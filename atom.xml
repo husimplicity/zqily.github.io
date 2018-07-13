@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zqily.com/"/>
-  <updated>2018-07-13T16:32:47.540Z</updated>
+  <updated>2018-07-13T16:51:45.502Z</updated>
   <id>http://zqily.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HexoEditor编写MarkDown自动上传替换七牛外链</title>
+    <link href="http://zqily.com/2018/07/14/HexoEditor%E7%BC%96%E5%86%99MarkDown%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E6%9B%BF%E6%8D%A2%E4%B8%83%E7%89%9B%E5%A4%96%E9%93%BE/"/>
+    <id>http://zqily.com/2018/07/14/HexoEditor编写MarkDown自动上传替换七牛外链/</id>
+    <published>2018-07-13T16:18:45.000Z</published>
+    <updated>2018-07-13T16:51:45.502Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>继之前介绍的如何搭建个人博客，如何完善博客各种功能，今天来介绍一下配合Hexo框架和Next主题来写文章的利器——HexoEditor。以及用七牛云保存图片，并用外链的方式在Hexo文章中显示图片。</p><hr><h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><blockquote><p>os: Windows</p></blockquote><hr><h1 id="HexoEditor"><a href="#HexoEditor" class="headerlink" title="HexoEditor"></a>HexoEditor</h1><p>HexoEditor是一款配和Hexo框架和Next主题，写Markdown文章的编辑器。废话不多说，先上GitHub地址。</p><p><a href="https://github.com/zhuzhuyule/HexoEditor/blob/master/doc/cn/README.md" target="_blank" rel="noopener">GitHub</a></p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装的话可以看<a href="http://zqily.com安装" target="_blank" rel="noopener">这里</a>，我有介绍过。</p><h2 id="打开"><a href="#打开" class="headerlink" title="打开"></a>打开</h2><p>在HexoEditor的根目录（根目录下有app,doc,icons等文件夹）下面，打开<code>Git Bash</code>，执行命令：</p><blockquote><p>npm start</p></blockquote><p>等一会儿就会出现HexoEditor编辑器。点击左下角会出现菜单栏。</p><p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618052712819.png" alt=""></p><p>如果要写博文，就新建Post。</p><p>新建的文章会根据<code>/yoursite/scaffolds/post.md</code>模板自动生成一些内容，其实也就是这个文件的内容，如果想修改模板，就直接修改这个就行了。</p><h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><p>写文章的话，左边写，右边就会实时显示样式。没什么好讲的，所以重点讲一讲这个设置里面的图片设置（以七牛云为例）。</p><p>为什么要重点讲这个图片设置？<br>写文章的时候，图片有两种方式展现在页面上，一种是从本地读取，一种是从一个外链上读取。<br>本地读取的话，图片都保存在Coding上面，很占用空间，速度也不快。<br>所以一般选择将图片保存在七牛云或者别的地方，然后通过外链调用。</p><p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618053310449.png" alt=""></p><ul><li>默认资源库：把你放在文章里面的图片存到这个目录下，可以在任意位置。</li><li>云图类型：七牛云、腾通自己选。</li><li>Access Key：从你七牛云或者百度云获取。</li><li>Secret Key：同上。</li><li>下面两个在填完上面两个Key之后会自动生成。</li></ul><h3 id="七牛云"><a href="#七牛云" class="headerlink" title="七牛云"></a>七牛云</h3><p>要使用七牛云，当然是先注册一个啦，<a href="https://portal.qiniu.com/signup?code=3l9qmvo8g6uz6" target="_blank" rel="noopener">点击进入注册页面</a>。实话实说，这是我的邀请链接，可以帮我增加每个月的下载流量。</p><p>注册好了之后，找到对象存储-&gt;立即添加。</p><p><img src="http://dugblog.coding.me/%E5%A6%82%E4%BD%95%E7%94%A8%E4%B8%83%E7%89%9B%E4%BA%91%E4%BF%9D%E5%AD%98Hexo%E6%96%87%E7%AB%A0%E4%B8%AD%E7%9A%84%E5%9B%BE%E7%89%87%EF%BC%8C%E5%B9%B6%E9%80%9A%E8%BF%87%E5%A4%96%E9%93%BE%E6%98%BE%E7%A4%BA%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD/20180618054842730.png" alt=""></p><p>很好，会提示你实名验证，那就只有老老实实的实名验证啦~验证时间大概是两到三天，可以先收藏着我的文章，验证好了再来看~XD</p><p>验证好了之后，填好创建信息，确定创建。然后点击右上角个人面板，密钥管理</p><p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618055558859.png" alt=""></p><p>可以看到两个Key的值</p><p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618055634989.png" alt=""></p><p>这两个值就是刚刚HexoEditor的图片设置里面要填的。</p><h2 id="How-to-use"><a href="#How-to-use" class="headerlink" title="How to use?"></a>How to use?</h2><p>怎么用这个图床功能呢？</p><p>用HexoEditor写文章的时候，将你的图片直接复制，或者写：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](图片绝对路径)</span><br></pre></td></tr></table></figure><p>然后右键，上传七牛云，接下来就是I have a HexoEditor, I have a qiniu, Bang! 你会发现</p><p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618060123794.png" alt=""></p><p>这样的路径图片会变成一个外链图片</p><p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180620092749904.png" alt=""></p><p>打完收工！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h1&gt;&lt;p&gt;继之前介绍的如何搭建个人博客，如何完善博客各种功能，今天来介绍一下配合Hexo框架和Next主题来写文章的利器——HexoEditor。以及
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://zqily.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://zqily.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows下用github+Hexo（Next主题）搭建博客Blog</title>
@@ -40,34 +65,9 @@
       <category term="hexo" scheme="http://zqily.com/categories/hexo/"/>
     
     
+      <category term="hexo" scheme="http://zqily.com/tags/hexo/"/>
+    
       <category term="markdown" scheme="http://zqily.com/tags/markdown/"/>
-    
-      <category term="hexo" scheme="http://zqily.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何写好Markdown文章？HexoEditor助你写出一篇好Hexo文章&amp;在文章中用七牛云外链显示图片</title>
-    <link href="http://zqily.com/2018/07/14/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0&amp;%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E7%94%A8%E4%B8%83%E7%89%9B%E4%BA%91%E5%A4%96%E9%93%BE%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87/"/>
-    <id>http://zqily.com/2018/07/14/如何写好Markdown文章？HexoEditor助你写出一篇好Hexo文章&amp;在文章中用七牛云外链显示图片/</id>
-    <published>2018-07-13T16:18:45.000Z</published>
-    <updated>2018-07-13T16:22:44.072Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>继之前介绍的如何搭建个人博客，如何完善博客各种功能，今天来介绍一下配合Hexo框架和Next主题来写文章的利器——HexoEditor。以及用七牛云保存图片，并用外链的方式在Hexo文章中显示图片。</p><hr><h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><blockquote><p>os: Windows</p></blockquote><hr><h1 id="HexoEditor"><a href="#HexoEditor" class="headerlink" title="HexoEditor"></a>HexoEditor</h1><p>HexoEditor是一款配和Hexo框架和Next主题，写Markdown文章的编辑器。废话不多说，先上GitHub地址。</p><p><a href="https://github.com/zhuzhuyule/HexoEditor/blob/master/doc/cn/README.md" target="_blank" rel="noopener">GitHub</a></p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装的话可以看<a href="http://zqily.com安装" target="_blank" rel="noopener">这里</a>，我有介绍过。</p><h2 id="打开"><a href="#打开" class="headerlink" title="打开"></a>打开</h2><p>在HexoEditor的根目录（根目录下有app,doc,icons等文件夹）下面，打开<code>Git Bash</code>，执行命令：</p><blockquote><p>npm start</p></blockquote><p>等一会儿就会出现HexoEditor编辑器。点击左下角会出现菜单栏。</p><p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618052712819.png" alt=""></p><p>如果要写博文，就新建Post。</p><p>新建的文章会根据<code>/yoursite/scaffolds/post.md</code>模板自动生成一些内容，其实也就是这个文件的内容，如果想修改模板，就直接修改这个就行了。</p><h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><p>写文章的话，左边写，右边就会实时显示样式。没什么好讲的，所以重点讲一讲这个设置里面的图片设置（以七牛云为例）。</p><p>为什么要重点讲这个图片设置？<br>写文章的时候，图片有两种方式展现在页面上，一种是从本地读取，一种是从一个外链上读取。<br>本地读取的话，图片都保存在Coding上面，很占用空间，速度也不快。<br>所以一般选择将图片保存在七牛云或者别的地方，然后通过外链调用。</p><p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618053310449.png" alt=""></p><ul><li>默认资源库：把你放在文章里面的图片存到这个目录下，可以在任意位置。</li><li>云图类型：七牛云、腾通自己选。</li><li>Access Key：从你七牛云或者百度云获取。</li><li>Secret Key：同上。</li><li>下面两个在填完上面两个Key之后会自动生成。</li></ul><h3 id="七牛云"><a href="#七牛云" class="headerlink" title="七牛云"></a>七牛云</h3><p>要使用七牛云，当然是先注册一个啦，<a href="https://portal.qiniu.com/signup?code=3l9qmvo8g6uz6" target="_blank" rel="noopener">点击进入注册页面</a>。实话实说，这是我的邀请链接，可以帮我增加每个月的下载流量。</p><p>注册好了之后，找到对象存储-&gt;立即添加。</p><p><img src="http://dugblog.coding.me/%E5%A6%82%E4%BD%95%E7%94%A8%E4%B8%83%E7%89%9B%E4%BA%91%E4%BF%9D%E5%AD%98Hexo%E6%96%87%E7%AB%A0%E4%B8%AD%E7%9A%84%E5%9B%BE%E7%89%87%EF%BC%8C%E5%B9%B6%E9%80%9A%E8%BF%87%E5%A4%96%E9%93%BE%E6%98%BE%E7%A4%BA%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD/20180618054842730.png" alt=""></p><p>很好，会提示你实名验证，那就只有老老实实的实名验证啦~验证时间大概是两到三天，可以先收藏着我的文章，验证好了再来看~XD</p><p>验证好了之后，填好创建信息，确定创建。然后点击右上角个人面板，密钥管理</p><p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618055558859.png" alt=""></p><p>可以看到两个Key的值</p><p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618055634989.png" alt=""></p><p>这两个值就是刚刚HexoEditor的图片设置里面要填的。</p><h2 id="How-to-use"><a href="#How-to-use" class="headerlink" title="How to use?"></a>How to use?</h2><p>怎么用这个图床功能呢？</p><p>用HexoEditor写文章的时候，将你的图片直接复制，或者写：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](图片绝对路径)</span><br></pre></td></tr></table></figure><p>然后右键，上传七牛云，接下来就是I have a HexoEditor, I have a qiniu, Bang! 你会发现</p><p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618060123794.png" alt=""></p><p>这样的路径图片会变成一个外链图片</p><p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180620092749904.png" alt=""></p><p>打完收工！</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h1&gt;&lt;p&gt;继之前介绍的如何搭建个人博客，如何完善博客各种功能，今天来介绍一下配合Hexo框架和Next主题来写文章的利器——HexoEditor。以及
-      
-    
-    </summary>
-    
-      <category term="hexo" scheme="http://zqily.com/categories/hexo/"/>
-    
-    
-      <category term="hexo" scheme="http://zqily.com/tags/hexo/"/>
     
   </entry>
   
@@ -92,9 +92,9 @@
       <category term="hexo" scheme="http://zqily.com/categories/hexo/"/>
     
     
-      <category term="markdown" scheme="http://zqily.com/tags/markdown/"/>
-    
       <category term="hexo" scheme="http://zqily.com/tags/hexo/"/>
+    
+      <category term="markdown" scheme="http://zqily.com/tags/markdown/"/>
     
   </entry>
   
