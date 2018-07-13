@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=1.0.1" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=1.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=1.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=1.0.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=1.0.1" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="hexo,markdown," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="ZQILY-zeqing" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="处女博文，就写一下这个个人Blog是如何搭建起来的吧。本文只讲解在Windows环境下如何搭建。 说起来想要搭建这样一个Blog还是因为我特别喜欢这个主题Next，所以索性就自己搭一个啦。  需要准备的东西 Node.js（点击可进入下载页面，两个版本都行，我选的最新的版本） Git（点击进去直接下载，附赠一个Git 安装教程） Hexo 官方使用文档（有什么更详细的想了解可以上官网，右上角可以选">
+<meta name="keywords" content="hexo,markdown">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows下用github+Hexo（Next主题）搭建博客Blog">
+<meta property="og:url" content="http://zqily.com/2018/07/14/Windows下用github+Hexo（Next主题）搭建博客Blog/index.html">
+<meta property="og:site_name" content="ZQILY-zeqing">
+<meta property="og:description" content="处女博文，就写一下这个个人Blog是如何搭建起来的吧。本文只讲解在Windows环境下如何搭建。 说起来想要搭建这样一个Blog还是因为我特别喜欢这个主题Next，所以索性就自己搭一个啦。  需要准备的东西 Node.js（点击可进入下载页面，两个版本都行，我选的最新的版本） Git（点击进去直接下载，附赠一个Git 安装教程） Hexo 官方使用文档（有什么更详细的想了解可以上官网，右上角可以选">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618035501534.png">
+<meta property="og:image" content="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618035851832.png">
+<meta property="og:image" content="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618040323625.png">
+<meta property="og:image" content="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618040413240.png">
+<meta property="og:image" content="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618041603426.png">
+<meta property="og:image" content="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618040723739.png">
+<meta property="og:image" content="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618034600251.png">
+<meta property="og:updated_time" content="2018-07-13T16:32:47.540Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Windows下用github+Hexo（Next主题）搭建博客Blog">
+<meta name="twitter:description" content="处女博文，就写一下这个个人Blog是如何搭建起来的吧。本文只讲解在Windows环境下如何搭建。 说起来想要搭建这样一个Blog还是因为我特别喜欢这个主题Next，所以索性就自己搭一个啦。  需要准备的东西 Node.js（点击可进入下载页面，两个版本都行，我选的最新的版本） Git（点击进去直接下载，附赠一个Git 安装教程） Hexo 官方使用文档（有什么更详细的想了解可以上官网，右上角可以选">
+<meta name="twitter:image" content="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618035501534.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '1.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'zeqing'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zqily.com/2018/07/14/Windows下用github+Hexo（Next主题）搭建博客Blog/"/>
+
+
+
+
+
+  <title>Windows下用github+Hexo（Next主题）搭建博客Blog | ZQILY-zeqing</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ZQILY-zeqing</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">泽清的个人网站</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-board">
+          <a href="/board" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            留言板
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zqily.com/2018/07/14/Windows下用github+Hexo（Next主题）搭建博客Blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zeqing">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9S60LwEscLA8V-8PM3_faa9VUGIhfD2oxTz8Zi5GKDxiZyYZfJQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZQILY-zeqing">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Windows下用github+Hexo（Next主题）搭建博客Blog</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+		  
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-14T00:18:45+08:00">
+                2018-07-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/14/Windows下用github+Hexo（Next主题）搭建博客Blog/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/07/14/Windows下用github+Hexo（Next主题）搭建博客Blog/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>处女博文，就写一下这个个人Blog是如何搭建起来的吧。本文只讲解在Windows环境下如何搭建。</p>
+<p>说起来想要搭建这样一个Blog还是因为我特别喜欢这个主题<strong><em>Next</em></strong>，所以索性就自己搭一个啦。</p>
+<hr>
+<h1 id="需要准备的东西"><a href="#需要准备的东西" class="headerlink" title="需要准备的东西"></a>需要准备的东西</h1><ul>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener"><em>Node.js</em></a>（点击可进入下载页面，两个版本都行，我选的最新的版本）</li>
+<li><a href="https://git-scm.com/download/win" target="_blank" rel="noopener"><em>Git</em></a>（点击进去直接下载，附赠一个<a href="https://blog.csdn.net/sishen47k/article/details/80211002" target="_blank" rel="noopener"><em>Git</em> 安装教程</a>）</li>
+<li><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener"><em>Hexo</em> 官方使用文档</a>（有什么更详细的想了解可以上官网，右上角可以选中文）</li>
+<li><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener"><em>Next</em> 主题官网</a>（官网上有很多详细的配置说明和设定教程）</li>
+<li><a href="https://github.com/zhuzhuyule/HexoEditor/blob/master/doc/cn/README.md" target="_blank" rel="noopener"><em>HexoEditor</em></a>（用于编写<em>Markdown</em> 文章的软件，配合Hexo食用）</li>
+<li><a href="https://notepad-plus-plus.org/" target="_blank" rel="noopener"><em>Notepad++</em></a>（Windows下记事本的替代品，因为记事本保存的时候会在每一行的开头还是结尾加一个什么标记，会导致有些文件用记事本打开之后再保存会出问题）</li>
+<li><em>Git Bash</em> 相关的一点点小知识，和命令行使用方法一样。（这个我写在最后面，如果不会的话请看一看）</li>
+</ul>
+<p>如果以下步骤哪里出了问题，欢迎留言，留言时请填上邮箱，你就可以收到我的回复了。<br>PS：邮件回复可能会被收进垃圾箱，请注意。</p>
+<hr>
+<h1 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h1><h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><p>所谓的依赖就是搭建博客需要的一些基层的软件，包括Node.js和Git，这两个东西在上面已经给出了下载链接，安装的话对于Windows用户应该不算难题吧。</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>安装好Git之后，任意空白处鼠标右键，会出现<code>Git Bash Here</code>。点击<code>Git Bash Here</code>会出现<code>Git Bash</code>对话框。</p>
+<p>新建一个文件夹，用于保存Hexo生成的博客内容。（将这个文件夹成为Hexo文件夹）然后进入该文件夹，空白处右键，点击<code>Git Bash Here</code>，输入命令</p>
+<p>| </p>
+<p>npm install -g hexo-cli</p>
+<p> |</p>
+<p>如果没有报错，继续输入</p>
+<p>| </p>
+<p>hexo init </p>
+<p> |</p>
+<p>代表的是保存目录，如果不填会在当前目录下生成Hexo框架所需要的文件。</p>
+<p>命令执行完成后，文件夹下的目录结构如下：</p>
+<p>| </p>
+<p>.<br>├── _config.yml<br>├── package.json<br>├── scaffolds<br>├── source<br>|   ├── _drafts<br>|   └── _posts<br>└── themes</p>
+<p> |</p>
+<p>其中<code>_config.yml</code>为配置文件，后面会用到。</p>
+<p>验证一下是否安装成功。在刚刚的<code>Git Bash</code>对话框中输入命令</p>
+<p>| </p>
+<p>hexo g</p>
+<p> |</p>
+<p>等待完成后再输入命令</p>
+<p>| </p>
+<p>hexo s</p>
+<p> |</p>
+<p>然后打开浏览器，输入<code>localhost:4000</code>。如果成功看见博客就证明安装成功。</p>
+<p>成功后在刚刚的<code>Git Bash</code>对话框中按下<code>Ctrl+c</code>停止服务。</p>
+<h2 id="安装Next主题"><a href="#安装Next主题" class="headerlink" title="安装Next主题"></a>安装Next主题</h2><p>进入Hexo文件夹（上文提到过，这个目录下可以看到一个themes文件夹），在Hexo文件夹空白处右键打开<code>Git Bash Here</code>，输入命令</p>
+<p>| </p>
+<p>git clone <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a> themes/next</p>
+<p> |</p>
+<p>没有报错（红色的er），就证明已经安装好了Next主题。</p>
+<h2 id="将Hexo的主题更改为Next主题"><a href="#将Hexo的主题更改为Next主题" class="headerlink" title="将Hexo的主题更改为Next主题"></a>将Hexo的主题更改为Next主题</h2><p>在Hexo文件夹下面可以看到一个<code>_config.yml</code>文件，右键用Notepad++打开（用记事本打开不知道会不会出问题，建议用Notepad++），靠下面的位置寻找</p>
+<p>| </p>
+<p>theme: landscape</p>
+<p> |</p>
+<p>将里面的landscape改成next</p>
+<p>| </p>
+<p>theme: next</p>
+<p> |</p>
+<p>然后和Hexo里面验证是否安装成功一样的步骤，可以检验主题是否更改成功。</p>
+<p>在Hexo文件夹里面打开<code>Git Bash</code>对话框，输入命令</p>
+<p>| </p>
+<p>hexo clean -g</p>
+<p> |</p>
+<p>等待完成后再输入命令</p>
+<p>| </p>
+<p>hexo s</p>
+<p> |</p>
+<p>然后打开浏览器，输入<code>localhost:4000</code>。如果成功看到主题更改了，记得在刚刚的<code>Git Bash</code>对话框中按下<code>Ctrl+c</code>停止服务。</p>
+<hr>
+<h1 id="部署Hexo"><a href="#部署Hexo" class="headerlink" title="部署Hexo"></a>部署Hexo</h1><p>现在我们可以在本地显示自己博客了，可是创建博客就是给人看的呀，那接下来就把我们的博客部署到网上。在没有自己的服务器的情况下，大致的选择方案有两种：</p>
+<ul>
+<li>部署到GitHub上</li>
+<li>部署到Coding上</li>
+</ul>
+<p>因为GitHub不让百度爬虫，影响百度收录，然后服务器在国外，速度也慢，所以推荐Coding。</p>
+<p>首先当然是得拥有一个Coding账号啦~，<a href="https://coding.net/" target="_blank" rel="noopener">点击我注册</a>。</p>
+<p>用户名一定不要有奇奇怪怪的符号！特别是下划线！影响收录！所以最好不要符号！</p>
+<p>注册登录之后，右上角加号点击项目，新建一个项目</p>
+<p><img src="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618035501534.png" alt=""></p>
+<p>项目名称一定要用<code>[你的用户名].coding.me</code>，比如用用户名为<code>dugblog</code>，项目名就填<code>dugblog.coding.me</code>。</p>
+<p><img src="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618035851832.png" alt=""></p>
+<p>新建好了之后，会进入项目页面，点击左侧代码-&gt;Pages服务</p>
+<p><img src="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618040323625.png" alt=""></p>
+<p>在部署来源里面选择<code>master分支</code>，保存</p>
+<p><img src="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618040413240.png" alt=""></p>
+<p>保存好了之后，会出现这样的提示</p>
+<p><img src="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618041603426.png" alt=""></p>
+<p>上图框出来的地址，就是你的博客地址，而且是一个一级目录，如果你的最后还有一个斜杠然后一串名称（例如：<code>http://DugBlog.coding.me/abcd</code>），请检查项目名称是否填对。</p>
+<p>然后在左侧可以找到这个</p>
+<p><img src="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618040723739.png" alt=""></p>
+<p>复制下来，打开站点配置文件，也就是<code>/yoursite/_config.yml</code>，和<code>source</code>平级目录下的那个。找到<code>deploy</code>，更改里面的配置：</p>
+<p>| </p>
+<p>deploy:<br> type: git # 必须填git<br> repo: # https://用户名:密码@刚刚复制的链接去掉https://</p>
+<h1 id="repo示例-https-myblog-123456-git-coding-net-myblog-myblog-coding-me-git"><a href="#repo示例-https-myblog-123456-git-coding-net-myblog-myblog-coding-me-git" class="headerlink" title="repo示例 https://myblog:123456@git.coding.net/myblog/myblog.coding.me.git"></a>repo示例 <a href="https://myblog:123456@git.coding.net/myblog/myblog.coding.me.git" target="_blank" rel="noopener">https://myblog:123456@git.coding.net/myblog/myblog.coding.me.git</a></h1><p> branch: master # 刚刚选择的分支，不懂就填这个<br> message: blog update # 每次更新时提交的备注</p>
+<p> |</p>
+<p>填好保存好，在Hexo根目录下打开<code>Git Bash</code>，先后执行命令：</p>
+<p>| </p>
+<p>hexo clean<br>hexo g -d</p>
+<p> |</p>
+<p>再回到刚刚的Pages服务页面，点开自己的博客地址，就应该可以看到你的博客了。</p>
+<hr>
+<h1 id="HexoEditor安装"><a href="#HexoEditor安装" class="headerlink" title="HexoEditor安装"></a>HexoEditor安装</h1><p>首先找一个地方，新建一个文件夹用来放HexoEditor的文件。进入文件夹，右键打开<code>Git Bash</code>对话框，依次输入下面的命令：</p>
+<p>| </p>
+<p>npm config set registry “<a href="https://registry.npm.taobao.org/&quot;" target="_blank" rel="noopener">https://registry.npm.taobao.org/&quot;</a><br>npm config set electron_mirror “<a href="https://npm.taobao.org/mirrors/electron/&quot;" target="_blank" rel="noopener">https://npm.taobao.org/mirrors/electron/&quot;</a></p>
+<p>git clone <a href="https://github.com/zhuzhuyule/HexoEditor.git" target="_blank" rel="noopener">https://github.com/zhuzhuyule/HexoEditor.git</a><br>cd HexoEditor<br>npm install</p>
+<p> |</p>
+<p>如果没报错，就是安装成功。而且会在你刚刚新建的目录下面生成一个HexoEditor目录。那么如何打开HexoEditor呢？</p>
+<p>进入到HexoEditor的目录里面，右键打开<code>Git Bash</code>对话框，输入如下命令启动HexoEditor:</p>
+<p>| </p>
+<p>npm start</p>
+<p> |</p>
+<hr>
+<h1 id="关于Git-Bash"><a href="#关于Git-Bash" class="headerlink" title="关于Git Bash"></a>关于Git Bash</h1><p>如果你来看这个，我默认你不怎么懂命令行，不打算深讲，只讲一点相关的内容。</p>
+<p>在上述教程中，很多时候我会有一个操作，就是在某一个文件夹里面，空白处右键打开<code>Git Bash</code>。可能有的同学会有疑问，在不同的地方打开会有什么不同吗？<br><strong>是的！可以说完全不同！而且影响很严重。</strong></p>
+<p>你仔细观察会发现，<code>$</code>这个符号上面一行最后面，有一个目录</p>
+<p><img src="http://pai5cscef.bkt.clouddn.com/%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E5%92%8CNext%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/20180618034600251.png" alt=""></p>
+<p>你在哪里打开的，这个目录就会是什么。而且你执行的所有命令，都会基于这个目录来执行。可以百度一下命令行和cd命令，会有更深的理解。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/markdown/" rel="tag"># markdown</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/14/Markdown 语法说明 (简体中文版)/" rel="next" title="Markdown 语法说明 (简体中文版)">
+                <i class="fa fa-chevron-left"></i> Markdown 语法说明 (简体中文版)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/14/如何写好Markdown文章？HexoEditor助你写出一篇好Hexo文章&在文章中用七牛云外链显示图片/" rel="prev" title="如何写好Markdown文章？HexoEditor助你写出一篇好Hexo文章&在文章中用七牛云外链显示图片">
+                如何写好Markdown文章？HexoEditor助你写出一篇好Hexo文章&在文章中用七牛云外链显示图片 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+	  
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9S60LwEscLA8V-8PM3_faa9VUGIhfD2oxTz8Zi5GKDxiZyYZfJQ"
+                alt="zeqing" />
+            
+              <p class="site-author-name" itemprop="name">zeqing</p>
+              <p class="site-description motion-element" itemprop="description">好好学习，天天向上！</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/zqily" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:me@zqily.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#需要准备的东西"><span class="nav-number">1.</span> <span class="nav-text">需要准备的东西</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开始搭建"><span class="nav-number">2.</span> <span class="nav-text">开始搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装依赖"><span class="nav-number">2.1.</span> <span class="nav-text">安装依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.2.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Next主题"><span class="nav-number">2.3.</span> <span class="nav-text">安装Next主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将Hexo的主题更改为Next主题"><span class="nav-number">2.4.</span> <span class="nav-text">将Hexo的主题更改为Next主题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#部署Hexo"><span class="nav-number">3.</span> <span class="nav-text">部署Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#repo示例-https-myblog-123456-git-coding-net-myblog-myblog-coding-me-git"><span class="nav-number">4.</span> <span class="nav-text">repo示例 https://myblog:123456@git.coding.net/myblog/myblog.coding.me.git</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HexoEditor安装"><span class="nav-number">5.</span> <span class="nav-text">HexoEditor安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于Git-Bash"><span class="nav-number">6.</span> <span class="nav-text">关于Git Bash</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zeqing</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=1.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=1.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=1.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=1.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=1.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=1.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=1.0.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'zqily',
+            repo: 'zqily.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'aa4ac079d7025c98cd11e0653053ad2048c5e162',
+            
+                client_id: 'b85c9b53e4890dcfb9d1'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+
+  <!-- 页面点击小心心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+
+<script type="text/javascript">var OriginTitile=document.title,st;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="泽清在这里等你",clearTimeout(st)):(document.title="Got ya~~"+OriginTitile,st=setTimeout(function(){document.title=OriginTitile},3e3))})</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/Epsilon2.1.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"pluginJsPath":"lib/","pluginRootPath":"live2dw/"});</script></body>
+</html>
