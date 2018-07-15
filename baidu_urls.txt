@@ -1,4 +1,4 @@
-https://zqily.com/2018/07/14/为什么要写独立博客？/
-https://zqily.com/2018/07/14/HexoEditor编写MarkDown自动上传替换七牛外链/
-https://zqily.com/2018/07/14/Windows下用github+Hexo（Next主题）搭建博客Blog/
-https://zqily.com/2018/07/14/Markdown 语法说明 (简体中文版)/
+http://zqily.com/2018/07/14/为什么要写独立博客？/
+http://zqily.com/2018/07/14/HexoEditor编写MarkDown自动上传替换七牛外链/
+http://zqily.com/2018/07/14/Windows下用github+Hexo（Next主题）搭建博客Blog/
+http://zqily.com/2018/07/14/Markdown 语法说明 (简体中文版)/
