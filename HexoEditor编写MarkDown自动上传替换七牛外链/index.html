@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="hexo,碎碎念," />
+  <meta name="keywords" content="hexo," />
 
 
 
@@ -81,18 +81,26 @@
 
 
 
-<meta name="description" content="如果你有一个绝佳的长期写作idea，你会选在哪里发布？微信公众号？知乎？微博？Lofter?简书？Medium？博客？慢着，既然有前面那么多既简单好用，又具备巨大「网络效应」Network Effect 的内容分发平台（或社区），我为什么还需要博客这种既不性感又不易用的过时玩意儿呢？ 1 为什么要选博客事实上，如今仍然有很多人在坚持自建独立博客，产出内容。大概每个写博客的人都有自己坚持的理由吧。就">
-<meta name="keywords" content="hexo,碎碎念">
+<meta name="description" content="引言继之前介绍的如何搭建个人博客，如何完善博客各种功能，今天来介绍一下配合Hexo框架和Next主题来写文章的利器——HexoEditor。以及用七牛云保存图片，并用外链的方式在Hexo文章中显示图片。  环境 os: Windows   HexoEditorHexoEditor是一款配和Hexo框架和Next主题，写Markdown文章的编辑器。废话不多说，先上GitHub地址。 GitHub">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="为什么要写独立博客？">
-<meta property="og:url" content="https://www.zqily.com/2018/07/14/为什么要写独立博客？/index.html">
+<meta property="og:title" content="HexoEditor编写MarkDown自动上传替换七牛外链">
+<meta property="og:url" content="https://www.zqily.com/HexoEditor编写MarkDown自动上传替换七牛外链/index.html">
 <meta property="og:site_name" content="冰清璧润-唐泽清的博客">
-<meta property="og:description" content="如果你有一个绝佳的长期写作idea，你会选在哪里发布？微信公众号？知乎？微博？Lofter?简书？Medium？博客？慢着，既然有前面那么多既简单好用，又具备巨大「网络效应」Network Effect 的内容分发平台（或社区），我为什么还需要博客这种既不性感又不易用的过时玩意儿呢？ 1 为什么要选博客事实上，如今仍然有很多人在坚持自建独立博客，产出内容。大概每个写博客的人都有自己坚持的理由吧。就">
+<meta property="og:description" content="引言继之前介绍的如何搭建个人博客，如何完善博客各种功能，今天来介绍一下配合Hexo框架和Next主题来写文章的利器——HexoEditor。以及用七牛云保存图片，并用外链的方式在Hexo文章中显示图片。  环境 os: Windows   HexoEditorHexoEditor是一款配和Hexo框架和Next主题，写Markdown文章的编辑器。废话不多说，先上GitHub地址。 GitHub">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-13T23:34:41.915Z">
+<meta property="og:image" content="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618052712819.png">
+<meta property="og:image" content="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618053310449.png">
+<meta property="og:image" content="http://dugblog.coding.me/%E5%A6%82%E4%BD%95%E7%94%A8%E4%B8%83%E7%89%9B%E4%BA%91%E4%BF%9D%E5%AD%98Hexo%E6%96%87%E7%AB%A0%E4%B8%AD%E7%9A%84%E5%9B%BE%E7%89%87%EF%BC%8C%E5%B9%B6%E9%80%9A%E8%BF%87%E5%A4%96%E9%93%BE%E6%98%BE%E7%A4%BA%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD/20180618054842730.png">
+<meta property="og:image" content="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618055558859.png">
+<meta property="og:image" content="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618055634989.png">
+<meta property="og:image" content="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618060123794.png">
+<meta property="og:image" content="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180620092749904.png">
+<meta property="og:updated_time" content="2018-07-13T16:51:45.502Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="为什么要写独立博客？">
-<meta name="twitter:description" content="如果你有一个绝佳的长期写作idea，你会选在哪里发布？微信公众号？知乎？微博？Lofter?简书？Medium？博客？慢着，既然有前面那么多既简单好用，又具备巨大「网络效应」Network Effect 的内容分发平台（或社区），我为什么还需要博客这种既不性感又不易用的过时玩意儿呢？ 1 为什么要选博客事实上，如今仍然有很多人在坚持自建独立博客，产出内容。大概每个写博客的人都有自己坚持的理由吧。就">
+<meta name="twitter:title" content="HexoEditor编写MarkDown自动上传替换七牛外链">
+<meta name="twitter:description" content="引言继之前介绍的如何搭建个人博客，如何完善博客各种功能，今天来介绍一下配合Hexo框架和Next主题来写文章的利器——HexoEditor。以及用七牛云保存图片，并用外链的方式在Hexo文章中显示图片。  环境 os: Windows   HexoEditorHexoEditor是一款配和Hexo框架和Next主题，写Markdown文章的编辑器。废话不多说，先上GitHub地址。 GitHub">
+<meta name="twitter:image" content="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618052712819.png">
 
 
 
@@ -122,7 +130,7 @@
 
 
 
-  <link rel="canonical" href="https://www.zqily.com/2018/07/14/为什么要写独立博客？/"/>
+  <link rel="canonical" href="https://www.zqily.com/HexoEditor编写MarkDown自动上传替换七牛外链/"/>
 
 
 
@@ -142,7 +150,7 @@
     })();
 </script>
 
-  <title>为什么要写独立博客？ | 冰清璧润-唐泽清的博客</title>
+  <title>HexoEditor编写MarkDown自动上传替换七牛外链 | 冰清璧润-唐泽清的博客</title>
   
 
 
@@ -332,7 +340,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.zqily.com/2018/07/14/为什么要写独立博客？/">
+    <link itemprop="mainEntityOfPage" href="https://www.zqily.com/HexoEditor编写MarkDown自动上传替换七牛外链/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="唐泽清">
@@ -349,7 +357,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">为什么要写独立博客？</h2>
+          <h2 class="post-title" itemprop="name headline">HexoEditor编写MarkDown自动上传替换七牛外链</h2>
         
 
         <div class="post-meta">
@@ -362,7 +370,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-14T07:18:45+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-14T00:18:45+08:00">
                 2018-07-14
               </time>
             
@@ -402,7 +410,7 @@
 
           
           
-             <span id="/2018/07/14/为什么要写独立博客？/" class="leancloud_visitors" data-flag-title="为什么要写独立博客？">
+             <span id="/HexoEditor编写MarkDown自动上传替换七牛外链/" class="leancloud_visitors" data-flag-title="HexoEditor编写MarkDown自动上传替换七牛外链">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -427,7 +435,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,946
+                  743
                 </span>
               
 
@@ -452,91 +460,50 @@
       
 
       
-        <p>如果你有一个绝佳的长期写作idea，你会选在哪里发布？微信公众号？知乎？微博？Lofter?简书？Medium？博客？慢着，既然有前面那么多既简单好用，又具备巨大「网络效应」<a href="https://en.wikipedia.org/wiki/Network_effect" target="_blank" rel="noopener">Network Effect</a> 的内容分发平台（或社区），我为什么还需要博客这种既不性感又不易用的过时玩意儿呢？</p>
-<h2 id="1-为什么要选博客"><a href="#1-为什么要选博客" class="headerlink" title="1 为什么要选博客"></a>1 为什么要选博客</h2><p>事实上，如今仍然有很多人在坚持自建独立博客，产出内容。大概每个写博客的人都有自己坚持的理由吧。就我而言，首先考虑博客而不是其他平台，至少有以下两点原因。</p>
-<h3 id="1-1-对搜索引擎更加友好"><a href="#1-1-对搜索引擎更加友好" class="headerlink" title="1.1 对搜索引擎更加友好"></a>1.1 对搜索引擎更加友好</h3><p>相较微博、微信等大多数社交媒体平台，博客对搜索引擎更加友好，也更加开放。多数第三方社交平台，或多或少地会存在搜索引擎收录的问题。而你作为使用者，能为搜索引擎优化做的事情也相当有限。</p>
-<p>也许，相较于其他社区平台的「网络效应」而言，对搜索引擎更友好和开放，可能并不意味着单位时间里更多的流量，但无疑会使得内容可能的覆盖范围更广。而当时间作为横坐标单位时，小流量积累起来的长尾亦会相当可观。</p>
-<h3 id="1-2-弱化社交利于专注内容生产"><a href="#1-2-弱化社交利于专注内容生产" class="headerlink" title="1.2 弱化社交利于专注内容生产"></a>1.2 弱化社交利于专注内容生产</h3><p>如果你想在微博、微信这些社交媒体上创作内容，除非完全不利用原先积累的社交资源，否则势必受其影响。为了完成在新媒体平台上的「自我形象管理」，你在内容生产的时候，或多或少地会被受众特征和形象管理意图所左右。</p>
-<p>与之相对的，博客虽然是一个开放互动平台，但它的互动是基于内容产生的。而且由于博客在社交方面的弱化（或者说不突出），用户因而可以完全免于社交因素的影响，专注于内容创作。</p>
-<h2 id="2-为什么要自建独立博客"><a href="#2-为什么要自建独立博客" class="headerlink" title="2 为什么要自建独立博客"></a>2 为什么要自建独立博客</h2><p>好吧，写博就写博吧，可为啥非得自建独立博客？要说独立博客和托管博客比有啥好处，一言以蔽之：爽。</p>
-<h3 id="2-1-独立博客是一个自由空间"><a href="#2-1-独立博客是一个自由空间" class="headerlink" title="2.1 独立博客是一个自由空间"></a>2.1 独立博客是一个自由空间</h3><p>相较于托管博客，独立博客有更多的自主权。自建博客和托管博客的关系，就好比是买房子与租房子的关系。选择租房子，你可以付出更少，入住更方便，可以在有限制的自由里装饰你租来的屋子。但是你所拥有的，是使用权而不是所有权。</p>
-<p>而若自建博客，一年换两套装修风格没问题。只要你高兴，甚至在房里堆满大便都是你的自由。你说我特么没事干嘛在自家堆满大便。对，你没必要，但你有这个自由。知道自己享有这种自由，难道不是一件很爽的事么？</p>
-<h3 id="2-2-自建独立博客很GEEK"><a href="#2-2-自建独立博客很GEEK" class="headerlink" title="2.2 自建独立博客很GEEK"></a>2.2 自建独立博客很GEEK</h3><p>如果你是程序猿，没个独立技术博客出门都不好意思跟人打招呼。事实上，虽然没有确切的数据，但是鉴于自建博客有一定的技术门槛，小白们想要自建独立博客需要耗费大量的时间成本，所以独立博客中应该多数是技术博客。</p>
-<p>如果你是个技术小白，当别人问你最近忙啥时，你轻描淡写地说，最近对Web开发有点兴趣，自己搭了个独立博客玩。这个逼装的简直可以给10分，不怕你骄傲。旁人看来，你简直GEEK到不行，然而你真正要做的，只是找一篇合适且详细的教程，一步一步照着做。</p>
-<h2 id="3-如何自建独立博客"><a href="#3-如何自建独立博客" class="headerlink" title="3 如何自建独立博客"></a>3 如何自建独立博客</h2><p>说了半天为啥要建，该说说怎么建了。当然，如果你有能力、有功夫自己从零开始配置服务器、搭建博客框架敬请忽视。以下部分仅供略懂以及不懂Web开发的人参考。</p>
-<h3 id="3-1-独立博客搭建方法介绍"><a href="#3-1-独立博客搭建方法介绍" class="headerlink" title="3.1 独立博客搭建方法介绍"></a>3.1 独立博客搭建方法介绍</h3><p>搭建独立博客有很多方法，下面具体对比几种比较常见的、我在搭建个人博客时考虑过的方法。</p>
-<table>
-<thead>
-<tr>
-<th>方式</th>
-<th>技术门槛</th>
-<th>服务器购买</th>
-<th>服务器配置</th>
-<th>域名备案</th>
-<th>访问速度</th>
-<th>费用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>WordPress</td>
-<td>中</td>
-<td>需要</td>
-<td>自行配置</td>
-<td>可免</td>
-<td>视服务器而定</td>
-<td>视服务器而定</td>
-</tr>
-<tr>
-<td>Jekyll</td>
-<td>中</td>
-<td>不用</td>
-<td>GitHub Page</td>
-<td>可免</td>
-<td>较快</td>
-<td>低</td>
-</tr>
-<tr>
-<td>Hexo</td>
-<td>中低</td>
-<td>不用</td>
-<td>GitHub Page</td>
-<td>可免</td>
-<td>较快</td>
-<td>低</td>
-</tr>
-<tr>
-<td>Ghost</td>
-<td>低</td>
-<td>不用</td>
-<td>不用</td>
-<td>可免</td>
-<td>较快</td>
-<td>高</td>
-</tr>
-<tr>
-<td>Farbox</td>
-<td>低</td>
-<td>不用</td>
-<td>不用</td>
-<td>可免</td>
-<td>快</td>
-<td>中</td>
-</tr>
-</tbody>
-</table>
-<p>如果想要经历完整的建站流程，而又比较习惯图形界面的管理后台，可以选择<a href="https://cn.wordpress.org/" target="_blank" rel="noopener">WordPress</a>。WordPress现在仍然是全球范围内最流行的博客内容管理工具（CMS）。不过，由于要自行购买服务器空间和配置，有一定难度。</p>
-<p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a>和<a href="http://jekyllcn.com/" target="_blank" rel="noopener">Jekyll</a>都是静态博客框架，利用<a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Page</a>的免费空间，搭建起来要比WordPress省事不少，而且也是上述所有方案中最节约成本的。另外，两者都支持Markdown文本，作为博客平台，更加专注高效的内容管理也要胜于WordPress。</p>
-<p><a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>和<a href="https://www.farbox.com/" target="_blank" rel="noopener">Farbox</a>是上述方案中最为简单易用的，几乎没有技术门槛。不用考虑服务器端的种种，支持Markdown文本，通过云服务同步。但是，在提供省心服务的同时，也需要收取相应的服务费用。</p>
-<h3 id="3-2-利用GitHub-Page搭建博客"><a href="#3-2-利用GitHub-Page搭建博客" class="headerlink" title="3.2 利用GitHub Page搭建博客"></a>3.2 利用GitHub Page搭建博客</h3><p>如果从上述几种方案中做选择，我个人更推荐利用<a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Page</a>和静态博客框架的方法。因为一来节约费用支出，二来域名免备案的同时、在全球范围的访问速度又都还不错，第三，利用GitHub Page进行服务器配置和文件上传也足够方便。</p>
-<p>知乎是这样介绍GitHub Pages的：</p>
-<blockquote>
-<p>Github Pages允许用户的任何一个Repo的gh-pages分支上的代码可以经由HTTP访问到。类似提供了静态文件服务。你可以用Github Pages搭建博客，也可以把项目的文档和主页放在上面。</p>
+        <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>继之前介绍的如何搭建个人博客，如何完善博客各种功能，今天来介绍一下配合Hexo框架和Next主题来写文章的利器——HexoEditor。以及用七牛云保存图片，并用外链的方式在Hexo文章中显示图片。</p>
+<hr>
+<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><blockquote>
+<p>os: Windows</p>
 </blockquote>
-<p><a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Page</a>本身也支持你利用它的免费空间写博客，官方推荐<a href="http://jekyllcn.com/" target="_blank" rel="noopener">Jekyll</a>作为博客框架来写作。具体的设置教程可以参考阮一峰老师的这篇博文→<a href="http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html" target="_blank" rel="noopener">搭建一个免费的，无限流量的Blog—-github Pages和Jekyll入门</a>。</p>
-<p>而上文提到的<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a>是湾湾同胞开发的静态博客框架，基于Node.js，相较于Jekyll，页面渲染生成更快，配置部署也更为简单。具体详尽的设置教程，Win可以参考这篇→<a href="https://zqily.com/2018/07/14/Windows%E4%B8%8B%E7%94%A8github+Hexo%EF%BC%88Next%E4%B8%BB%E9%A2%98%EF%BC%89%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2Blog/#more" target="_blank" rel="noopener">Windows下用github+Hexo（Next主题）搭建博客Blog</a>，Mac可以更为方便，可以直接使用Mweb即可。</p>
-<p>除了上述两种框架外，还有<a href="http://octopress.org/" target="_blank" rel="noopener">Octopress</a>等其他基于GitHub Page的博客框架。有兴趣的话可以横向对比探索。另外要善用GitHub Page的话，可能还需要掌握一些Git相关的知识，这点可以参考廖雪峰老师的→<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">Git教程</a>，或者<a href="https://www.udacity.com/" target="_blank" rel="noopener">Udacity</a>的线上课程→<a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775" target="_blank" rel="noopener">How to use Git and GitHub</a>。</p>
-<p>不过GitHub Page也并非完美无缺，至少在墙内使用的话，面临的一大问题是无法被百度收录。因为GitHub禁用了百度爬虫。据说是因为百度爬虫爬得太凶猛，已经对GitHub可用性造成了影响。好吧，又多了一个和百度说再见的理由。</p>
+<hr>
+<h1 id="HexoEditor"><a href="#HexoEditor" class="headerlink" title="HexoEditor"></a>HexoEditor</h1><p>HexoEditor是一款配和Hexo框架和Next主题，写Markdown文章的编辑器。废话不多说，先上GitHub地址。</p>
+<p><a href="https://github.com/zhuzhuyule/HexoEditor/blob/master/doc/cn/README.md" target="_blank" rel="noopener">GitHub</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装的话可以看<a href="http://zqily.com安装" target="_blank" rel="noopener">这里</a>，我有介绍过。</p>
+<h2 id="打开"><a href="#打开" class="headerlink" title="打开"></a>打开</h2><p>在HexoEditor的根目录（根目录下有app,doc,icons等文件夹）下面，打开<code>Git Bash</code>，执行命令：</p>
+<blockquote>
+<p>npm start</p>
+</blockquote>
+<p>等一会儿就会出现HexoEditor编辑器。点击左下角会出现菜单栏。</p>
+<p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618052712819.png" alt=""></p>
+<p>如果要写博文，就新建Post。</p>
+<p>新建的文章会根据<code>/yoursite/scaffolds/post.md</code>模板自动生成一些内容，其实也就是这个文件的内容，如果想修改模板，就直接修改这个就行了。</p>
+<h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><p>写文章的话，左边写，右边就会实时显示样式。没什么好讲的，所以重点讲一讲这个设置里面的图片设置（以七牛云为例）。</p>
+<p>为什么要重点讲这个图片设置？<br>写文章的时候，图片有两种方式展现在页面上，一种是从本地读取，一种是从一个外链上读取。<br>本地读取的话，图片都保存在Coding上面，很占用空间，速度也不快。<br>所以一般选择将图片保存在七牛云或者别的地方，然后通过外链调用。</p>
+<p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618053310449.png" alt=""></p>
+<ul>
+<li>默认资源库：把你放在文章里面的图片存到这个目录下，可以在任意位置。</li>
+<li>云图类型：七牛云、腾通自己选。</li>
+<li>Access Key：从你七牛云或者百度云获取。</li>
+<li>Secret Key：同上。</li>
+<li>下面两个在填完上面两个Key之后会自动生成。</li>
+</ul>
+<h3 id="七牛云"><a href="#七牛云" class="headerlink" title="七牛云"></a>七牛云</h3><p>要使用七牛云，当然是先注册一个啦，<a href="https://portal.qiniu.com/signup?code=3l9qmvo8g6uz6" target="_blank" rel="noopener">点击进入注册页面</a>。实话实说，这是我的邀请链接，可以帮我增加每个月的下载流量。</p>
+<p>注册好了之后，找到对象存储-&gt;立即添加。</p>
+<p><img src="http://dugblog.coding.me/%E5%A6%82%E4%BD%95%E7%94%A8%E4%B8%83%E7%89%9B%E4%BA%91%E4%BF%9D%E5%AD%98Hexo%E6%96%87%E7%AB%A0%E4%B8%AD%E7%9A%84%E5%9B%BE%E7%89%87%EF%BC%8C%E5%B9%B6%E9%80%9A%E8%BF%87%E5%A4%96%E9%93%BE%E6%98%BE%E7%A4%BA%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD/20180618054842730.png" alt=""></p>
+<p>很好，会提示你实名验证，那就只有老老实实的实名验证啦~验证时间大概是两到三天，可以先收藏着我的文章，验证好了再来看~XD</p>
+<p>验证好了之后，填好创建信息，确定创建。然后点击右上角个人面板，密钥管理</p>
+<p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618055558859.png" alt=""></p>
+<p>可以看到两个Key的值</p>
+<p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618055634989.png" alt=""></p>
+<p>这两个值就是刚刚HexoEditor的图片设置里面要填的。</p>
+<h2 id="How-to-use"><a href="#How-to-use" class="headerlink" title="How to use?"></a>How to use?</h2><p>怎么用这个图床功能呢？</p>
+<p>用HexoEditor写文章的时候，将你的图片直接复制，或者写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](图片绝对路径)</span><br></pre></td></tr></table></figure>
+<p>然后右键，上传七牛云，接下来就是I have a HexoEditor, I have a qiniu, Bang! 你会发现</p>
+<p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180618060123794.png" alt=""></p>
+<p>这样的路径图片会变成一个外链图片</p>
+<p><img src="http://pai5cscef.bkt.clouddn.com/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDMarkdown%E6%96%87%E7%AB%A0%EF%BC%9FHexoEditor%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%B8%80%E7%AF%87%E5%A5%BDHexo%E6%96%87%E7%AB%A0/20180620092749904.png" alt=""></p>
+<p>打完收工！</p>
 
       
     </div>
@@ -568,7 +535,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://www.zqily.com/2018/07/14/为什么要写独立博客？/" title="为什么要写独立博客？">https://www.zqily.com/2018/07/14/为什么要写独立博客？/</a>
+    <a href="https://www.zqily.com/HexoEditor编写MarkDown自动上传替换七牛外链/" title="HexoEditor编写MarkDown自动上传替换七牛外链">https://www.zqily.com/HexoEditor编写MarkDown自动上传替换七牛外链/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -585,8 +552,6 @@
           
             <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
           
-            <a href="/tags/碎碎念/" rel="tag"><i class="fa fa-tag"></i> 碎碎念</a>
-          
         </div>
       
 
@@ -598,8 +563,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/14/HexoEditor编写MarkDown自动上传替换七牛外链/" rel="next" title="HexoEditor编写MarkDown自动上传替换七牛外链">
-                <i class="fa fa-chevron-left"></i> HexoEditor编写MarkDown自动上传替换七牛外链
+              <a href="/Windows下用github+Hexo（Next主题）搭建博客Blog/" rel="next" title="Windows下用github+Hexo（Next主题）搭建博客Blog">
+                <i class="fa fa-chevron-left"></i> Windows下用github+Hexo（Next主题）搭建博客Blog
               </a>
             
           </div>
@@ -607,6 +572,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/为什么要写独立博客？/" rel="prev" title="为什么要写独立博客？">
+                为什么要写独立博客？ <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -625,31 +594,43 @@
 
     <div class="post-spread">
       
-        <!-- JiaThis Button BEGIN -->
-<div class="jiathis_style">
-<span class="jiathis_txt">分享到：</span>
-<a class="jiathis_button_fav">收藏夹</a>
-<a class="jiathis_button_copy">复制网址</a>
-<a class="jiathis_button_email">邮件</a>
-<a class="jiathis_button_weixin">微信</a>
-<a class="jiathis_button_qzone">QQ空间</a>
-<a class="jiathis_button_tqq">腾讯微博</a>
-<a class="jiathis_button_douban">豆瓣</a>
-<a class="jiathis_button_share">一键分享</a>
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
 
-<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-<a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" >
-var jiathis_config={
-  data_track_clickback:true,
-  summary:"",
-  shortUrl:false,
-  hideMore:false
-}
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
 </script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
-<!-- JiaThis Button END -->
+
       
     </div>
   </div>
@@ -796,7 +777,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-为什么要选博客"><span class="nav-number">1.</span> <span class="nav-text">1 为什么要选博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-对搜索引擎更加友好"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 对搜索引擎更加友好</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-弱化社交利于专注内容生产"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 弱化社交利于专注内容生产</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-为什么要自建独立博客"><span class="nav-number">2.</span> <span class="nav-text">2 为什么要自建独立博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-独立博客是一个自由空间"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 独立博客是一个自由空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-自建独立博客很GEEK"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 自建独立博客很GEEK</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-如何自建独立博客"><span class="nav-number">3.</span> <span class="nav-text">3 如何自建独立博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-独立博客搭建方法介绍"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 独立博客搭建方法介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-利用GitHub-Page搭建博客"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 利用GitHub Page搭建博客</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#环境"><span class="nav-number">2.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HexoEditor"><span class="nav-number">3.</span> <span class="nav-text">HexoEditor</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">3.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打开"><span class="nav-number">3.2.</span> <span class="nav-text">打开</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置"><span class="nav-number">3.3.</span> <span class="nav-text">设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#七牛云"><span class="nav-number">3.3.1.</span> <span class="nav-text">七牛云</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-use"><span class="nav-number">3.4.</span> <span class="nav-text">How to use?</span></a></li></ol></li></ol></div>
             
 
           </div>
