@@ -8,7 +8,18 @@
         <category>hexo</category>
       </categories>
       <tags>
+        <tag>hexo</tag>
         <tag>碎碎念</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[HexoEditor编写MarkDown自动上传替换七牛外链]]></title>
+    <url>%2FHexoEditor%E7%BC%96%E5%86%99MarkDown%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E6%9B%BF%E6%8D%A2%E4%B8%83%E7%89%9B%E5%A4%96%E9%93%BE%2F</url>
+    <content type="text"><![CDATA[引言继之前介绍的如何搭建个人博客，如何完善博客各种功能，今天来介绍一下配合Hexo框架和Next主题来写文章的利器——HexoEditor。以及用七牛云保存图片，并用外链的方式在Hexo文章中显示图片。 环境 os: Windows HexoEditorHexoEditor是一款配和Hexo框架和Next主题，写Markdown文章的编辑器。废话不多说，先上GitHub地址。 GitHub 安装安装的话可以看这里，我有介绍过。 打开在HexoEditor的根目录（根目录下有app,doc,icons等文件夹）下面，打开Git Bash，执行命令： npm start 等一会儿就会出现HexoEditor编辑器。点击左下角会出现菜单栏。 如果要写博文，就新建Post。 新建的文章会根据/yoursite/scaffolds/post.md模板自动生成一些内容，其实也就是这个文件的内容，如果想修改模板，就直接修改这个就行了。 设置写文章的话，左边写，右边就会实时显示样式。没什么好讲的，所以重点讲一讲这个设置里面的图片设置（以七牛云为例）。 为什么要重点讲这个图片设置？写文章的时候，图片有两种方式展现在页面上，一种是从本地读取，一种是从一个外链上读取。本地读取的话，图片都保存在Coding上面，很占用空间，速度也不快。所以一般选择将图片保存在七牛云或者别的地方，然后通过外链调用。 默认资源库：把你放在文章里面的图片存到这个目录下，可以在任意位置。 云图类型：七牛云、腾通自己选。 Access Key：从你七牛云或者百度云获取。 Secret Key：同上。 下面两个在填完上面两个Key之后会自动生成。 七牛云要使用七牛云，当然是先注册一个啦，点击进入注册页面。实话实说，这是我的邀请链接，可以帮我增加每个月的下载流量。 注册好了之后，找到对象存储-&gt;立即添加。 很好，会提示你实名验证，那就只有老老实实的实名验证啦~验证时间大概是两到三天，可以先收藏着我的文章，验证好了再来看~XD 验证好了之后，填好创建信息，确定创建。然后点击右上角个人面板，密钥管理 可以看到两个Key的值 这两个值就是刚刚HexoEditor的图片设置里面要填的。 How to use?怎么用这个图床功能呢？ 用HexoEditor写文章的时候，将你的图片直接复制，或者写： 1![](图片绝对路径) 然后右键，上传七牛云，接下来就是I have a HexoEditor, I have a qiniu, Bang! 你会发现 这样的路径图片会变成一个外链图片 打完收工！]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
         <tag>hexo</tag>
       </tags>
   </entry>
@@ -22,17 +33,6 @@
       <tags>
         <tag>hexo</tag>
         <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[HexoEditor编写MarkDown自动上传替换七牛外链]]></title>
-    <url>%2FHexoEditor%E7%BC%96%E5%86%99MarkDown%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E6%9B%BF%E6%8D%A2%E4%B8%83%E7%89%9B%E5%A4%96%E9%93%BE%2F</url>
-    <content type="text"><![CDATA[引言继之前介绍的如何搭建个人博客，如何完善博客各种功能，今天来介绍一下配合Hexo框架和Next主题来写文章的利器——HexoEditor。以及用七牛云保存图片，并用外链的方式在Hexo文章中显示图片。 环境 os: Windows HexoEditorHexoEditor是一款配和Hexo框架和Next主题，写Markdown文章的编辑器。废话不多说，先上GitHub地址。 GitHub 安装安装的话可以看这里，我有介绍过。 打开在HexoEditor的根目录（根目录下有app,doc,icons等文件夹）下面，打开Git Bash，执行命令： npm start 等一会儿就会出现HexoEditor编辑器。点击左下角会出现菜单栏。 如果要写博文，就新建Post。 新建的文章会根据/yoursite/scaffolds/post.md模板自动生成一些内容，其实也就是这个文件的内容，如果想修改模板，就直接修改这个就行了。 设置写文章的话，左边写，右边就会实时显示样式。没什么好讲的，所以重点讲一讲这个设置里面的图片设置（以七牛云为例）。 为什么要重点讲这个图片设置？写文章的时候，图片有两种方式展现在页面上，一种是从本地读取，一种是从一个外链上读取。本地读取的话，图片都保存在Coding上面，很占用空间，速度也不快。所以一般选择将图片保存在七牛云或者别的地方，然后通过外链调用。 默认资源库：把你放在文章里面的图片存到这个目录下，可以在任意位置。 云图类型：七牛云、腾通自己选。 Access Key：从你七牛云或者百度云获取。 Secret Key：同上。 下面两个在填完上面两个Key之后会自动生成。 七牛云要使用七牛云，当然是先注册一个啦，点击进入注册页面。实话实说，这是我的邀请链接，可以帮我增加每个月的下载流量。 注册好了之后，找到对象存储-&gt;立即添加。 很好，会提示你实名验证，那就只有老老实实的实名验证啦~验证时间大概是两到三天，可以先收藏着我的文章，验证好了再来看~XD 验证好了之后，填好创建信息，确定创建。然后点击右上角个人面板，密钥管理 可以看到两个Key的值 这两个值就是刚刚HexoEditor的图片设置里面要填的。 How to use?怎么用这个图床功能呢？ 用HexoEditor写文章的时候，将你的图片直接复制，或者写： 1![](图片绝对路径) 然后右键，上传七牛云，接下来就是I have a HexoEditor, I have a qiniu, Bang! 你会发现 这样的路径图片会变成一个外链图片 打完收工！]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
