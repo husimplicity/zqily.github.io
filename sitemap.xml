@@ -72,7 +72,7 @@
   </url>
   
   <url>
-    <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/Epsilon2.1.physics.json</loc>
+    <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/Epsilon2.1.model.json</loc>
     
     <lastmod>2018-02-14T12:21:52.000Z</lastmod>
     
@@ -80,6 +80,13 @@
   
   <url>
     <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/exp/f01.exp.json</loc>
+    
+    <lastmod>2018-02-14T12:21:52.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/exp/f04.exp.json</loc>
     
     <lastmod>2018-02-14T12:21:52.000Z</lastmod>
     
@@ -94,13 +101,6 @@
   
   <url>
     <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/exp/f03.exp.json</loc>
-    
-    <lastmod>2018-02-14T12:21:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/exp/f04.exp.json</loc>
     
     <lastmod>2018-02-14T12:21:52.000Z</lastmod>
     
@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/Epsilon2.1.model.json</loc>
+    <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/Epsilon2.1.physics.json</loc>
     
     <lastmod>2018-02-14T12:21:52.000Z</lastmod>
     
