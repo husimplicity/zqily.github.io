@@ -1962,7 +1962,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2b12f0;
+  background: #d2700f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3273,7 +3273,4 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-}
-.footer-inner {
-  color: f9ff33;
 }
