@@ -23,7 +23,7 @@ $(function(){
 			message += seconds + " second" + ( seconds==1 ? '':'s' ) + " <br>";
 			
 			if(newYear){
-				message += "left until the Graduate entrance examination!";
+				message += "left until National Postgraduate Entrance Examination!";
 			}
 			else {
 				message += "left to 10 days from now!";
