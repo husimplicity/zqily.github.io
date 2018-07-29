@@ -28,7 +28,7 @@ function APlayer_Controler(elem){
 						  on_historyend:{top:'历史纪录已到头',bottom:'快去听新歌吧！'}	//用户处于历史记录的第一首时点击上一首所触发的提示信息
 			},
 			timeout:30, /*单位(s)->设置播放器canplay事件无响应的最长时间,该时间内按钮区域无效,超时后有效。若为0则关闭无响应提示,且按钮一直有效*/
-			showOnPhone:false,	//手机端显示开关,默认(false)为不显示
+			showOnPhone:true,	//手机端显示开关,默认(false)为不显示
 			songrecord_log:false
 		};
 		var apc=$.extend(true,{},def_setting,elem);
