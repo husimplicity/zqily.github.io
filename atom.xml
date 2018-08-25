@@ -165,6 +165,38 @@
   </entry>
   
   <entry>
+    <title>操作系统死锁题库</title>
+    <link href="https://www.zqily.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%AD%BB%E9%94%81%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/操作系统死锁题库/</id>
+    <published>2018-08-24T16:18:45.000Z</published>
+    <updated>2018-08-25T10:38:35.399Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>1、</strong>在计算机系统拥有的各种软硬件资源中，内存是属于</p><p>A、可重用资源</p><p>B、不可重用资源</p><p>C、临界资源</p><p>D、独占资源</p><p><img src="https://img-blog.csdn.net/20180814104515228?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>2、</strong>下列描述的各种现象中，属于活锁现象的是</p><p>A、相关进程进入阻塞状态，且无法唤醒</p><p>B、相关进程进入阻塞状态，且可以唤醒</p><p>C、相关进程没有阻塞，但是调度时刻被延迟推后</p><p>D、相关进程没有被阻塞，可被调度，但是执行没有进展（能上CPU，但得不到资源）</p><p><strong>3、</strong>在系统运行过程中，通过检查系统是否处于安全状态而不让死锁发生的策略是</p><p>A、死锁预防</p><p>B、死锁避免（银行家·算法）</p><p>C、死锁检测</p><p>D、死锁解除</p><p><img src="https://img-blog.csdn.net/20180814104723521?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>4、</strong>对资源采用按序分配策略能达到下列哪一个目的？</p><p>A、死锁预防</p><p>B、死锁避免</p><p>C、死锁检测</p><p>D、死锁解除</p><p><img src="https://img-blog.csdn.net/201808141049163?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>5、</strong>在下列解决死锁的方法中，属于死锁避免策略的是</p><p>A、资源有序分配法</p><p>B、资源分配图化简法</p><p>C、死锁检测算法</p><p>D、银行家算法</p><p><strong>6、</strong></p><p>![XM1`53%@V$M~[956(58<a href="http://i1.chinesemooc.org/course/formula/201512/13af16a691179038828348a83fd0b4cd.png" target="_blank" rel="noopener">CBX.png </a></p><p>A、死锁</p><p>B、无死锁</p><p>C、活锁</p><p>D、饥饿</p><p><strong>7、</strong></p><p><img src="http://i1.chinesemooc.org/course/formula/201512/8c5ce1bbd64286a078359019082dc678.png" alt="EATM{KSK$Y1W)73W]RX]8GA.png"></p><p>A、资源独占条件</p><p>B、不可抢占条件</p><p>C、请求和保持条件</p><p>D、循环等待条件</p><p><img src="https://img-blog.csdn.net/20180814105243513?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>8、</strong></p><p><img src="http://i1.chinesemooc.org/course/formula/201512/b5446da7efe11730e3a785c9ca901071.png" alt="ZPFN`(V_G_](3OWHD@(8{8X.png "></p><p>A、安全状态</p><p>B、不安全状态</p><p>C、死锁状态</p><p>D、临界状态</p><p><strong>9、</strong>系统有某类资源5个，供3个进程共享，每个进程最多申请多少个该类资源时系统仍然是安全的？</p><p>A、1</p><p>B、2</p><p>C、3</p><p>D、5</p><p><strong>10、</strong>形成死锁的必要条件是</p><p>A、资源的互斥使用</p><p>B、部分分配资源</p><p>C、不可剥夺已分配资源</p><p>D、进程对资源的申请形成环路</p><p>E、系统资源不足</p><p><img src="https://img-blog.csdn.net/20180814105406277?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>11、</strong></p><p>![EVP(E5$}X8X1I6LOPVK$<a href="http://i1.chinesemooc.org/course/formula/201512/83e5db8511f496b81e92304ca2e7d765.png" target="_blank" rel="noopener">DF.png</a></p><p>A、P5→P4→P3→P2→P1</p><p>B、P4→P3→P2→P5→P1</p><p>C、P4→P3→P2→P1→P5</p><p>D、P2→P3→P4→P5→P1</p><p>E、P1→P2→P3→P4→P5</p><p><strong>12、</strong></p><p><img src="http://i1.chinesemooc.org/course/formula/201512/169a8253d68a0365fecd2a55b3268faf.png" alt="XBFLYX1XS[760X]92ZFEFK5.png"></p><p>（T）</p><p><strong>13、</strong>在图中，O3点属于区域④。（F）</p><p><strong>14、</strong>在图中，边O1O2（不含两个端点）表示死锁状态。（T）</p><p><img src="https://img-blog.csdn.net/20180814105506915?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814105523173?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814105600392?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814105622200?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814105650817?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>15、</strong>解决经典的哲学家进餐问题时，若规定每个哲学家先取左边筷子、再取右边筷子，则可以避免死锁发生。（F）</p><p><img src="https://img-blog.csdn.net/20180814105814201?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814105837836?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814105903273?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;在计算机系统拥有的各种软硬件资源中，内存是属于&lt;/p&gt;
+&lt;p&gt;A、可重用资源&lt;/p&gt;
+&lt;p&gt;B、不可重用资源&lt;/p&gt;
+&lt;p&gt;C、临界资源&lt;/p&gt;
+&lt;p&gt;D、独占资源&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-blog.c
+      
+    
+    </summary>
+    
+      <category term="操作系统" scheme="https://www.zqily.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+      <category term="操作系统" scheme="https://www.zqily.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title>操作系统运行环境题库</title>
     <link href="https://www.zqily.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%E9%A2%98%E5%BA%93/"/>
     <id>https://www.zqily.com/操作系统运行环境题库/</id>
@@ -213,71 +245,6 @@
 &lt;p&gt;B、充分利用内存，有利于数据共享&lt;/p&gt;
 &lt;p&gt;C、充分利用CPU，提高CPU利用率&lt;/p&gt;
 &lt;p&gt;D、提高文件系统
-      
-    
-    </summary>
-    
-      <category term="操作系统" scheme="https://www.zqily.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-      <category term="操作系统" scheme="https://www.zqily.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机组成存储层次结构题库</title>
-    <link href="https://www.zqily.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%AD%98%E5%82%A8%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/计算机组成存储层次结构题库/</id>
-    <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T10:22:16.625Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>1、</strong>下列哪些常用的设备是基于非易失性存储器的？</p><p>A、固态硬盘（SSD）</p><p>B、机械硬盘</p><p>C、光盘</p><p>D、优盘（Flash）</p><p>E、BIOS ROM芯片</p><p>F、SDRAM芯片</p><p>G、SRAM芯片</p><p><strong>2、</strong>按照课程中提供的SRAM结构图，在写入“0”的过程中，哪几个晶体管是处于连通状态？</p><p>A、M3</p><p>B、M2</p><p>C、M5</p><p>D、M6</p><p>E、M1</p><p>F、M4</p><p><strong>3、</strong>下面是有关SRAM和DRAM的叙述正确的是哪几项？</p><p>A、DRAM结构比SRAM简单</p><p>B、DRAM功耗比SRAM低</p><p>C、DRAM要刷新，SRAM不要刷新</p><p>D、单位容量的DRAM比SRAM成本高</p><p>E、单位容量的DRAM比SRAM速度快</p><p>F、单位容量的DRAM比SRAM面积大</p><p><strong>4、</strong>以PC133标准的SDRAM为例，时钟频率133MHz。设tRCD=15ns，CL=2，tRP=15ns。在正常的读操作情况下，从内存控制器发出行地址到内存输出第四个数据，需要多少个时钟周期？</p><p>A、7</p><p>B、4</p><p>C、12</p><p>D、5</p><p>E、6</p><p>F、8</p><p>G、9</p><p>H、15</p><p><strong>5、</strong>以PC133标准的SDRAM为例，时钟频率133MHz。设tRCD=15ns，CL=2，tRP=15ns。在正常的读操作情况下，从内存控制器发出行地址到内存输出第一个数据，需要多少个时钟周期？</p><p>A、4</p><p>B、2</p><p>C、3</p><p>D、5</p><p>E、8</p><p>F、12</p><p>G、15</p><p><strong>6、</strong>以PC133标准的SDRAM为例，时钟频率133MHz。设tRCD=22ns，CL=2，tRP=22ns。如果内存控制器需要发起两次不同行地址的读操作，每次读操作读出四个数据，那从发出第一个行地址到发出第二个行地址，最短需要多少个时钟周期？</p><p>A、11</p><p>B、4</p><p>C、7</p><p>D、5</p><p>E、8</p><p>F、10</p><p>G、15</p><p><strong>7、</strong>以PC133标准的SDRAM为例，时钟频率133MHz。设tRCD=15ns，CL=2，tRP=22ns。如果内存控制器需要发起两次不同行地址的读操作，每次读操作读出四个数据，那从发出第一个行地址到发出第二个行地址，最短需要多少个时钟周期？</p><p>A、10</p><p>B、4</p><p>C、7</p><p>D、5</p><p>E、8</p><p>F、11</p><p>G、15</p><p><strong>8、</strong>64-bit数据宽度的DDR-400 SDRAM的峰值带宽为3.2GB/s，核心时钟频率为200MHz，芯片内部采用了2位数据预取技术，其接口频率是多少？</p><p>A、200MHz</p><p>B、400MHz</p><p>C、800MHz</p><p>D、1600MHz</p><p>E、100MHz</p><p>F、1200MHz</p><p><strong>9、</strong>64-bit数据宽度的DDR3-1600 SDRAM的峰值带宽为12.8GB/s，接口时钟频率为800MHz，芯片内部采用了8位数据预取技术，其核心频率是多少？</p><p>A、200MHz</p><p>B、400MHz</p><p>C、800MHz</p><p>D、1600MHz</p><p>E、100MHz</p><p>F、1200MHz</p><p><strong>10、</strong>关于程序局部性的描述，正确的是哪几项？</p><p>A、数组通常具有很好的空间局部性</p><p>B、循环通常具有很好的时间局部性</p><p>C、循环通常具有很好的空间局部性</p><p>D、数组通常具有很好的时间局部性</p><p>E、链表通常具有很好的时间局部性</p><p>F、链表通常具有很好的空间局部性</p><p><strong>11、</strong>请阅读代码片段</p><p>sum = 0;</p><p>for (i = 0; i &lt; n; i++)</p><p>sum += a[i];</p><p>return sum;</p><p>在上述代码片段中，对数组a[]的使用体现了<strong>__</strong>局部性。</p><p>答案： 空间</p><p><strong>12、</strong>请阅读代码片段</p><p>sum = 0;</p><p>for (i = 0; i &lt; n; i++)</p><p>sum += a[i];</p><p>return sum;</p><p>在上述代码片段中，对变量sum的使用体现了<strong>_</strong>局部性。</p><p>答案： 时间</p><p><strong>13、</strong>一个容量为1GB的硬盘，如果不考虑冗余空间，那可以存储多少个二进制位的信息？（只填写数字，中间不带任何分隔符，后面不带单位）</p><p>答案： 8000000000</p><p><strong>14、</strong>一个容量为1GB的内存，如果不考虑冗余空间，那可以存储多少个二进制位的信息？（只填写数字，中间不带任何分隔符，后面不带单位）</p><p>答案： 8589934592</p><p><strong>15、</strong>一个传输率为100Mbps的以太网接口，每秒钟最多能输出多少个二进制位的信息？（只填写数字，中间不带任何分隔符，后面不带单位）</p><p>答案： 100000000</p><p><strong>16、</strong>一个传输率为100Mbps的内存接口，每秒钟最多能输出多少个二进制位的信息？（只填写数字，中间不带任何分隔符，后面不带单位）</p><p>答案： 100000000</p><p><strong>17、</strong>一个传输率为100Mbps的硬盘接口，每秒钟最多能输出多少个二进制位的信息？（只填写数字，中间不带任何分隔符，后面不带单位）</p><p>答案： 100000000</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;下列哪些常用的设备是基于非易失性存储器的？&lt;/p&gt;
-&lt;p&gt;A、固态硬盘（SSD）&lt;/p&gt;
-&lt;p&gt;B、机械硬盘&lt;/p&gt;
-&lt;p&gt;C、光盘&lt;/p&gt;
-&lt;p&gt;D、优盘（Flash）&lt;/p&gt;
-&lt;p&gt;E、BIOS ROM芯片&lt;/p&gt;
-&lt;p&gt;F、SDR
-      
-    
-    </summary>
-    
-      <category term="计算机组成" scheme="https://www.zqily.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/"/>
-    
-    
-      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
-    
-      <category term="计算机组成" scheme="https://www.zqily.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统io系统题库</title>
-    <link href="https://www.zqily.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fio%E7%B3%BB%E7%BB%9F%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/操作系统io系统题库/</id>
-    <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T10:37:06.826Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>1、</strong>下列I/O控制方式中，哪一个不需要硬件支持？</p><p>A、轮询方式</p><p>B、中断方式</p><p>C、DMA方式</p><p>D、I/O处理机方式</p><p><img src="https://img-blog.csdn.net/20180814101328851?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>2、</strong>下列关于虚设备技术的叙述中，哪一个是错误的？</p><p>A、虚设备技术是指在一类设备上模拟另一类设备的技术</p><p>B、引入虚设备技术是为了提高设备利用率</p><p>C、通常采用虚设备技术是用低速设备来模拟高速设备</p><p>D、SPOOLing技术是一类典型的虚设备技术</p><p><img src="https://img-blog.csdn.net/20180814101533620?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>3、</strong>下列关于SPOOLing技术的叙述中，哪一个是错误的？</p><p>A、SPOOLing技术解决了独占设备利用率低的问题</p><p>B、SPOOLing没有解决CPU的速度与设备速度的差异性</p><p>C、SPOOLing技术需要利用磁盘空间作为缓冲</p><p>D、SPOOLing技术可用于打印机的管理</p><p><strong>4、</strong>在设备管理中，缓冲技术主要用于</p><p>A、提供内存与外存之间的接口</p><p>B、提高主机和设备交换信息的速度</p><p>C、提高设备利用率</p><p>D、扩充地址空间</p><p><img src="https://img-blog.csdn.net/20180814102225896?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>5、</strong>下列关于I/O端口地址的叙述中，哪一个是错误的？</p><p>A、内存映像编址方式下允许缓存设备接口寄存器的内容</p><p>B、I/O端口地址是指设备接口寄存器的地址</p><p>C、I/O独立编址方式需要特定的I/O指令</p><p>D、内存映像编址方式下I/O端口地址空间可以比较大</p><p><img src="https://img-blog.csdn.net/20180814103057358?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814103213425?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814103250404?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>6、</strong>下列关于操作系统设备管理的叙述中，哪些是正确的？</p><p>A、设备管理使用户能独立于具体设备的复杂物理特性而方便地使用设备</p><p>B、设备管理利用各种技术提高CPU与设备、设备与设备之间的并行工作能力</p><p>C、操作系统对用户屏蔽了实现具体设备I/O操作的细节</p><p>D、SPOOLing技术是一类典型的虚拟设备技术</p><p>E、操作系统应尽量对设备提供各种不同的接口</p><p><strong>7、</strong>下列哪些方案可以提高I/O性能？</p><p>A、缓冲技术</p><p>B、异步I/O方式</p><p>C、DMA方式</p><p>D、轮询方式</p><p>E、静态设备分配策略</p><p><img src="https://img-blog.csdn.net/20180814103657212?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>8、</strong>I/O设备的传输速率差异性、接口的复杂性等给操作系统设备管理带来复杂性。（T）</p><p><strong>9、</strong>利用设备内部的缓冲区可以进行数据格式加工等处理。（T）</p><p><strong>10、</strong>内存映像I/O模式下设备驱动程序可以用C语言编写。（T）</p><p><strong>11、</strong>通过把独占设备改造成<strong><strong><strong>____</strong></strong></strong>，可以提高独占设备利用率</p><p>A、共享设备</p><p>B、共享的设备</p><p><strong>12、</strong>通常按层次组织I/O软件，典型的四层I/O软件包括用户进程I/O、<strong><strong><strong>____</strong></strong></strong>、设备驱动程序和中断处理程序。</p><p>A、设备无关软件</p><p>B、设备独立软件</p><p>C、设备独立性软件</p><p>D、设备无关性软件</p><p>E、逻辑I/O</p><p><img src="https://img-blog.csdn.net/2018081410381722?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>答案： A,B,C,D,E</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;下列I/O控制方式中，哪一个不需要硬件支持？&lt;/p&gt;
-&lt;p&gt;A、轮询方式&lt;/p&gt;
-&lt;p&gt;B、中断方式&lt;/p&gt;
-&lt;p&gt;C、DMA方式&lt;/p&gt;
-&lt;p&gt;D、I/O处理机方式&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://img-blog.
       
     
     </summary>
@@ -349,32 +316,33 @@
   </entry>
   
   <entry>
-    <title>数据结构树题库</title>
-    <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%A0%91%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/数据结构树题库/</id>
+    <title>计算机组成指令体系结构题库</title>
+    <link href="https://www.zqily.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E6%8C%87%E4%BB%A4%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/计算机组成指令体系结构题库/</id>
     <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T10:52:01.916Z</updated>
+    <updated>2018-08-25T10:07:29.930Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>1</strong>、给出一棵树的逻辑结构T=(N,R),其中：</p><p>N={A,B,C,D,E,F,G,H,I,J,K}</p><p>R={r}</p><p>r={(A,B),(B,E),(B,F),(F,G),(F,H),(A,C),(C,I),(C,J),(J,K),(A,D)}</p><p>试回答下列问题：</p><p>（1）哪个是F的父结点？</p><p>（2）哪些是B的子孙？</p><p>（3）以结点C为根的子树的深度是多少？</p><p>（注：<strong>根的层数为0，独根树深度为0，高度为1</strong>，其他题目同样如此）</p><p>解析</p><p><img src="http://i1.chinesemooc.org/course/formula/201602/a880a211d581cc920b9187a50c95c702.png" alt="2-1-1.png"></p><p>答案： B EFGH 2</p><p><strong>2、</strong>将下图的二叉树转换为对应的森林，按照后根次序列出其结点。</p><p><img src="http://i1.chinesemooc.org/course/formula/201709/97899b554eea320e15410c3292cec779.png" alt="Screen Shot 2017-09-07 at 16.03.02.png"></p><p>解析</p><p>转化后的森林如下所示：</p><p><img src="http://i1.chinesemooc.org/course/formula/201510/677917ac67fe8c5599c6a91cb872f201.png" alt="4.png"></p><p>答案： EBFCDAIJKHGL</p><p><img src="https://img-blog.csdn.net/20180816152403769?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>3、</strong>对于以下等价类，采用“加权合并规则”（也称“重量权衡合并规则”），进行并查运算，给出最后父节点索引序列。</p><p>8-9 3-2 7-4 5-9 6-1 8-6 7-3 2-5 8-0 //右指向左</p><p>注意：当合并大小相同的两棵树的时候，将第二棵树的根指向第一棵树的根；根节点的索引是它本身；数字之间用空格隔开。</p><p>解析：（合并时，结点数少的指向结点数多的）</p><p><img src="http://i1.chinesemooc.org/course/formula/201510/399e11791ae3edce668ba3f9f1bbd93f.png" alt="13.png"></p><p><img src="https://img-blog.csdn.net/20180816162747826?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>答案： 8 6 3 7 7 8 8 8 8 8</p><p><strong>4、</strong>若一个具有N个顶点，K条边的无向图是一个森林（N&gt;K且2K&gt;=N），则该森林有多少棵树？</p><p>解析</p><p>在一棵树中，结点比边多一个，即结点比边多几个就有几棵树。</p><p>答案： N-K</p><p><strong>5、</strong>一棵完全三叉树，下标为121的结点在第几层？（注：下标号从0开始，根的层数为0）</p><p>解析</p><p>第h层的下标是从(3^h-1)/2到(3^(h+1)-1)/2-1，</p><p>第5层的下标是从121到363。</p><p>答案： 5</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>1、</strong>下列关于CISC和RISC的描述错误的是？</p><p>A、CISC指令长度是不固定的</p><p>B、CISC指令的操作数必须预存于寄存器中</p><p>C、RISC指令长度是固定的</p><p>D、RISC指令的操作数必须预存于寄存器中</p><p>E、RISC架构的指令种类通常比CISC架构更少</p><p><strong>2、</strong>下列关于Intel处理器及其推出时间描述错误的是？</p><p>A、Intel 8086——1978年</p><p>B、Intel 80286——1982年</p><p>C、Intel Pentium——1993年</p><p>D、Intel PentiumPro——1995年</p><p>E、Intel 80386——1988年</p><p>F、Intel Core i7——2008年</p><p>G、Intel Core 2——2006年</p><p><strong>3、</strong>x86体系结构中，寄存器EAX长度为多少位？</p><p>A、8位</p><p>B、16位</p><p>C、32位</p><p>D、64位</p><p><strong>4、</strong>x86体系结构中，寄存器AX长度为多少位？</p><p>A、8位</p><p>B、16位</p><p>C、32位</p><p>D、64位</p><p><strong>5、</strong>IA-32寄存器模型中包括以下哪些寄存器？（多选题）</p><p>A、通用寄存器</p><p>B、指令指针寄存器</p><p>C、页面寄存器</p><p>D、标志寄存器</p><p>E、段寄存器</p><p><strong>6、</strong>8086系统中标志位CF的含义是？</p><p>A、溢出标志</p><p>B、零标志</p><p>C、符号标志</p><p>D、进位标志</p><p><strong>7、</strong>8086系统中标志位CF的含义是？</p><p>A、符号标志</p><p>B、奇偶标志</p><p>C、溢出标志</p><p>D、进位标志</p><p><strong>8、</strong>8086系统中标志位ZF的含义是？</p><p>A、符号标志</p><p>B、奇偶标志</p><p>C、溢出标志</p><p>D、进位标志</p><p>E、零标志</p><p><strong>9、</strong>8086系统中段寄存器DS的含义是？</p><p>A、代码段寄存器</p><p>B、附加段寄存器</p><p>C、数据段寄存器</p><p>D、堆栈段寄存器</p><p><strong>10、</strong>8086系统中段寄存器CS的含义是？</p><p>A、数据段寄存器</p><p>B、附加段寄存器</p><p>C、代码段寄存器</p><p>D、堆栈段寄存器</p><p><strong>11、</strong>设CS=2500H，DS=2400H，SS=2430H，BP=0200H，SI=0010H，DI=0206H，计算下列x86指令源操作数的物理地址：</p><p>MOV AX，[2000H]</p><p>A、4500H</p><p>B、27000H</p><p>C、26000H</p><p>D、4430H</p><p><strong>12、</strong>设CS=2500H，DS=2400H，SS=2430H，BP=0200H，SI=0010H，DI=0206H，计算下列x86指令源操作数的物理地址：</p><p>MOV AX，[BP+SI+4]</p><p>A、2714H</p><p>B、25214H</p><p>C、24514H</p><p>D、2614H</p><p><strong>13、</strong>设CS=2500H，DS=2400H，SS=2430H，BP=0200H，SI=0010H，DI=0206H，计算下列x86指令源操作数的物理地址：MOV AX，[DI+100H]</p><p>A、25306H</p><p>B、24606H</p><p>C、2806H</p><p>D、24306H</p><p>E、2706H</p><p>F、2736H</p><p><strong>14、</strong>设CS=2500H，DS=2400H，SS=2430H，BP=0200H，SI=0010H，DI=0206H，计算下列x86指令源操作数的物理地址：</p><p>MOV AX，[BP+SI+4]</p><p>A、24214H</p><p>B、2714H</p><p>C、24514H</p><p>D、2644H</p><p><strong>15、</strong>设CS=2500H，DS=2400H，SS=2430H，BP=0200H，SI=0010H，DI=0206H，计算下列x86指令源操作数的物理地址：</p><p>MOV AX，[2000H]</p><p>A、26300H</p><p>B、4500H</p><p>C、26000H</p><p>D、4400H</p><p><strong>16、</strong>下列x86指令中，哪些属于算术运算指令？（多选题）</p><p>A、ADD</p><p>B、DEC</p><p>C、MOV</p><p>D、IN</p><p>E、LEA</p><p>F、AND</p><p>G、SHL</p><p>H、MOVSB</p><p>I、CALL</p><p>J、JNZ</p><p>K、LOOP</p><p>L、MUL</p><p><strong>17、</strong>下列关于MIPS指令的主要特点说法错误的是？</p><p>A、指令长度固定</p><p>B、寻址模式简单</p><p>C、只有Load和Store指令可以访问存储器</p><p>D、需要优秀的编译器支持</p><p>E、指令数量多，且功能复杂</p><p><strong>18、</strong>MIPS按照指令的基本格式可以分为三种类型，以下不属于这三种类型的是？</p><p>A、R型指令</p><p>B、O型指令</p><p>C、M型指令</p><p>D、I型指令</p><p>E、J型指令</p><p><strong>19、</strong>MIPS按照指令的基本格式进行划分，可以分为几种？</p><p>A、1</p><p>B、2</p><p>C、3</p><p>D、4</p><p><strong>20、</strong>某MIPS指令的机器码是0x20A5FFFF，对应的汇编指令是什么？</p><p>A、addi $a2,$a2,-1</p><p>B、ori $a1,$a1,-1</p><p>C、ori $a2,$a2,-1</p><p>D、addi $a1,$a1,-1</p><p><strong>21、</strong>某MIPS指令的机器码是0x0005402A，对应的汇编指令是什么？</p><p>A、slt $a1,$0,$t0</p><p>B、or $v0,$0,$a1</p><p>C、or $a1,$0,$v0</p><p>D、slt $t0,$0,$a1</p><p><strong>22、</strong>阅读下面的x86汇编程序，回答问题。</p><p>设DS=1000H</p><p>MOV SI, 1250H</p><p>MOV DI, 1370H</p><p>MOV CL, 3</p><p>MOV AX, DS</p><p>MOV ES, AX</p><p>MOV BX, 5</p><p>STD</p><p>REP MOVSB</p><p>请问，在这次串传送操作中，完成了第一个元素的传送后，SI寄存器的值是什么？</p><p>A、124FH</p><p>B、1252H</p><p>C、1251</p><p>D、不确定</p><p><strong>23、</strong>阅读下面的x86汇编程序，回答问题。</p><p>设DS=1000H</p><p>MOV SI, 1250H</p><p>MOV DI, 1370H</p><p>MOV CL, 3</p><p>MOV AX, DS</p><p>MOV ES, AX</p><p>MOV BX, 5</p><p>STD</p><p>REP MOVSB</p><p>请问，在这次串传送操作中，完成了第一个元素的传送后，SI寄存器的值是什么？</p><p>A、124FH</p><p>B、1249</p><p>C、1249H</p><p>D、不确定</p><p><strong>24、</strong>阅读下面的x86汇编程序，回答问题。</p><p>设DS=1000H</p><p>MOV SI, 1250H</p><p>MOV DI, 1370H</p><p>MOV CL, 3</p><p>MOV AX, DS</p><p>MOV ES, AX</p><p>MOV BX, 5</p><p>STD</p><p>REP MOVSB</p><p>请问，在这次串传送操作中，完成了第一个元素的传送后，SI寄存器的值是什么？</p><p>A、124FH</p><p>B、1248H</p><p>C、1251H</p><p>D、1252H</p><p><strong>25、</strong>阅读下面的x86汇编程序，回答问题。</p><p>设DS=1000H</p><p>MOV SI, 1250H</p><p>MOV DI, 1370H</p><p>MOV CL, 3</p><p>MOV AX, DS</p><p>MOV ES, AX</p><p>MOV BX, 5</p><p>CLD</p><p>REP MOVSB</p><p>请问，这次串传送操作，总共传送了多少个字节的数据？</p><p>A、0个</p><p>B、3个</p><p>C、5个</p><p>D、不确定</p><p><strong>26、</strong>如果想用8086 CPU把内存中某个区域的1024个字节的数据传送到另一个区域，可以选用如下三种方法：</p><p>（1）只使用传送指令（MOV）；</p><p>（2）使用传送指令（MOV），并用条件转移指令建立循环语句的结构；</p><p>（3）使用串传送指令（MOVSB）以及必要的配合指令，不使用循环语句的结构。</p><p>请比较用这三种方法编写的程序，执行时访问存储器次数最少的是：</p><p>A、方法一</p><p>B、方法二</p><p>C、方法三</p><p>D、无法比较</p><p><strong>27、</strong>如果想用8086 CPU把内存中某个区域的1024个字节的数据传送到另一个区域，可以选用如下三种方法：</p><p>（1）只使用传送指令（MOV）；</p><p>（2）使用传送指令（MOV），并用条件转移指令建立循环语句的结构；</p><p>（3）使用串传送指令（MOVSB）以及必要的配合指令，不使用循环语句的结构。</p><p>请比较用这三种方法编写的程序，执行时访问存储器次数最多的是：</p><p>A、方法一</p><p>B、方法二</p><p>C、方法三</p><p>D、无法比较</p><p><strong>28、</strong>如果想用8086 CPU把内存中某个区域的1024个字节的数据传送到另一个区域，可以选用如下三种方法：</p><p>（1）只使用传送指令（MOV）；</p><p>（2）使用传送指令（MOV），并用条件转移指令建立循环语句的结构；</p><p>（3）使用串传送指令（MOVSB）以及必要的配合指令，不使用循环语句的结构。</p><p>请比较用这三种方法编写的程序，程序代码占用存储器空间最大的是：</p><p>A、方法1</p><p>B、方法2</p><p>C、方法3</p><p>D、无法比较</p><p><strong>29、</strong>很多x86指令的功能比较复杂，往往一条x86指令可以完成的功能，需要多条MIPS指令才能实现。请问下列x86指令中，哪些确定能够只用一条MIPS指令完成对应的功能？（注：只需考虑这条指令本身，不用考虑对后续指令的影响）</p><p>A、ADD ECX, 15H</p><p>B、MOV EAX, 28H</p><p>C、ADD EDX, EBX</p><p>D、ADD EAX, [13H]</p><p>E、MOV EDX, [EBX+11H]</p><p>F、ADD [EBX+ESI*4+200H], EAX</p><p>G、REP MOVSB</p><p>H、JZ LOOP_1</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;strong&gt;1&lt;/strong&gt;、给出一棵树的逻辑结构T=(N,R),其中：&lt;/p&gt;
-&lt;p&gt;N={A,B,C,D,E,F,G,H,I,J,K}&lt;/p&gt;
-&lt;p&gt;R={r}&lt;/p&gt;
-&lt;p&gt;r={(A,B),(B,E),(B,F),(F,G),(F,H),(A,C),(C,I
+        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;下列关于CISC和RISC的描述错误的是？&lt;/p&gt;
+&lt;p&gt;A、CISC指令长度是不固定的&lt;/p&gt;
+&lt;p&gt;B、CISC指令的操作数必须预存于寄存器中&lt;/p&gt;
+&lt;p&gt;C、RISC指令长度是固定的&lt;/p&gt;
+&lt;p&gt;D、RISC指令的操作数必须预
       
     
     </summary>
     
-      <category term="数据结构" scheme="https://www.zqily.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="计算机组成" scheme="https://www.zqily.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/"/>
     
     
       <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
     
-      <category term="数据结构" scheme="https://www.zqily.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="计算机组成" scheme="https://www.zqily.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/"/>
     
   </entry>
   
@@ -406,22 +374,50 @@
   </entry>
   
   <entry>
-    <title>数据结构线性表题库</title>
-    <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%BA%BF%E6%80%A7%E8%A1%A8%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/数据结构线性表题库/</id>
+    <title>数据结构树题库</title>
+    <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%A0%91%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/数据结构树题库/</id>
     <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T10:45:28.150Z</updated>
+    <updated>2018-08-25T10:52:01.916Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>1、</strong>下面关于线性表的叙述中，正确的是</p><p>A、线性表采用顺序存储，必须占用一片连续的存储单元。</p><p>B、线性表采用顺序存储，便于进行插入和删除操作。</p><p>C、线性表采用链接存储，不必占用一片连续的存储单元。</p><p>D、线性表采用链接存储，便于插入和删除操作。</p><p>解析</p><p>顺序存储是按索引值从小到大存放在一片相邻的连续区域<br>采用链接存储，便于插入和删除操作，如果采用顺序存储，插入和删除时需要大量移动元素，参考数组的元素删除<br>线性表采用链接存储，在结点中存储link信息，不需占用连续存储单元<br>采用链接存储，便于插入和删除操作</p><p><strong>2、</strong>下面的叙述中正确的是：</p><p>A、线性表在链式存储时，查找第i个元素的时间与i的数值无关。</p><p>B、线性表在顺序存储时，查找第i个元素的时间与i的数值成正比。</p><p>C、</p><p>线性表在顺序存储时，查找第i个元素的时间与i的数值无关。</p><p>D、</p><p>线性表在链式存储时，插入第i个元素的时间与i的数值成正比。</p><p>解析</p><p>线性表在链式存储时，查找第i个元素的时间与i的数值无关。 因为存储空间是不连续的，需要从头或者尾结点开始查找元素，i越大，时间越长，时间不可能与i无关<br>线性表在顺序存储时，查找第i个元素的时间与i的数值成正比。 因为存储空间是连续的，直接由i可以得到元素位置<br>线性表在顺序存储时，查找第i个元素的时间与i的数值无关。 因为存储空间是连续的，直接由i可以得到元素位置<br>线性表在链式存储时，插入第i个元素的时间与i的数值成正比。 因为存储空间是不连续的，插入第i个元素不需要移动其他元素。但是在插入之前从头搜索到第i个元素的指针，所以插入时间跟i相关</p><p><strong>3、</strong>对于一个具有n个结点的单链表，在已知的结点*p后插入一个新结点的时间复杂度为O(1),在给定值为x的结点后插入一个新结点的时间复杂度为O(n)。</p><p>解析</p><p>已知结点后插入，不需要移动其他结点位置，所以为O(1) 2. 先要查找到值为x的结点，需要O(n),再插入，不需要移动其他结点位置，需要O(1)，总共需要O(n)+O(1)=O(n)</p><p><strong>4、</strong>带头结点head的循环链表的尾结点tail的特点是: <strong>_</strong></p><p>答案： tail-&gt;next=head</p><p><strong>5、</strong>完成在双循环链表结点p之后插入s的操作为：</p><p>A、p-&gt;next-&gt;prev=s; s-&gt;prev=p; s-&gt;next=p-&gt;next; p-&gt;next=s;</p><p>B、p-&gt;next-&gt;prev=s; p-&gt;next=s; s-&gt;prev=p; s-&gt;next=p-&gt;next;</p><p>C、s-&gt;prev=p; s-&gt;next=p-&gt;next; p-&gt;next=s; p-&gt;next-&gt;prev=s;</p><p>D、s-&gt;next=p-&gt;next; p-&gt;next-&gt;prev=s; s-&gt;prev=p; p-&gt;next=s;</p><p>解析</p><p>p-&gt;next-&gt;prev=s; s-&gt;prev=p; s-&gt;next=p-&gt;next; p-&gt;next=s; 最后更改p-&gt;next是正确的，否则会造成原来的p结点后来的next信息丢失<br>p-&gt;next-&gt;prev=s; p-&gt;next=s; s-&gt;prev=p; s-&gt;next=p-&gt;next; 先更改会造成原来的p结点后来的next信息丢失<br>s-&gt;prev=p; s-&gt;next=p-&gt;next; p-&gt;next=s; p-&gt;next-&gt;prev=s; 先更改p-&gt;next成s再更改p-&gt;next-&gt;prev，会造成原来的p结点后来的next信息丢失<br>s-&gt;next=p-&gt;next; p-&gt;next-&gt;prev=s; s-&gt;prev=p; p-&gt;next=s; 最后更改p-&gt;next是正确的，否则会造成原来的p结点后来的next信息丢失</p><p>答案： A,D</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>1</strong>、给出一棵树的逻辑结构T=(N,R),其中：</p><p>N={A,B,C,D,E,F,G,H,I,J,K}</p><p>R={r}</p><p>r={(A,B),(B,E),(B,F),(F,G),(F,H),(A,C),(C,I),(C,J),(J,K),(A,D)}</p><p>试回答下列问题：</p><p>（1）哪个是F的父结点？</p><p>（2）哪些是B的子孙？</p><p>（3）以结点C为根的子树的深度是多少？</p><p>（注：<strong>根的层数为0，独根树深度为0，高度为1</strong>，其他题目同样如此）</p><p>解析</p><p><img src="http://i1.chinesemooc.org/course/formula/201602/a880a211d581cc920b9187a50c95c702.png" alt="2-1-1.png"></p><p>答案： B EFGH 2</p><p><strong>2、</strong>将下图的二叉树转换为对应的森林，按照后根次序列出其结点。</p><p><img src="http://i1.chinesemooc.org/course/formula/201709/97899b554eea320e15410c3292cec779.png" alt="Screen Shot 2017-09-07 at 16.03.02.png"></p><p>解析</p><p>转化后的森林如下所示：</p><p><img src="http://i1.chinesemooc.org/course/formula/201510/677917ac67fe8c5599c6a91cb872f201.png" alt="4.png"></p><p>答案： EBFCDAIJKHGL</p><p><img src="https://img-blog.csdn.net/20180816152403769?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>3、</strong>对于以下等价类，采用“加权合并规则”（也称“重量权衡合并规则”），进行并查运算，给出最后父节点索引序列。</p><p>8-9 3-2 7-4 5-9 6-1 8-6 7-3 2-5 8-0 //右指向左</p><p>注意：当合并大小相同的两棵树的时候，将第二棵树的根指向第一棵树的根；根节点的索引是它本身；数字之间用空格隔开。</p><p>解析：（合并时，结点数少的指向结点数多的）</p><p><img src="http://i1.chinesemooc.org/course/formula/201510/399e11791ae3edce668ba3f9f1bbd93f.png" alt="13.png"></p><p><img src="https://img-blog.csdn.net/20180816162747826?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>答案： 8 6 3 7 7 8 8 8 8 8</p><p><strong>4、</strong>若一个具有N个顶点，K条边的无向图是一个森林（N&gt;K且2K&gt;=N），则该森林有多少棵树？</p><p>解析</p><p>在一棵树中，结点比边多一个，即结点比边多几个就有几棵树。</p><p>答案： N-K</p><p><strong>5、</strong>一棵完全三叉树，下标为121的结点在第几层？（注：下标号从0开始，根的层数为0）</p><p>解析</p><p>第h层的下标是从(3^h-1)/2到(3^(h+1)-1)/2-1，</p><p>第5层的下标是从121到363。</p><p>答案： 5</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;下面关于线性表的叙述中，正确的是&lt;/p&gt;
-&lt;p&gt;A、线性表采用顺序存储，必须占用一片连续的存储单元。&lt;/p&gt;
-&lt;p&gt;B、线性表采用顺序存储，便于进行插入和删除操作。&lt;/p&gt;
-&lt;p&gt;C、线性表采用链接存储，不必占用一片连续的存储单元。&lt;/
+        &lt;p&gt;&lt;strong&gt;1&lt;/strong&gt;、给出一棵树的逻辑结构T=(N,R),其中：&lt;/p&gt;
+&lt;p&gt;N={A,B,C,D,E,F,G,H,I,J,K}&lt;/p&gt;
+&lt;p&gt;R={r}&lt;/p&gt;
+&lt;p&gt;r={(A,B),(B,E),(B,F),(F,G),(F,H),(A,C),(C,I
+      
+    
+    </summary>
+    
+      <category term="数据结构" scheme="https://www.zqily.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
+    
+      <category term="数据结构" scheme="https://www.zqily.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构检索题库</title>
+    <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%A3%80%E7%B4%A2%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/数据结构检索题库/</id>
+    <published>2018-08-24T16:18:45.000Z</published>
+    <updated>2018-08-25T11:03:49.769Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>1、</strong>给定关键码序列26, 25, 20, 33, 21, 24, 45, 204, 42, 38, 29, 31，用散列法进行存储(本题采用闭散列方法解决冲突)，规定负载因子α=0.6。请给出最合理的除余法的散列函数。</p><p>A、H(key)=key % 17</p><p>B、H(key)=key % 23</p><p>C、H(key)=key % 19</p><p>D、H(key)=key % 20</p><blockquote><p>解析</p><p>在插入所有关键码后，负载因子最大为0.6。元素数目为12，散列表长度为12 / 0.6 = 20，小于20的最大质数为19。</p><p><img src="https://img-blog.csdn.net/20180820155433113?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p></blockquote><p><strong>2、</strong>有两个整数的集合A,B，大小分别为n，m=O(log(n))，由顺序表存储，并且已经排好序，现在要求他们的交集，请问你设计的高效算法的复杂度是：</p><p>A、n</p><p>B、</p><p><img src="https://img-blog.csdn.net/20180801171515816?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>C、</p><p><img src="https://img-blog.csdn.net/20180801171514827?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>D、</p><p><img src="https://img-blog.csdn.net/20180801171517242?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><blockquote><p>解析</p><p>枚举每个集合B中的元素，去集合A中寻找是否存在相同的元素。枚举的复杂度是logn，寻找可以用二分查找，复杂度是logn，故为logn的平方</p><p>答案： B</p></blockquote><p><strong>3、</strong>折半查找有序表（4，6，10，12，20，30，50，70，88，100）。若查找表中元素58，则它将依次与表中（）比较大小，查找结果是失败</p><p>A、20，50</p><p>B、30，88，70，50</p><p>C、20，70，30，50</p><p>D、30，88，50</p><blockquote><p>解析</p><p>一共10个记录，先与第5个记录20比较，58&gt;20，所以继续查找右半部分，与70比较，58&lt;70，继续查找左半部分，与30比较，58&gt;30，继续查找右半部分，与50比较，查找结束。</p></blockquote><p><strong>4、</strong>在各种查找方法中，平均查找长度与结点个数n无关的查找方法是（ ）。</p><p>A、散列查找</p><p>B、顺序查找</p><p>C、二分查找</p><p>D、没有这样的查找方法使得平均查找长度和n无关</p><blockquote><p>解析</p><p>散列查找的平均查找长度只跟负载因子有关，而顺序查找平均查找长度是O(n)，二分查找平均查找长度是O(logn)</p></blockquote><p><strong>5、</strong>一个散列表的散列函数是h(key)=key%19，共有20个槽，用闭散列的线性探查方法。从空表开始，依次进行如下插入删除操作，问这些操作的平均检索长度是()（用整数或分数表示）</p><p>操作是：Add 26 Add 25 Add 24 Add 195 Del 26 Add 176</p><p>提示：</p><p>1.散列表中不能插入两个相同的关键码</p><p>2.结果请用一个最简分数数值表示，分号用/表示，例如四分之三写为：3/4</p><blockquote><p>解析</p><p>依次检索次数为1，1，1，4，1，5，故总次数1+1+1+4+1+5=13，故平均检索次数为13/6</p><p>答案： 13/6</p></blockquote><p><strong>6、</strong>有一个散列表，共有N个槽，采用双散列探查的闭散列方法解决冲突。经过一系列插入操作，当前散列表中有M个元素，负载因子a为0.4，即M/N=a=0.4。假设M,N都非常大，并且双散列探查方法近使得每一次探查的位置，可以近似为均匀分布（即等概率地探查每个槽）。当前对于某个关键码，近似估算不成功检索的平均检索长度：5/3</p><blockquote><p>解析：</p><p>关键点提示：不成功检索由多次hash碰撞和一次未碰撞构成，由题意得，碰撞的概率为a，为碰撞的概率为1-a。故不成功检索的检索长度l概率分布是如下形式的指数分布：</p><p><img src="https://img-blog.csdn.net/20180820160537216?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>计算</p><p><img src="https://img-blog.csdn.net/20180820160537382?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>，最后得到答案为5/3</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;给定关键码序列26, 25, 20, 33, 21, 24, 45, 204, 42, 38, 29, 31，用散列法进行存储(本题采用闭散列方法解决冲突)，规定负载因子α=0.6。请给出最合理的除余法的散列函数。&lt;/p&gt;
+&lt;p&gt;A、H
       
     
     </summary>
@@ -467,34 +463,6 @@
   </entry>
   
   <entry>
-    <title>数据结构检索题库</title>
-    <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%A3%80%E7%B4%A2%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/数据结构检索题库/</id>
-    <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T11:03:49.769Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>1、</strong>给定关键码序列26, 25, 20, 33, 21, 24, 45, 204, 42, 38, 29, 31，用散列法进行存储(本题采用闭散列方法解决冲突)，规定负载因子α=0.6。请给出最合理的除余法的散列函数。</p><p>A、H(key)=key % 17</p><p>B、H(key)=key % 23</p><p>C、H(key)=key % 19</p><p>D、H(key)=key % 20</p><blockquote><p>解析</p><p>在插入所有关键码后，负载因子最大为0.6。元素数目为12，散列表长度为12 / 0.6 = 20，小于20的最大质数为19。</p><p><img src="https://img-blog.csdn.net/20180820155433113?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p></blockquote><p><strong>2、</strong>有两个整数的集合A,B，大小分别为n，m=O(log(n))，由顺序表存储，并且已经排好序，现在要求他们的交集，请问你设计的高效算法的复杂度是：</p><p>A、n</p><p>B、</p><p><img src="https://img-blog.csdn.net/20180801171515816?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>C、</p><p><img src="https://img-blog.csdn.net/20180801171514827?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>D、</p><p><img src="https://img-blog.csdn.net/20180801171517242?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><blockquote><p>解析</p><p>枚举每个集合B中的元素，去集合A中寻找是否存在相同的元素。枚举的复杂度是logn，寻找可以用二分查找，复杂度是logn，故为logn的平方</p><p>答案： B</p></blockquote><p><strong>3、</strong>折半查找有序表（4，6，10，12，20，30，50，70，88，100）。若查找表中元素58，则它将依次与表中（）比较大小，查找结果是失败</p><p>A、20，50</p><p>B、30，88，70，50</p><p>C、20，70，30，50</p><p>D、30，88，50</p><blockquote><p>解析</p><p>一共10个记录，先与第5个记录20比较，58&gt;20，所以继续查找右半部分，与70比较，58&lt;70，继续查找左半部分，与30比较，58&gt;30，继续查找右半部分，与50比较，查找结束。</p></blockquote><p><strong>4、</strong>在各种查找方法中，平均查找长度与结点个数n无关的查找方法是（ ）。</p><p>A、散列查找</p><p>B、顺序查找</p><p>C、二分查找</p><p>D、没有这样的查找方法使得平均查找长度和n无关</p><blockquote><p>解析</p><p>散列查找的平均查找长度只跟负载因子有关，而顺序查找平均查找长度是O(n)，二分查找平均查找长度是O(logn)</p></blockquote><p><strong>5、</strong>一个散列表的散列函数是h(key)=key%19，共有20个槽，用闭散列的线性探查方法。从空表开始，依次进行如下插入删除操作，问这些操作的平均检索长度是()（用整数或分数表示）</p><p>操作是：Add 26 Add 25 Add 24 Add 195 Del 26 Add 176</p><p>提示：</p><p>1.散列表中不能插入两个相同的关键码</p><p>2.结果请用一个最简分数数值表示，分号用/表示，例如四分之三写为：3/4</p><blockquote><p>解析</p><p>依次检索次数为1，1，1，4，1，5，故总次数1+1+1+4+1+5=13，故平均检索次数为13/6</p><p>答案： 13/6</p></blockquote><p><strong>6、</strong>有一个散列表，共有N个槽，采用双散列探查的闭散列方法解决冲突。经过一系列插入操作，当前散列表中有M个元素，负载因子a为0.4，即M/N=a=0.4。假设M,N都非常大，并且双散列探查方法近使得每一次探查的位置，可以近似为均匀分布（即等概率地探查每个槽）。当前对于某个关键码，近似估算不成功检索的平均检索长度：5/3</p><blockquote><p>解析：</p><p>关键点提示：不成功检索由多次hash碰撞和一次未碰撞构成，由题意得，碰撞的概率为a，为碰撞的概率为1-a。故不成功检索的检索长度l概率分布是如下形式的指数分布：</p><p><img src="https://img-blog.csdn.net/20180820160537216?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>计算</p><p><img src="https://img-blog.csdn.net/20180820160537382?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>，最后得到答案为5/3</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;给定关键码序列26, 25, 20, 33, 21, 24, 45, 204, 42, 38, 29, 31，用散列法进行存储(本题采用闭散列方法解决冲突)，规定负载因子α=0.6。请给出最合理的除余法的散列函数。&lt;/p&gt;
-&lt;p&gt;A、H
-      
-    
-    </summary>
-    
-      <category term="数据结构" scheme="https://www.zqily.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    
-      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
-    
-      <category term="数据结构" scheme="https://www.zqily.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
     <title>数据结构索引题库</title>
     <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%B4%A2%E5%BC%95%E9%A2%98%E5%BA%93/"/>
     <id>https://www.zqily.com/数据结构索引题库/</id>
@@ -509,6 +477,66 @@
       
         &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;设有一个职工文件，并设该文件由教材中表10-1所示的5个记录组成，其中职工号为关键码。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://i1.chinesemooc.org/course/formula/201610/427d79933
+      
+    
+    </summary>
+    
+      <category term="数据结构" scheme="https://www.zqily.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
+    
+      <category term="数据结构" scheme="https://www.zqily.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构线性表题库</title>
+    <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%BA%BF%E6%80%A7%E8%A1%A8%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/数据结构线性表题库/</id>
+    <published>2018-08-24T16:18:45.000Z</published>
+    <updated>2018-08-25T10:45:28.150Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>1、</strong>下面关于线性表的叙述中，正确的是</p><p>A、线性表采用顺序存储，必须占用一片连续的存储单元。</p><p>B、线性表采用顺序存储，便于进行插入和删除操作。</p><p>C、线性表采用链接存储，不必占用一片连续的存储单元。</p><p>D、线性表采用链接存储，便于插入和删除操作。</p><p>解析</p><p>顺序存储是按索引值从小到大存放在一片相邻的连续区域<br>采用链接存储，便于插入和删除操作，如果采用顺序存储，插入和删除时需要大量移动元素，参考数组的元素删除<br>线性表采用链接存储，在结点中存储link信息，不需占用连续存储单元<br>采用链接存储，便于插入和删除操作</p><p><strong>2、</strong>下面的叙述中正确的是：</p><p>A、线性表在链式存储时，查找第i个元素的时间与i的数值无关。</p><p>B、线性表在顺序存储时，查找第i个元素的时间与i的数值成正比。</p><p>C、</p><p>线性表在顺序存储时，查找第i个元素的时间与i的数值无关。</p><p>D、</p><p>线性表在链式存储时，插入第i个元素的时间与i的数值成正比。</p><p>解析</p><p>线性表在链式存储时，查找第i个元素的时间与i的数值无关。 因为存储空间是不连续的，需要从头或者尾结点开始查找元素，i越大，时间越长，时间不可能与i无关<br>线性表在顺序存储时，查找第i个元素的时间与i的数值成正比。 因为存储空间是连续的，直接由i可以得到元素位置<br>线性表在顺序存储时，查找第i个元素的时间与i的数值无关。 因为存储空间是连续的，直接由i可以得到元素位置<br>线性表在链式存储时，插入第i个元素的时间与i的数值成正比。 因为存储空间是不连续的，插入第i个元素不需要移动其他元素。但是在插入之前从头搜索到第i个元素的指针，所以插入时间跟i相关</p><p><strong>3、</strong>对于一个具有n个结点的单链表，在已知的结点*p后插入一个新结点的时间复杂度为O(1),在给定值为x的结点后插入一个新结点的时间复杂度为O(n)。</p><p>解析</p><p>已知结点后插入，不需要移动其他结点位置，所以为O(1) 2. 先要查找到值为x的结点，需要O(n),再插入，不需要移动其他结点位置，需要O(1)，总共需要O(n)+O(1)=O(n)</p><p><strong>4、</strong>带头结点head的循环链表的尾结点tail的特点是: <strong>_</strong></p><p>答案： tail-&gt;next=head</p><p><strong>5、</strong>完成在双循环链表结点p之后插入s的操作为：</p><p>A、p-&gt;next-&gt;prev=s; s-&gt;prev=p; s-&gt;next=p-&gt;next; p-&gt;next=s;</p><p>B、p-&gt;next-&gt;prev=s; p-&gt;next=s; s-&gt;prev=p; s-&gt;next=p-&gt;next;</p><p>C、s-&gt;prev=p; s-&gt;next=p-&gt;next; p-&gt;next=s; p-&gt;next-&gt;prev=s;</p><p>D、s-&gt;next=p-&gt;next; p-&gt;next-&gt;prev=s; s-&gt;prev=p; p-&gt;next=s;</p><p>解析</p><p>p-&gt;next-&gt;prev=s; s-&gt;prev=p; s-&gt;next=p-&gt;next; p-&gt;next=s; 最后更改p-&gt;next是正确的，否则会造成原来的p结点后来的next信息丢失<br>p-&gt;next-&gt;prev=s; p-&gt;next=s; s-&gt;prev=p; s-&gt;next=p-&gt;next; 先更改会造成原来的p结点后来的next信息丢失<br>s-&gt;prev=p; s-&gt;next=p-&gt;next; p-&gt;next=s; p-&gt;next-&gt;prev=s; 先更改p-&gt;next成s再更改p-&gt;next-&gt;prev，会造成原来的p结点后来的next信息丢失<br>s-&gt;next=p-&gt;next; p-&gt;next-&gt;prev=s; s-&gt;prev=p; p-&gt;next=s; 最后更改p-&gt;next是正确的，否则会造成原来的p结点后来的next信息丢失</p><p>答案： A,D</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;下面关于线性表的叙述中，正确的是&lt;/p&gt;
+&lt;p&gt;A、线性表采用顺序存储，必须占用一片连续的存储单元。&lt;/p&gt;
+&lt;p&gt;B、线性表采用顺序存储，便于进行插入和删除操作。&lt;/p&gt;
+&lt;p&gt;C、线性表采用链接存储，不必占用一片连续的存储单元。&lt;/
+      
+    
+    </summary>
+    
+      <category term="数据结构" scheme="https://www.zqily.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
+    
+      <category term="数据结构" scheme="https://www.zqily.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构高级数据结构题库</title>
+    <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/数据结构高级数据结构题库/</id>
+    <published>2018-08-24T16:18:45.000Z</published>
+    <updated>2018-08-25T09:58:09.291Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>1、</strong>在5x5的矩阵中，有2个非零元素，则稀疏因子为____。</p><p>答案： 0.08</p><p><strong>2、</strong>下列关于十字链表的表述正确的有：</p><p>A、十字链表的节点只需要记录非零元素的值，不需要记录它们在矩阵中的位置。</p><p>B、一个全由非零元素组成的矩阵，若使用十字链表表示，也将获得效率的提升。</p><p>C、十字链表的每个节点只有一个指向后继元素的指针。</p><p>D、应用十字链表做矩阵乘法时，时间复杂度是O((ta + tb) <em> p </em> n)。（假设矩阵A乘以矩阵B，A为p*m的矩阵，B为m*n的矩阵，A中行向量的非零元素个数最多为ta，B中列向量的非零元素个数最多为tb）</p><p>E、十字链表的节点记录了非零元素的值及它们在矩阵中的位置。</p><p>F、十字链表可以应用于稀疏矩阵的表示。</p><p><strong>3、</strong>图、线性表、可重入表、纯表的关系是（线性表）包含于（纯表）包含于（可重入表）包含于（图）。</p><p><strong>4、</strong>以下可重入表中哪些是循环表？</p><p>A、(L1: (L2: (L1, a)))</p><p>B、D(A:(c), B:(e), C:(a, L:(b, A, d)))</p><p>C、(L: (a, L))</p><p>D、(L1:(a, b), (L1, c, L2:(d)), (L2, e, L3:(f, g)), L3)</p><p>E、(L1: (a, b, L2(x, y)), L2, L3: (s, t, L4:(q, L5:(w, L3, v), r)))</p><p>F、(x1, (y1, (a1, a2), y3), x3, (z1, z2))</p><p><strong>5、</strong>现在有若干个有序的空闲块：1500,1000,500,2000,1200,500，有一个请求序列：500,600,1000,400,500,1000,2000，请问在最先适配、最佳适配、最差适配的策略下分配失败的次数分别是多少？</p><p>答案： 1 0 2</p><p><strong>6、</strong>下列关于Trie树和后缀树的说法中正确的有：</p><p>A、通用后缀树可以用来查找两个字符串的公共子串。</p><p>B、用Trie树存储的单词词典，检索一次的代价与单词的长度相关。</p><p>C、用Trie树存储的单词词典，检索一次的代价与词典中单词的数量相关。</p><p>D、利用后缀树可以方便地查找字符串的子串。</p><p>E、与后缀树相比，后缀数组实现简单，且时空效率高。</p><p><strong>7、</strong>字符串”analysis”建立后缀树后，一共有____个节点。</p><p>解析</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/a38e2311689acefd0fd4a49ab526e947.png" alt=""></p><p>答案： 10</p><p><strong>8、</strong>选项中哪个插入顺序可以得到这棵AVL树</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/d42b816abfe244c52050c504ddeab110.png" alt=""></p><p>A、6,15,3,5,4,1</p><p>B、15,6,3,5,4,1</p><p>C、6,15,5,3,1,4</p><p>D、6,15,3,5,1,4</p><p><strong>9、</strong>操作序列&lt;插入2，插入5，插入6，插入4，插入1，插入3，删除6&gt;，将形成哪棵splay树？</p><p>A、</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/63525c3354c5e80a721c2712dc34eb97.png" alt=""></p><p>B、</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/867eaf43648120e8158bf3090e59b6d3.png" alt=""></p><p>C、</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/f4a00621d89478efb5de9e92423ec75e.png" alt=""></p><p>D、</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/b88c1b6527600cb312746e52be64ba74.png" alt=""></p><p>答案： B</p><p><strong>10、</strong>请问字符串“ladygaga”的LCP数组是？（答案是7个数字，请用空格分隔）</p><p>解析</p><p>0 ladygaga</p><p>1 adygaga</p><p>2 dygaga</p><p>3 ygaga</p><p>4 gaga</p><p>5 aga</p><p>6 ga</p><p>7 a</p><p>SA: 7 1 5 2 6 4 0 3</p><p>LCP: 1 1 0 0 2 0 0</p><p>答案： 1 1 0 0 2 0 0</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;在5x5的矩阵中，有2个非零元素，则稀疏因子为____。&lt;/p&gt;
+&lt;p&gt;答案： 0.08&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2、&lt;/strong&gt;下列关于十字链表的表述正确的有：&lt;/p&gt;
+&lt;p&gt;A、十字链表的节点只需要记录非零元素的值，不需
       
     
     </summary>
@@ -552,55 +580,24 @@
   </entry>
   
   <entry>
-    <title>数据结构高级数据结构题库</title>
-    <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/数据结构高级数据结构题库/</id>
+    <title>操作系统io系统题库</title>
+    <link href="https://www.zqily.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fio%E7%B3%BB%E7%BB%9F%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/操作系统io系统题库/</id>
     <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T09:58:09.291Z</updated>
+    <updated>2018-08-25T10:37:06.826Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>1、</strong>在5x5的矩阵中，有2个非零元素，则稀疏因子为____。</p><p>答案： 0.08</p><p><strong>2、</strong>下列关于十字链表的表述正确的有：</p><p>A、十字链表的节点只需要记录非零元素的值，不需要记录它们在矩阵中的位置。</p><p>B、一个全由非零元素组成的矩阵，若使用十字链表表示，也将获得效率的提升。</p><p>C、十字链表的每个节点只有一个指向后继元素的指针。</p><p>D、应用十字链表做矩阵乘法时，时间复杂度是O((ta + tb) <em> p </em> n)。（假设矩阵A乘以矩阵B，A为p*m的矩阵，B为m*n的矩阵，A中行向量的非零元素个数最多为ta，B中列向量的非零元素个数最多为tb）</p><p>E、十字链表的节点记录了非零元素的值及它们在矩阵中的位置。</p><p>F、十字链表可以应用于稀疏矩阵的表示。</p><p><strong>3、</strong>图、线性表、可重入表、纯表的关系是（线性表）包含于（纯表）包含于（可重入表）包含于（图）。</p><p><strong>4、</strong>以下可重入表中哪些是循环表？</p><p>A、(L1: (L2: (L1, a)))</p><p>B、D(A:(c), B:(e), C:(a, L:(b, A, d)))</p><p>C、(L: (a, L))</p><p>D、(L1:(a, b), (L1, c, L2:(d)), (L2, e, L3:(f, g)), L3)</p><p>E、(L1: (a, b, L2(x, y)), L2, L3: (s, t, L4:(q, L5:(w, L3, v), r)))</p><p>F、(x1, (y1, (a1, a2), y3), x3, (z1, z2))</p><p><strong>5、</strong>现在有若干个有序的空闲块：1500,1000,500,2000,1200,500，有一个请求序列：500,600,1000,400,500,1000,2000，请问在最先适配、最佳适配、最差适配的策略下分配失败的次数分别是多少？</p><p>答案： 1 0 2</p><p><strong>6、</strong>下列关于Trie树和后缀树的说法中正确的有：</p><p>A、通用后缀树可以用来查找两个字符串的公共子串。</p><p>B、用Trie树存储的单词词典，检索一次的代价与单词的长度相关。</p><p>C、用Trie树存储的单词词典，检索一次的代价与词典中单词的数量相关。</p><p>D、利用后缀树可以方便地查找字符串的子串。</p><p>E、与后缀树相比，后缀数组实现简单，且时空效率高。</p><p><strong>7、</strong>字符串”analysis”建立后缀树后，一共有____个节点。</p><p>解析</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/a38e2311689acefd0fd4a49ab526e947.png" alt=""></p><p>答案： 10</p><p><strong>8、</strong>选项中哪个插入顺序可以得到这棵AVL树</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/d42b816abfe244c52050c504ddeab110.png" alt=""></p><p>A、6,15,3,5,4,1</p><p>B、15,6,3,5,4,1</p><p>C、6,15,5,3,1,4</p><p>D、6,15,3,5,1,4</p><p><strong>9、</strong>操作序列&lt;插入2，插入5，插入6，插入4，插入1，插入3，删除6&gt;，将形成哪棵splay树？</p><p>A、</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/63525c3354c5e80a721c2712dc34eb97.png" alt=""></p><p>B、</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/867eaf43648120e8158bf3090e59b6d3.png" alt=""></p><p>C、</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/f4a00621d89478efb5de9e92423ec75e.png" alt=""></p><p>D、</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/b88c1b6527600cb312746e52be64ba74.png" alt=""></p><p>答案： B</p><p><strong>10、</strong>请问字符串“ladygaga”的LCP数组是？（答案是7个数字，请用空格分隔）</p><p>解析</p><p>0 ladygaga</p><p>1 adygaga</p><p>2 dygaga</p><p>3 ygaga</p><p>4 gaga</p><p>5 aga</p><p>6 ga</p><p>7 a</p><p>SA: 7 1 5 2 6 4 0 3</p><p>LCP: 1 1 0 0 2 0 0</p><p>答案： 1 1 0 0 2 0 0</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>1、</strong>下列I/O控制方式中，哪一个不需要硬件支持？</p><p>A、轮询方式</p><p>B、中断方式</p><p>C、DMA方式</p><p>D、I/O处理机方式</p><p><img src="https://img-blog.csdn.net/20180814101328851?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>2、</strong>下列关于虚设备技术的叙述中，哪一个是错误的？</p><p>A、虚设备技术是指在一类设备上模拟另一类设备的技术</p><p>B、引入虚设备技术是为了提高设备利用率</p><p>C、通常采用虚设备技术是用低速设备来模拟高速设备</p><p>D、SPOOLing技术是一类典型的虚设备技术</p><p><img src="https://img-blog.csdn.net/20180814101533620?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>3、</strong>下列关于SPOOLing技术的叙述中，哪一个是错误的？</p><p>A、SPOOLing技术解决了独占设备利用率低的问题</p><p>B、SPOOLing没有解决CPU的速度与设备速度的差异性</p><p>C、SPOOLing技术需要利用磁盘空间作为缓冲</p><p>D、SPOOLing技术可用于打印机的管理</p><p><strong>4、</strong>在设备管理中，缓冲技术主要用于</p><p>A、提供内存与外存之间的接口</p><p>B、提高主机和设备交换信息的速度</p><p>C、提高设备利用率</p><p>D、扩充地址空间</p><p><img src="https://img-blog.csdn.net/20180814102225896?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>5、</strong>下列关于I/O端口地址的叙述中，哪一个是错误的？</p><p>A、内存映像编址方式下允许缓存设备接口寄存器的内容</p><p>B、I/O端口地址是指设备接口寄存器的地址</p><p>C、I/O独立编址方式需要特定的I/O指令</p><p>D、内存映像编址方式下I/O端口地址空间可以比较大</p><p><img src="https://img-blog.csdn.net/20180814103057358?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814103213425?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814103250404?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>6、</strong>下列关于操作系统设备管理的叙述中，哪些是正确的？</p><p>A、设备管理使用户能独立于具体设备的复杂物理特性而方便地使用设备</p><p>B、设备管理利用各种技术提高CPU与设备、设备与设备之间的并行工作能力</p><p>C、操作系统对用户屏蔽了实现具体设备I/O操作的细节</p><p>D、SPOOLing技术是一类典型的虚拟设备技术</p><p>E、操作系统应尽量对设备提供各种不同的接口</p><p><strong>7、</strong>下列哪些方案可以提高I/O性能？</p><p>A、缓冲技术</p><p>B、异步I/O方式</p><p>C、DMA方式</p><p>D、轮询方式</p><p>E、静态设备分配策略</p><p><img src="https://img-blog.csdn.net/20180814103657212?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>8、</strong>I/O设备的传输速率差异性、接口的复杂性等给操作系统设备管理带来复杂性。（T）</p><p><strong>9、</strong>利用设备内部的缓冲区可以进行数据格式加工等处理。（T）</p><p><strong>10、</strong>内存映像I/O模式下设备驱动程序可以用C语言编写。（T）</p><p><strong>11、</strong>通过把独占设备改造成<strong><strong><strong>____</strong></strong></strong>，可以提高独占设备利用率</p><p>A、共享设备</p><p>B、共享的设备</p><p><strong>12、</strong>通常按层次组织I/O软件，典型的四层I/O软件包括用户进程I/O、<strong><strong><strong>____</strong></strong></strong>、设备驱动程序和中断处理程序。</p><p>A、设备无关软件</p><p>B、设备独立软件</p><p>C、设备独立性软件</p><p>D、设备无关性软件</p><p>E、逻辑I/O</p><p><img src="https://img-blog.csdn.net/2018081410381722?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>答案： A,B,C,D,E</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;在5x5的矩阵中，有2个非零元素，则稀疏因子为____。&lt;/p&gt;
-&lt;p&gt;答案： 0.08&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2、&lt;/strong&gt;下列关于十字链表的表述正确的有：&lt;/p&gt;
-&lt;p&gt;A、十字链表的节点只需要记录非零元素的值，不需
-      
-    
-    </summary>
-    
-      <category term="数据结构" scheme="https://www.zqily.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    
-      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
-    
-      <category term="数据结构" scheme="https://www.zqily.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统同步机制题库</title>
-    <link href="https://www.zqily.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%90%8C%E6%AD%A5%E6%9C%BA%E5%88%B6%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/操作系统同步机制题库/</id>
-    <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T10:31:31.661Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>1、</strong>多个进程并发执行时，各个进程应互斥进入其临界区，所谓临界区是指</p><p>A、一段程序</p><p>B、一段数据区</p><p>C、一个缓冲区</p><p>D、一种同步机制</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180808173613677?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>2、</strong>下列哪一种场景问题只包含进程互斥问题？</p><p>A、田径场的四百米接力比赛</p><p>B、一个进程读文件，一个进程写文件</p><p>C、两个进程通过一个缓冲区传递数据</p><p>D、公共汽车上司机和售票员的工作配合</p><p><strong>3、</strong>以下是解决进程互斥进入临界区的一种解法。</p><blockquote><p>P:</p><p>… …</p><p>pturn = true;</p><p>while (qturn) ;</p><p>临界区操作</p><p>pturn = false;</p><p>… …</p><p>Q:</p><p>… …</p><p>qturn = true;</p><p>while (pturn) ;</p><p>临界区操作</p><p>qturn = false;</p><p>… …</p></blockquote><p>其中，pturn、qturn的初值为false</p><p>如果P、Q两个进程同时想进入临界区，那么会发生下面哪一种情形？</p><p>A、P和Q都进入了临界区</p><p>B、P先进入临界区，Q再进入临界区</p><p>C、Q先进入临界区，P再进入临界区</p><p>D、P和Q都进入不了临界区</p><p><strong>4、</strong>若干进程之间相互合作，共同完成一项任务。进程的这种关系称为</p><p>A、并发</p><p>B、同步</p><p>C、互斥</p><p>D、异步</p><p><strong>5、</strong>下列描述的四个现象中，哪一项既具有同步关系又具有互斥关系？</p><p>A、多个不同的用户进程一起玩踢足球电子游戏</p><p>B、多个不同的用户订票进程访问票额数据库</p><p>C、多个不同的用户进程一起玩麻将电子游戏</p><p>D、多个不同的用户进程编译自己的程序</p><p><strong>6、</strong>在使用信号量及P、V操作机制解决问题时，进程执行一次P操作，意味着该进程</p><p>A、正在使用一个资源</p><p>B、准备释放一个资源</p><p>C、申请分配一个资源</p><p>D、需要共享一个资源</p><p><strong>7、</strong>在使用信号量及P、V操作机制解决问题时，一个进程执行V操作意味着</p><p>A、可能有另一个进程从等待队列进入就绪队列</p><p>B、该进程从等待队列进入就绪队列</p><p>C、该进程从磁盘调入内存</p><p>D、可能有另一个进程从磁盘被调入内存</p><p><strong>8、</strong>假设信号量S的当前值为 -3，这就表示</p><p>A、系统中还有3个资源可以使用</p><p>B、系统中有3个等待该信号量的进程</p><p>C、在信号量S上不能再执行P操作了</p><p>D、在信号量S上只能执行V操作</p><p><strong>9、</strong>用信号量及PV操作管理临界区时，若信号量mutex的初值为1，当mutex的等待队列中有k（k &gt; 1）个进程时，信号量的值为</p><p>A、-k</p><p>B、k</p><p>C、k-1</p><p>D、1-k</p><p><strong>10、</strong>第一类读者写者问题的解决方案会导致写者进程产生“饥饿”现象。（T）</p><p><img src="https://img-blog.csdn.net/20180809165203963?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>11、</strong>用“测试并加锁”（TSL）指令解决进程互斥进入临界区的解决方案不适用于多处理器。（F）</p><p><img src="https://img-blog.csdn.net/20180809165129469?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>12、</strong>自旋锁采用了忙等待方式，它适用于多处理器。（T）</p><p><img src="https://img-blog.csdn.net/20180809165032459?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>13、</strong>若系统采用基于优先级的抢占式调度策略，临界区的使用可能导致优先级反转问题。（T）</p><p><strong>14、</strong>下列关于管程的描述中，哪一个是不正确的？</p><p>A、管程中需要提供互斥量以保证管程的互斥性</p><p>B、管程有自己的名字</p><p>C、管程的主要作用是管理共享资源（数据结构）</p><p>D、进程只能调用管程提供的过程对管程中的数据结构进行处理</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180809164918157?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>15、</strong>下列哪一个操作不会唤醒或通知等在条件变量上的进程？</p><p>A、broadcast()</p><p>B、notify()</p><p>C、signal()</p><p>D、wait()</p><p><strong>16、</strong>应用消息缓冲机制完成进程间通信的过程中，下列哪一项不是所必需的？</p><p>A、同步互斥信号量</p><p>B、消息缓冲区</p><p>C、send/receive原语</p><p>D、消息队列（指针）</p><p><img src="https://img-blog.csdn.net/201808091647566?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>17、</strong>采用共享内存进行进程间通信的方法需要程序员解决的问题是</p><p>A、设计共享内存空间的访问原语</p><p>B、处理进程在使用共享内存过程中的互斥关系</p><p>C、分配共享内存空间的大小</p><p>D、保证共享内存空间不被破坏</p><p><strong>18、</strong>MESA管程应用时需要至少2次对条件的检测。（假设线程都有一个进入队列、等待notify的过程，不存在直接通过的情况。）（T）</p><p><strong>19、</strong>若管程中同时出现2个进程，需要采取措施使其中一个进程等待。HOARE管程的解决办法是让先进入管程的进程等待。（F）</p><p>解析：先进入的先执行</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;多个进程并发执行时，各个进程应互斥进入其临界区，所谓临界区是指&lt;/p&gt;
-&lt;p&gt;A、一段程序&lt;/p&gt;
-&lt;p&gt;B、一段数据区&lt;/p&gt;
-&lt;p&gt;C、一个缓冲区&lt;/p&gt;
-&lt;p&gt;D、一种同步机制&lt;/p&gt;
-&lt;p&gt;解析：&lt;/p&gt;
-&lt;p&gt;&lt;img src
+        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;下列I/O控制方式中，哪一个不需要硬件支持？&lt;/p&gt;
+&lt;p&gt;A、轮询方式&lt;/p&gt;
+&lt;p&gt;B、中断方式&lt;/p&gt;
+&lt;p&gt;C、DMA方式&lt;/p&gt;
+&lt;p&gt;D、I/O处理机方式&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://img-blog.
       
     
     </summary>
