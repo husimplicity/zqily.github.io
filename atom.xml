@@ -76,6 +76,36 @@
   </entry>
   
   <entry>
+    <title>数据结构字符串题库</title>
+    <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/数据结构字符串题库/</id>
+    <published>2018-08-25T16:18:45.000Z</published>
+    <updated>2018-08-25T12:00:02.333Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>1、</strong>设有字符串变量String A ＝“”，B＝“MULE”，C＝“OLD”，D＝“MY” ; 请计算下列表达式</p><p>(1) D+C+B</p><p>(2) B.substr(3，2) （从下标3开始取）</p><p>(3) A.strlength()</p><p>解析</p><p>(1) 字符串连接：MYOLDMULE</p><p>(2) 从第3位开始取2个字符，但是’MULE’第三位及之后只有一位字符，所以答案为：E</p><p>参考：</p><p><img src="https://img-blog.csdn.net/20180815173152501?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>(3) A是空串，空串的长度为：0</p><p><strong>2、</strong>S=“S1S2…Sn”是一个长为n的字符串，存放在一个数组中，编程序将S改造之后输出。</p><p>1.将S的所有第偶数个字符按照其原来的下标从大到小的次序放在S的后半部分；</p><p>2.将S的所有第奇数个字符按照其原来的下标从小到大的次序放在S的前半部分；</p><p>例如：S=‘ABCDEFGHIJKL’，则改造后的S为‘ACEGIKLJHFDB’。则 S=’algorithm’, 改造后为<strong><strong>____</strong></strong></p><p>解析</p><p>前半部分为，algorithm奇数的字符，即agrtm；后半部分为Algorithm偶数字符下标从大到小次序，即hiol，故结果是agrtmhiol。</p><p><img src="https://img-blog.csdn.net/20180815180248780?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>答案： agrtmhiol</p><p><strong>3、</strong>设有两个串p和q，其中q是p的子串，求q在p中首次出现的位置的算法称为：</p><p>A、求子串 Seeking substring</p><p>B、联接 Concatenation</p><p>C、匹配 Matching</p><p>D、求串长 Seeking length</p><p>解析</p><p>A.求子串：求子串是给定首字符在原字符串中位置和子串长度，输出子串</p><p>B.联接：是把两个字符串连接到一起输出新字符串</p><p>C.匹配：是求子串在父串中的位置</p><p>D.求串长：求字符串的长度</p><p><strong>4、</strong>若串S1=‘ABCDEFG’, S2=‘9898’ ,S3=‘###’,S4=‘012345’,</p><p>执行 concat<strong>(</strong>replace(S1,substr(S1,length(S2),length(S3)),S3),substr(S4,index(S2,‘8’),length(S2))<strong>)</strong></p><p>注意：substr(S,i,j)是对字符串S的下标为i开始取j个字符，这里的下标是从0开始的(单选)</p><p>A、ABC###G0123</p><p>B、ABCD###2345</p><p>C、ABCD###1234</p><p>D、ABC###G2345</p><p>解析</p><p>substr(S1,length(S2),length(S3))即substr(S1,4,3))，</p><p>从下标4开始取s1三个字符，即EFG，</p><p>replace(S1,substr(S1,length(S2),length(S3)),S3)即replace（S1，‘EFG’，’###‘），</p><p>故结果为’ABCD###‘，</p><p>substr(S4,index(S2,‘8’),length(S2))即,substr(S4,1,4)（其中index(S2,‘8’)指的是找s2中第一个’8‘的下标），故为’1234‘。</p><p>故最后结果为ABCD###1234</p><p>答案： C</p><p><strong>5、</strong>在字符{A, C, G, T}组成的DNA序列中，A和T、C和G是互补对。判断一个DNA序列中是否存在互补回文串（例如，ATCATGAT的补串是TAGTACTA，与原串形成互补回文串）。下面DNA序列中存在互补回文串的是：（多选）</p><p>A、CTGATCAG</p><p>B、AATTAATT</p><p>C、TGCAACGT</p><p>D、CATGGTAC</p><p>E、GTACGTAC</p><p>F、AGCTAGCT</p><p>解析</p><p>C.TGCAACGT : 互补串为ACGTTGCA，不是原串回文。</p><p>D.CATGGTAC : 互补串为GTACCATG，不是原串回文。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;设有字符串变量String A ＝“”，B＝“MULE”，C＝“OLD”，D＝“MY” ; 请计算下列表达式&lt;/p&gt;
+&lt;p&gt;(1) D+C+B&lt;/p&gt;
+&lt;p&gt;(2) B.substr(3，2) （从下标3开始取）&lt;/p&gt;
+&lt;p&gt;(3) 
+      
+    
+    </summary>
+    
+      <category term="数据结构" scheme="https://www.zqily.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
+    
+      <category term="数据结构" scheme="https://www.zqily.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
     <title>计算机网络应用层题库</title>
     <link href="https://www.zqily.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8%E5%B1%82%E9%A2%98%E5%BA%93/"/>
     <id>https://www.zqily.com/计算机网络应用层题库/</id>
@@ -104,23 +134,23 @@
   </entry>
   
   <entry>
-    <title>计算机组成乘法器和除法器题库</title>
-    <link href="https://www.zqily.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B9%98%E6%B3%95%E5%99%A8%E5%92%8C%E9%99%A4%E6%B3%95%E5%99%A8%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/计算机组成乘法器和除法器题库/</id>
+    <title>计算机组成单周期处理器题库</title>
+    <link href="https://www.zqily.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8D%95%E5%91%A8%E6%9C%9F%E5%A4%84%E7%90%86%E5%99%A8%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/计算机组成单周期处理器题库/</id>
     <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T10:12:19.075Z</updated>
+    <updated>2018-08-25T10:14:26.742Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>1、</strong>对于第一版乘法器，当乘数寄存器最低位为1时，在该次循环过程中，需要将乘数寄存器向哪个方向移动，需要将被乘数寄存器向哪个方向移动？</p><p>A、右、左</p><p>B、不移动，左</p><p>C、不移动，右</p><p>D、右、右</p><p>E、左、左</p><p>F、右，不移动</p><p><strong>2、</strong>对于第一版乘法器，在每次循环的过程中，需要将被乘数寄存器的内容与乘积寄存器中的内容相加，并将结果放入乘积寄存器的条件是：</p><p>A、乘数寄存器的最低位为1</p><p>B、乘数寄存器的最低位为0</p><p>C、被乘数寄存器的最低位为1</p><p>D、被乘数寄存器的最低位为0</p><p>E、乘积寄存器的最低位为1</p><p><strong>3、</strong>对于32-bit的第一版乘法器，每次循环都需要判断的条件是哪几个？</p><p>A、乘数寄存器的最低位是否为0</p><p>B、是否循环了32次</p><p>C、</p><p>被乘数寄存器的最低位是否为0</p><p>D、</p><p>是否循环了33次</p><p>E、</p><p>是否循环了31次</p><p><strong>4、</strong>以4-bit的第一版乘法器为例，对于二进制数00100011，当第2次循环结束时，被乘数寄存器、乘数寄存器和乘积寄存器的值分别是？</p><p>A、00001000，0000，00000110</p><p>B、00001000，0001，00000110</p><p>C、00000100，0000，00000110</p><p>D、00000100，0000，00000010</p><p><strong>5、</strong>对于32-bit的第一版乘法器，需要包含以下哪些组成部分？</p><p>A、64位ALU</p><p>B、32位的乘数寄存器</p><p>C、64位的被乘数寄存器</p><p>D、64位的乘积寄存器</p><p>E、32位ALU</p><p>F、32位的被乘数寄存器</p><p><strong>6、</strong>对于第一版乘法器，下列哪些属于对其进行面积优化的措施？</p><p>A、将加法运算和两个移位同时进行</p><p>B、将加法器和被乘数寄存器位宽减半优化面积</p><p>C、64-bit加法器缩小为32-bit</p><p>D、取消乘数寄存器</p><p>E、乘积寄存器需支持右移</p><p><strong>7、</strong>对于第一版乘法器，控制逻辑的作用是哪些？</p><p>A、控制何时对被乘数寄存器进行移位</p><p>B、控制何时对乘数寄存器进行移位</p><p>C、控制何时将新值写入积寄存器</p><p>D、控制何时将乘积寄存器进行移位</p><p><strong>8、</strong>对于本课中讲授的第二版乘法器，在对乘法器进行面积优化后，一个32-bit乘法器需要包含以下哪些部分？</p><p>A、32位ALU</p><p>B、32位的被乘数寄存器</p><p>C、64位的乘积寄存器</p><p>D、32位的乘数寄存器</p><p>E、64位ALU</p><p>F、32位的乘积寄存器</p><p><strong>9、</strong>对于第一版除法器，在一次循环中当余数寄存器大于0时，需要将商寄存器向哪个方向移动，需要将除数寄存器向哪个方向移动？</p><p>A、左、右</p><p>B、不移动，左</p><p>C、不移动，右</p><p>D、右、右</p><p>E、左、左</p><p>F、右，不移动</p><p><strong>10、</strong>对于第一版除法器，在每次循环的过程中，需要左移商寄存器，并将其最低位设置为1的条件是：</p><p>A、余数大于等于0</p><p>B、余数小于0</p><p>C、除数寄存器的最低位为1</p><p>D、除数寄存器的最低位为0</p><p><strong>11、</strong>一个32-bit除法器，对于第一种除法算法，每次迭代时都需要判断的条件是哪几个？</p><p>A、余数寄存器是否小于0</p><p>B、是否完成了重复了33次循环</p><p>C、除数寄存器是否小于0</p><p>D、是否重复了31次循环</p><p>E、是否重复了32次循环</p><p><strong>12、</strong>对于32-bit的第一版除法器，需要包含以下哪些组成部分？</p><p>A、64位ALU</p><p>B、32位的商寄存器</p><p>C、64位的余数寄存器</p><p>D、64位的除数寄存器</p><p>E、32位ALU</p><p>F、32位的除数寄存器</p><p><strong>13、</strong>以4-bit的第一版除法器为例，对于二进制数0111÷0010，当第2次循环结束时，商寄存器、除数寄存器和余数寄存器的值是？</p><p>A、0000，00001000，00000111</p><p>B、0001，00001000，00000111</p><p>C、0000， 00001000，11110111</p><p>D、0000，00010000，00000111</p><p><strong>14、</strong>对于第二版除法器，在对除法器进行面积优化后，一个32-bit除法器需要包含以下哪些组成部分？</p><p>A、32位ALU</p><p>B、32除数寄存器</p><p>C、64位余数寄存器</p><p>D、64位ALU</p><p>E、32位商寄存器</p><p>F、32位余数寄存器</p><p><strong>15、</strong>对于第二种除法算法，在对除法器进行面积优化后，商的结果放置在哪里？</p><p>A、余数寄存器的低32位</p><p>B、余数寄存器的高32位</p><p>C、除数寄存器的低32位</p><p>D、除数寄存器的高32位</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>1、</strong>处理器设计的五个步骤如下，请正确排序。</p><p>1 连接组件建立数据通路</p><p>2 为数据通路选择合适的组件</p><p>3 集成控制信号，形成完整的控制逻辑</p><p>4 分析指令系统，得出对数据通路的需求</p><p>5 分析每条指令的实现，以确定控制信号</p><p>答案： 42153</p><p><strong>2、</strong>课程中提到的MIPS-lite指令子集（addu，subu，ori，lw，sw，beq）对ALU的需求有哪些？</p><p>A、加法</p><p>B、减法</p><p>C、逻辑或</p><p>D、相等</p><p>E、逻辑与</p><p>F、逻辑非</p><p>G、乘法</p><p>H、除法</p><p>I、左移</p><p>J、右移</p><p><strong>3、</strong>下列关于MIPS-lite指令子集对数据通路的需求描述正确的是？</p><p>A、add指令与ori指令对寄存器堆的写操作需求不一样</p><p>B、lw指令需要符号扩展部件</p><p>C、lw指令与sw指令都需要数据存储器</p><p>D、add指令需要零扩展部件</p><p>E、sub指令需要符号扩展部件</p><p>F、ori指令需要符号扩展部件</p><p><strong>4、</strong>下列关于运算指令的控制信号描述正确的是？</p><p>A、add指令与ori指令的寄存器堆控制信号RegDst不同</p><p>B、add指令与ori指令的ALU源操作数控制信号ALUSrc不同</p><p>C、add指令与ori指令的ALU运算类型控制信号ALUctr不同</p><p>D、add指令的扩展部件控制信号ExtOp不唯一</p><p>E、ori指令的扩展部件控制信号ExtOp不唯一</p><p>F、add指令与ori指令的数据存储器控制信号MemWr可以不相同</p><p><strong>5、</strong>下列关于访存指令的控制信号描述正确的是？</p><p>A、lw指令与sw指令的ALU运算类型控制信号ALUctr相同</p><p>B、lw指令与sw指令的控制信号MemtoReg可以不相同</p><p>C、lw指令与sw指令的寄存器堆控制信号RegDst一定相同</p><p>D、lw指令与sw指令的扩展部件控制信号ExtOp可以不相同</p><p>E、lw指令与sw指令的数据存储器控制信号MemWr可以不相同</p><p><strong>6、</strong>下列关于beq指令的执行描述正确的是？</p><p>A、beq指令的寄存器堆控制信号RegDst是不唯一的</p><p>B、beq指令与lw指令的数据存储器控制信号MemWr是相同的</p><p>C、beq指令与add指令的ALU运算类型控制信号ALUctr相同</p><p>D、beq指令的扩展部件控制信号ExtOp一定为sign</p><p>E、若ALU计算结果为零，则beq指令不需要执行PC+4操作</p><p><strong>7、</strong>在单周期处理器上执行beq指令，使用到了下列哪些部件？</p><p>A、寄存器堆</p><p>B、ALU</p><p>C、扩展部件（零扩展或符号扩展）</p><p>D、数据存储器</p><p><strong>8、</strong>在单周期处理器上执行add指令，使用到了下列哪些部件？</p><p>A、寄存器堆</p><p>B、ALU</p><p>C、扩展部件（零扩展或符号扩展）</p><p>D、数据存储器</p><p><strong>9、</strong>在单周期处理器上执行ori指令，使用到了下列哪些部件？</p><p>A、扩展部件（零扩展或符号扩展）</p><p>B、寄存器堆</p><p>C、ALU</p><p>D、数据存储器</p><p><strong>10、</strong>在单周期处理器上执行lw指令，使用到了下列哪些部件？</p><p>A、扩展部件（零扩展或符号扩展）</p><p>B、数据存储器</p><p>C、寄存器堆</p><p>D、ALU</p><p><strong>11、</strong>假设单周期处理器五个阶段的延迟分别为200ps（取指）、50ps（读寄存器）、200ps（ALU操作）、300ps（访存）、100ps（写寄存器），则sw指令的总延迟为多少ps？</p><p>答案： 750</p><p><strong>12、</strong>假设单周期处理器五个阶段的延迟分别为200ps（取指）、50ps（读寄存器）、200ps（ALU操作）、300ps（访存）、100ps（写寄存器），则lw指令的总延迟为多少ps？</p><p>答案： 850</p><p><strong>13、</strong>假设单周期处理器五个阶段的延迟分别为200ps（取指）、50ps（读寄存器）、200ps（ALU操作）、300ps（访存）、100ps（写寄存器），则add指令的总延迟为多少ps？</p><p>答案： 550</p><p><strong>14、</strong>假设单周期处理器五个阶段的延迟分别为200ps（取指）、50ps（读寄存器）、200ps（ALU操作）、300ps（访存）、100ps（写寄存器），则beq指令的总延迟为多少ps？</p><p>答案： 450</p><p><strong>15、</strong>假设一条指令的32位编码从高到低依次为Ins<31>, Ins<30>, ……, Ins<0>，则产生ExtOp控制信号需要用到指令编码中的多少位？</0></30></31></p><p>A、6位</p><p>B、12位</p><p>C、32位</p><p>D、1位</p><p><strong>16、</strong>假设一条指令的32位编码从高到低依次为Ins<31>, Ins<30>, ……, Ins<0>，则产生MemWr控制信号需要用到指令编码中的多少位？</0></30></31></p><p>A、6位</p><p>B、12位</p><p>C、32位</p><p>D、1位</p><p><strong>17、</strong>假设一条指令的32位编码从高到低依次为Ins<31>, Ins<30>, ……, Ins<0>，则产生ALUctr[0]控制信号需要用到指令编码中的多少位？</0></30></31></p><p>A、12位</p><p>B、6位</p><p>C、7位</p><p>D、26位</p><p>E、32位</p><p>F、</p><p>14位</p><p><strong>18、</strong>假设一条指令的32位编码从高到低依次为Ins<31>, Ins<30>, ……, Ins<0>，则产生RegWr控制信号需要用到指令编码中的多少位？</0></30></31></p><p>A、12位</p><p>B、6位</p><p>C、7位</p><p>D、26位</p><p>E、32位</p><p>F、14位</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;对于第一版乘法器，当乘数寄存器最低位为1时，在该次循环过程中，需要将乘数寄存器向哪个方向移动，需要将被乘数寄存器向哪个方向移动？&lt;/p&gt;
-&lt;p&gt;A、右、左&lt;/p&gt;
-&lt;p&gt;B、不移动，左&lt;/p&gt;
-&lt;p&gt;C、不移动，右&lt;/p&gt;
-&lt;p&gt;D、右
+        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;处理器设计的五个步骤如下，请正确排序。&lt;/p&gt;
+&lt;p&gt;1 连接组件建立数据通路&lt;/p&gt;
+&lt;p&gt;2 为数据通路选择合适的组件&lt;/p&gt;
+&lt;p&gt;3 集成控制信号，形成完整的控制逻辑&lt;/p&gt;
+&lt;p&gt;4 分析指令系统，得出对数据通路的需求&lt;/p&gt;
       
     
     </summary>
@@ -131,69 +161,6 @@
       <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
     
       <category term="计算机组成" scheme="https://www.zqily.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统概论题库</title>
-    <link href="https://www.zqily.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/操作系统概论题库/</id>
-    <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T10:24:48.807Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>1、</strong>下列关于操作系统的叙述中，哪一个是错误的？</p><p>A、操作系统管理着计算机系统中的各种资源</p><p>B、操作系统应为用户提供良好的界面</p><p>C、操作系统是计算机系统中的一个应用软件</p><p>D、操作系统向用户屏蔽了硬件操作细节</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180807112825473?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>2、</strong>下列关于批处理操作系统的叙述中，哪一个是正确的？</p><p>A、批处理操作系统的系统资源利用率不高</p><p>B、批处理操作系统的系统吞吐量小</p><p>C、用户不能直接干预自己作业的执行</p><p>D、批处理操作系统追求的目标是响应时间</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180807113700853?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>3、</strong>用户向操作系统提出服务请求一般有两种方式：终端命令和</p><p>A、宏命令</p><p>B、汇编语言</p><p>C、高级语言</p><p>D、系统调用</p><p>解析：</p><p><img src="https://img-blog.csdn.net/2018080711384355?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>4、</strong>下列哪一个不是操作系统的特征？</p><p>A、并发性</p><p>B、共享性</p><p>C、随机性</p><p>D、制约性</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180807114051893?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>5、</strong>下列关于并发概念的叙述中，哪个是正确的？</p><p>A、并发性是指若干程序在同一时刻执行</p><p>B、并发性是指若干程序在不同时刻执行</p><p>C、并发性是指若干程序在同一时间间隔内执行</p><p>D、并发性是指若干程序在不同时间间隔内执行</p><p>解析：</p><p><img src="https://img-blog.csdn.net/201808071145499?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>6、</strong>在汽车电子系统中使用的操作系统应属于下列哪一类？</p><p>A、批处理操作系统</p><p>B、嵌入式操作系统</p><p>C、个人计算机操作系统</p><p>D、分布式操作系统</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180807114743967?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>7、</strong>下列哪一项不是嵌入式操作系统的特点？</p><p>A、交互性</p><p>B、低成本</p><p>C、高可靠性</p><p>D、占有资源少</p><p><strong>8、</strong>下列关于SPOOLing技术的叙述中，哪一个是错误的？</p><p>A、批处理系统常采用SPOOLing技术实现</p><p>B、SPOOLing技术是一种用磁盘空间换取时间的技术</p><p>C、作业的输入输出工作通常由SPOOLing系统完成</p><p>D、SPOOLing是一种独占设备技术</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180807135341676?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180807135431282?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180807135515664?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>9、</strong>下列哪一项是分布式操作系统与网络操作系统本质区别？</p><p>A、实现各台计算机之间的通信</p><p>B、共享网络中的资源</p><p>C、满足较大规模的应用</p><p>D、系统中若干台计算机相互协作完成同一任务</p><p><strong>10、</strong>操作系统对每一种资源的管理所完成的工作包括</p><p>A、实施资源分配</p><p>B、确定资源分配策略</p><p>C、对资源使用提供保护机制</p><p>D、记录资源的使用状况</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180807140807776?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>11、</strong>分时操作系统是典型的交互式系统，下列哪些因素与交互式系统相关？</p><p>A、响应时间</p><p>B、资源利用率</p><p>C、吞吐量</p><p>D、时间片</p><p>E、高可靠性</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180807141422359?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>12、</strong>设计实时系统时首先要考虑的是如何提高系统的资源利用率。（F）</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180807141719524?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>13、</strong>多道批处理系统是指那些有多个处理器同时处理作业的系统。（F）</p><p><strong>14、</strong>现代操作系统通常采用SPOOLing技术的思想实现网络打印功能。（T）</p><p><strong>15、</strong>单CPU上可以并发执行多个程序。（T）</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;下列关于操作系统的叙述中，哪一个是错误的？&lt;/p&gt;
-&lt;p&gt;A、操作系统管理着计算机系统中的各种资源&lt;/p&gt;
-&lt;p&gt;B、操作系统应为用户提供良好的界面&lt;/p&gt;
-&lt;p&gt;C、操作系统是计算机系统中的一个应用软件&lt;/p&gt;
-&lt;p&gt;D、操作系统向用
-      
-    
-    </summary>
-    
-      <category term="操作系统" scheme="https://www.zqily.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-      <category term="操作系统" scheme="https://www.zqily.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统死锁题库</title>
-    <link href="https://www.zqily.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%AD%BB%E9%94%81%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/操作系统死锁题库/</id>
-    <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T10:38:35.399Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>1、</strong>在计算机系统拥有的各种软硬件资源中，内存是属于</p><p>A、可重用资源</p><p>B、不可重用资源</p><p>C、临界资源</p><p>D、独占资源</p><p><img src="https://img-blog.csdn.net/20180814104515228?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>2、</strong>下列描述的各种现象中，属于活锁现象的是</p><p>A、相关进程进入阻塞状态，且无法唤醒</p><p>B、相关进程进入阻塞状态，且可以唤醒</p><p>C、相关进程没有阻塞，但是调度时刻被延迟推后</p><p>D、相关进程没有被阻塞，可被调度，但是执行没有进展（能上CPU，但得不到资源）</p><p><strong>3、</strong>在系统运行过程中，通过检查系统是否处于安全状态而不让死锁发生的策略是</p><p>A、死锁预防</p><p>B、死锁避免（银行家·算法）</p><p>C、死锁检测</p><p>D、死锁解除</p><p><img src="https://img-blog.csdn.net/20180814104723521?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>4、</strong>对资源采用按序分配策略能达到下列哪一个目的？</p><p>A、死锁预防</p><p>B、死锁避免</p><p>C、死锁检测</p><p>D、死锁解除</p><p><img src="https://img-blog.csdn.net/201808141049163?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>5、</strong>在下列解决死锁的方法中，属于死锁避免策略的是</p><p>A、资源有序分配法</p><p>B、资源分配图化简法</p><p>C、死锁检测算法</p><p>D、银行家算法</p><p><strong>6、</strong></p><p>![XM1`53%@V$M~[956(58<a href="http://i1.chinesemooc.org/course/formula/201512/13af16a691179038828348a83fd0b4cd.png" target="_blank" rel="noopener">CBX.png </a></p><p>A、死锁</p><p>B、无死锁</p><p>C、活锁</p><p>D、饥饿</p><p><strong>7、</strong></p><p><img src="http://i1.chinesemooc.org/course/formula/201512/8c5ce1bbd64286a078359019082dc678.png" alt="EATM{KSK$Y1W)73W]RX]8GA.png"></p><p>A、资源独占条件</p><p>B、不可抢占条件</p><p>C、请求和保持条件</p><p>D、循环等待条件</p><p><img src="https://img-blog.csdn.net/20180814105243513?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>8、</strong></p><p><img src="http://i1.chinesemooc.org/course/formula/201512/b5446da7efe11730e3a785c9ca901071.png" alt="ZPFN`(V_G_](3OWHD@(8{8X.png "></p><p>A、安全状态</p><p>B、不安全状态</p><p>C、死锁状态</p><p>D、临界状态</p><p><strong>9、</strong>系统有某类资源5个，供3个进程共享，每个进程最多申请多少个该类资源时系统仍然是安全的？</p><p>A、1</p><p>B、2</p><p>C、3</p><p>D、5</p><p><strong>10、</strong>形成死锁的必要条件是</p><p>A、资源的互斥使用</p><p>B、部分分配资源</p><p>C、不可剥夺已分配资源</p><p>D、进程对资源的申请形成环路</p><p>E、系统资源不足</p><p><img src="https://img-blog.csdn.net/20180814105406277?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>11、</strong></p><p>![EVP(E5$}X8X1I6LOPVK$<a href="http://i1.chinesemooc.org/course/formula/201512/83e5db8511f496b81e92304ca2e7d765.png" target="_blank" rel="noopener">DF.png</a></p><p>A、P5→P4→P3→P2→P1</p><p>B、P4→P3→P2→P5→P1</p><p>C、P4→P3→P2→P1→P5</p><p>D、P2→P3→P4→P5→P1</p><p>E、P1→P2→P3→P4→P5</p><p><strong>12、</strong></p><p><img src="http://i1.chinesemooc.org/course/formula/201512/169a8253d68a0365fecd2a55b3268faf.png" alt="XBFLYX1XS[760X]92ZFEFK5.png"></p><p>（T）</p><p><strong>13、</strong>在图中，O3点属于区域④。（F）</p><p><strong>14、</strong>在图中，边O1O2（不含两个端点）表示死锁状态。（T）</p><p><img src="https://img-blog.csdn.net/20180814105506915?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814105523173?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814105600392?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814105622200?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814105650817?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>15、</strong>解决经典的哲学家进餐问题时，若规定每个哲学家先取左边筷子、再取右边筷子，则可以避免死锁发生。（F）</p><p><img src="https://img-blog.csdn.net/20180814105814201?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814105837836?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814105903273?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;在计算机系统拥有的各种软硬件资源中，内存是属于&lt;/p&gt;
-&lt;p&gt;A、可重用资源&lt;/p&gt;
-&lt;p&gt;B、不可重用资源&lt;/p&gt;
-&lt;p&gt;C、临界资源&lt;/p&gt;
-&lt;p&gt;D、独占资源&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://img-blog.c
-      
-    
-    </summary>
-    
-      <category term="操作系统" scheme="https://www.zqily.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-      <category term="操作系统" scheme="https://www.zqily.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
     
   </entry>
   
@@ -313,6 +280,39 @@
       <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
     
       <category term="数据结构" scheme="https://www.zqily.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机组成存储层次结构题库</title>
+    <link href="https://www.zqily.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%AD%98%E5%82%A8%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/计算机组成存储层次结构题库/</id>
+    <published>2018-08-24T16:18:45.000Z</published>
+    <updated>2018-08-25T10:22:16.625Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>1、</strong>下列哪些常用的设备是基于非易失性存储器的？</p><p>A、固态硬盘（SSD）</p><p>B、机械硬盘</p><p>C、光盘</p><p>D、优盘（Flash）</p><p>E、BIOS ROM芯片</p><p>F、SDRAM芯片</p><p>G、SRAM芯片</p><p><strong>2、</strong>按照课程中提供的SRAM结构图，在写入“0”的过程中，哪几个晶体管是处于连通状态？</p><p>A、M3</p><p>B、M2</p><p>C、M5</p><p>D、M6</p><p>E、M1</p><p>F、M4</p><p><strong>3、</strong>下面是有关SRAM和DRAM的叙述正确的是哪几项？</p><p>A、DRAM结构比SRAM简单</p><p>B、DRAM功耗比SRAM低</p><p>C、DRAM要刷新，SRAM不要刷新</p><p>D、单位容量的DRAM比SRAM成本高</p><p>E、单位容量的DRAM比SRAM速度快</p><p>F、单位容量的DRAM比SRAM面积大</p><p><strong>4、</strong>以PC133标准的SDRAM为例，时钟频率133MHz。设tRCD=15ns，CL=2，tRP=15ns。在正常的读操作情况下，从内存控制器发出行地址到内存输出第四个数据，需要多少个时钟周期？</p><p>A、7</p><p>B、4</p><p>C、12</p><p>D、5</p><p>E、6</p><p>F、8</p><p>G、9</p><p>H、15</p><p><strong>5、</strong>以PC133标准的SDRAM为例，时钟频率133MHz。设tRCD=15ns，CL=2，tRP=15ns。在正常的读操作情况下，从内存控制器发出行地址到内存输出第一个数据，需要多少个时钟周期？</p><p>A、4</p><p>B、2</p><p>C、3</p><p>D、5</p><p>E、8</p><p>F、12</p><p>G、15</p><p><strong>6、</strong>以PC133标准的SDRAM为例，时钟频率133MHz。设tRCD=22ns，CL=2，tRP=22ns。如果内存控制器需要发起两次不同行地址的读操作，每次读操作读出四个数据，那从发出第一个行地址到发出第二个行地址，最短需要多少个时钟周期？</p><p>A、11</p><p>B、4</p><p>C、7</p><p>D、5</p><p>E、8</p><p>F、10</p><p>G、15</p><p><strong>7、</strong>以PC133标准的SDRAM为例，时钟频率133MHz。设tRCD=15ns，CL=2，tRP=22ns。如果内存控制器需要发起两次不同行地址的读操作，每次读操作读出四个数据，那从发出第一个行地址到发出第二个行地址，最短需要多少个时钟周期？</p><p>A、10</p><p>B、4</p><p>C、7</p><p>D、5</p><p>E、8</p><p>F、11</p><p>G、15</p><p><strong>8、</strong>64-bit数据宽度的DDR-400 SDRAM的峰值带宽为3.2GB/s，核心时钟频率为200MHz，芯片内部采用了2位数据预取技术，其接口频率是多少？</p><p>A、200MHz</p><p>B、400MHz</p><p>C、800MHz</p><p>D、1600MHz</p><p>E、100MHz</p><p>F、1200MHz</p><p><strong>9、</strong>64-bit数据宽度的DDR3-1600 SDRAM的峰值带宽为12.8GB/s，接口时钟频率为800MHz，芯片内部采用了8位数据预取技术，其核心频率是多少？</p><p>A、200MHz</p><p>B、400MHz</p><p>C、800MHz</p><p>D、1600MHz</p><p>E、100MHz</p><p>F、1200MHz</p><p><strong>10、</strong>关于程序局部性的描述，正确的是哪几项？</p><p>A、数组通常具有很好的空间局部性</p><p>B、循环通常具有很好的时间局部性</p><p>C、循环通常具有很好的空间局部性</p><p>D、数组通常具有很好的时间局部性</p><p>E、链表通常具有很好的时间局部性</p><p>F、链表通常具有很好的空间局部性</p><p><strong>11、</strong>请阅读代码片段</p><p>sum = 0;</p><p>for (i = 0; i &lt; n; i++)</p><p>sum += a[i];</p><p>return sum;</p><p>在上述代码片段中，对数组a[]的使用体现了<strong>__</strong>局部性。</p><p>答案： 空间</p><p><strong>12、</strong>请阅读代码片段</p><p>sum = 0;</p><p>for (i = 0; i &lt; n; i++)</p><p>sum += a[i];</p><p>return sum;</p><p>在上述代码片段中，对变量sum的使用体现了<strong>_</strong>局部性。</p><p>答案： 时间</p><p><strong>13、</strong>一个容量为1GB的硬盘，如果不考虑冗余空间，那可以存储多少个二进制位的信息？（只填写数字，中间不带任何分隔符，后面不带单位）</p><p>答案： 8000000000</p><p><strong>14、</strong>一个容量为1GB的内存，如果不考虑冗余空间，那可以存储多少个二进制位的信息？（只填写数字，中间不带任何分隔符，后面不带单位）</p><p>答案： 8589934592</p><p><strong>15、</strong>一个传输率为100Mbps的以太网接口，每秒钟最多能输出多少个二进制位的信息？（只填写数字，中间不带任何分隔符，后面不带单位）</p><p>答案： 100000000</p><p><strong>16、</strong>一个传输率为100Mbps的内存接口，每秒钟最多能输出多少个二进制位的信息？（只填写数字，中间不带任何分隔符，后面不带单位）</p><p>答案： 100000000</p><p><strong>17、</strong>一个传输率为100Mbps的硬盘接口，每秒钟最多能输出多少个二进制位的信息？（只填写数字，中间不带任何分隔符，后面不带单位）</p><p>答案： 100000000</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;下列哪些常用的设备是基于非易失性存储器的？&lt;/p&gt;
+&lt;p&gt;A、固态硬盘（SSD）&lt;/p&gt;
+&lt;p&gt;B、机械硬盘&lt;/p&gt;
+&lt;p&gt;C、光盘&lt;/p&gt;
+&lt;p&gt;D、优盘（Flash）&lt;/p&gt;
+&lt;p&gt;E、BIOS ROM芯片&lt;/p&gt;
+&lt;p&gt;F、SDR
+      
+    
+    </summary>
+    
+      <category term="计算机组成" scheme="https://www.zqily.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/"/>
+    
+    
+      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
+    
+      <category term="计算机组成" scheme="https://www.zqily.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/"/>
     
   </entry>
   
@@ -550,55 +550,23 @@
   </entry>
   
   <entry>
-    <title>操作系统io系统题库</title>
-    <link href="https://www.zqily.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fio%E7%B3%BB%E7%BB%9F%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/操作系统io系统题库/</id>
+    <title>计算机组成乘法器和除法器题库</title>
+    <link href="https://www.zqily.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B9%98%E6%B3%95%E5%99%A8%E5%92%8C%E9%99%A4%E6%B3%95%E5%99%A8%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/计算机组成乘法器和除法器题库/</id>
     <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T10:37:06.826Z</updated>
+    <updated>2018-08-25T10:12:19.075Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>1、</strong>下列I/O控制方式中，哪一个不需要硬件支持？</p><p>A、轮询方式</p><p>B、中断方式</p><p>C、DMA方式</p><p>D、I/O处理机方式</p><p><img src="https://img-blog.csdn.net/20180814101328851?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>2、</strong>下列关于虚设备技术的叙述中，哪一个是错误的？</p><p>A、虚设备技术是指在一类设备上模拟另一类设备的技术</p><p>B、引入虚设备技术是为了提高设备利用率</p><p>C、通常采用虚设备技术是用低速设备来模拟高速设备</p><p>D、SPOOLing技术是一类典型的虚设备技术</p><p><img src="https://img-blog.csdn.net/20180814101533620?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>3、</strong>下列关于SPOOLing技术的叙述中，哪一个是错误的？</p><p>A、SPOOLing技术解决了独占设备利用率低的问题</p><p>B、SPOOLing没有解决CPU的速度与设备速度的差异性</p><p>C、SPOOLing技术需要利用磁盘空间作为缓冲</p><p>D、SPOOLing技术可用于打印机的管理</p><p><strong>4、</strong>在设备管理中，缓冲技术主要用于</p><p>A、提供内存与外存之间的接口</p><p>B、提高主机和设备交换信息的速度</p><p>C、提高设备利用率</p><p>D、扩充地址空间</p><p><img src="https://img-blog.csdn.net/20180814102225896?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>5、</strong>下列关于I/O端口地址的叙述中，哪一个是错误的？</p><p>A、内存映像编址方式下允许缓存设备接口寄存器的内容</p><p>B、I/O端口地址是指设备接口寄存器的地址</p><p>C、I/O独立编址方式需要特定的I/O指令</p><p>D、内存映像编址方式下I/O端口地址空间可以比较大</p><p><img src="https://img-blog.csdn.net/20180814103057358?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814103213425?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180814103250404?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>6、</strong>下列关于操作系统设备管理的叙述中，哪些是正确的？</p><p>A、设备管理使用户能独立于具体设备的复杂物理特性而方便地使用设备</p><p>B、设备管理利用各种技术提高CPU与设备、设备与设备之间的并行工作能力</p><p>C、操作系统对用户屏蔽了实现具体设备I/O操作的细节</p><p>D、SPOOLing技术是一类典型的虚拟设备技术</p><p>E、操作系统应尽量对设备提供各种不同的接口</p><p><strong>7、</strong>下列哪些方案可以提高I/O性能？</p><p>A、缓冲技术</p><p>B、异步I/O方式</p><p>C、DMA方式</p><p>D、轮询方式</p><p>E、静态设备分配策略</p><p><img src="https://img-blog.csdn.net/20180814103657212?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>8、</strong>I/O设备的传输速率差异性、接口的复杂性等给操作系统设备管理带来复杂性。（T）</p><p><strong>9、</strong>利用设备内部的缓冲区可以进行数据格式加工等处理。（T）</p><p><strong>10、</strong>内存映像I/O模式下设备驱动程序可以用C语言编写。（T）</p><p><strong>11、</strong>通过把独占设备改造成<strong><strong><strong>____</strong></strong></strong>，可以提高独占设备利用率</p><p>A、共享设备</p><p>B、共享的设备</p><p><strong>12、</strong>通常按层次组织I/O软件，典型的四层I/O软件包括用户进程I/O、<strong><strong><strong>____</strong></strong></strong>、设备驱动程序和中断处理程序。</p><p>A、设备无关软件</p><p>B、设备独立软件</p><p>C、设备独立性软件</p><p>D、设备无关性软件</p><p>E、逻辑I/O</p><p><img src="https://img-blog.csdn.net/2018081410381722?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>答案： A,B,C,D,E</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>1、</strong>对于第一版乘法器，当乘数寄存器最低位为1时，在该次循环过程中，需要将乘数寄存器向哪个方向移动，需要将被乘数寄存器向哪个方向移动？</p><p>A、右、左</p><p>B、不移动，左</p><p>C、不移动，右</p><p>D、右、右</p><p>E、左、左</p><p>F、右，不移动</p><p><strong>2、</strong>对于第一版乘法器，在每次循环的过程中，需要将被乘数寄存器的内容与乘积寄存器中的内容相加，并将结果放入乘积寄存器的条件是：</p><p>A、乘数寄存器的最低位为1</p><p>B、乘数寄存器的最低位为0</p><p>C、被乘数寄存器的最低位为1</p><p>D、被乘数寄存器的最低位为0</p><p>E、乘积寄存器的最低位为1</p><p><strong>3、</strong>对于32-bit的第一版乘法器，每次循环都需要判断的条件是哪几个？</p><p>A、乘数寄存器的最低位是否为0</p><p>B、是否循环了32次</p><p>C、</p><p>被乘数寄存器的最低位是否为0</p><p>D、</p><p>是否循环了33次</p><p>E、</p><p>是否循环了31次</p><p><strong>4、</strong>以4-bit的第一版乘法器为例，对于二进制数00100011，当第2次循环结束时，被乘数寄存器、乘数寄存器和乘积寄存器的值分别是？</p><p>A、00001000，0000，00000110</p><p>B、00001000，0001，00000110</p><p>C、00000100，0000，00000110</p><p>D、00000100，0000，00000010</p><p><strong>5、</strong>对于32-bit的第一版乘法器，需要包含以下哪些组成部分？</p><p>A、64位ALU</p><p>B、32位的乘数寄存器</p><p>C、64位的被乘数寄存器</p><p>D、64位的乘积寄存器</p><p>E、32位ALU</p><p>F、32位的被乘数寄存器</p><p><strong>6、</strong>对于第一版乘法器，下列哪些属于对其进行面积优化的措施？</p><p>A、将加法运算和两个移位同时进行</p><p>B、将加法器和被乘数寄存器位宽减半优化面积</p><p>C、64-bit加法器缩小为32-bit</p><p>D、取消乘数寄存器</p><p>E、乘积寄存器需支持右移</p><p><strong>7、</strong>对于第一版乘法器，控制逻辑的作用是哪些？</p><p>A、控制何时对被乘数寄存器进行移位</p><p>B、控制何时对乘数寄存器进行移位</p><p>C、控制何时将新值写入积寄存器</p><p>D、控制何时将乘积寄存器进行移位</p><p><strong>8、</strong>对于本课中讲授的第二版乘法器，在对乘法器进行面积优化后，一个32-bit乘法器需要包含以下哪些部分？</p><p>A、32位ALU</p><p>B、32位的被乘数寄存器</p><p>C、64位的乘积寄存器</p><p>D、32位的乘数寄存器</p><p>E、64位ALU</p><p>F、32位的乘积寄存器</p><p><strong>9、</strong>对于第一版除法器，在一次循环中当余数寄存器大于0时，需要将商寄存器向哪个方向移动，需要将除数寄存器向哪个方向移动？</p><p>A、左、右</p><p>B、不移动，左</p><p>C、不移动，右</p><p>D、右、右</p><p>E、左、左</p><p>F、右，不移动</p><p><strong>10、</strong>对于第一版除法器，在每次循环的过程中，需要左移商寄存器，并将其最低位设置为1的条件是：</p><p>A、余数大于等于0</p><p>B、余数小于0</p><p>C、除数寄存器的最低位为1</p><p>D、除数寄存器的最低位为0</p><p><strong>11、</strong>一个32-bit除法器，对于第一种除法算法，每次迭代时都需要判断的条件是哪几个？</p><p>A、余数寄存器是否小于0</p><p>B、是否完成了重复了33次循环</p><p>C、除数寄存器是否小于0</p><p>D、是否重复了31次循环</p><p>E、是否重复了32次循环</p><p><strong>12、</strong>对于32-bit的第一版除法器，需要包含以下哪些组成部分？</p><p>A、64位ALU</p><p>B、32位的商寄存器</p><p>C、64位的余数寄存器</p><p>D、64位的除数寄存器</p><p>E、32位ALU</p><p>F、32位的除数寄存器</p><p><strong>13、</strong>以4-bit的第一版除法器为例，对于二进制数0111÷0010，当第2次循环结束时，商寄存器、除数寄存器和余数寄存器的值是？</p><p>A、0000，00001000，00000111</p><p>B、0001，00001000，00000111</p><p>C、0000， 00001000，11110111</p><p>D、0000，00010000，00000111</p><p><strong>14、</strong>对于第二版除法器，在对除法器进行面积优化后，一个32-bit除法器需要包含以下哪些组成部分？</p><p>A、32位ALU</p><p>B、32除数寄存器</p><p>C、64位余数寄存器</p><p>D、64位ALU</p><p>E、32位商寄存器</p><p>F、32位余数寄存器</p><p><strong>15、</strong>对于第二种除法算法，在对除法器进行面积优化后，商的结果放置在哪里？</p><p>A、余数寄存器的低32位</p><p>B、余数寄存器的高32位</p><p>C、除数寄存器的低32位</p><p>D、除数寄存器的高32位</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;下列I/O控制方式中，哪一个不需要硬件支持？&lt;/p&gt;
-&lt;p&gt;A、轮询方式&lt;/p&gt;
-&lt;p&gt;B、中断方式&lt;/p&gt;
-&lt;p&gt;C、DMA方式&lt;/p&gt;
-&lt;p&gt;D、I/O处理机方式&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://img-blog.
-      
-    
-    </summary>
-    
-      <category term="操作系统" scheme="https://www.zqily.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-      <category term="操作系统" scheme="https://www.zqily.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机组成单周期处理器题库</title>
-    <link href="https://www.zqily.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8D%95%E5%91%A8%E6%9C%9F%E5%A4%84%E7%90%86%E5%99%A8%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/计算机组成单周期处理器题库/</id>
-    <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T10:14:26.742Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>1、</strong>处理器设计的五个步骤如下，请正确排序。</p><p>1 连接组件建立数据通路</p><p>2 为数据通路选择合适的组件</p><p>3 集成控制信号，形成完整的控制逻辑</p><p>4 分析指令系统，得出对数据通路的需求</p><p>5 分析每条指令的实现，以确定控制信号</p><p>答案： 42153</p><p><strong>2、</strong>课程中提到的MIPS-lite指令子集（addu，subu，ori，lw，sw，beq）对ALU的需求有哪些？</p><p>A、加法</p><p>B、减法</p><p>C、逻辑或</p><p>D、相等</p><p>E、逻辑与</p><p>F、逻辑非</p><p>G、乘法</p><p>H、除法</p><p>I、左移</p><p>J、右移</p><p><strong>3、</strong>下列关于MIPS-lite指令子集对数据通路的需求描述正确的是？</p><p>A、add指令与ori指令对寄存器堆的写操作需求不一样</p><p>B、lw指令需要符号扩展部件</p><p>C、lw指令与sw指令都需要数据存储器</p><p>D、add指令需要零扩展部件</p><p>E、sub指令需要符号扩展部件</p><p>F、ori指令需要符号扩展部件</p><p><strong>4、</strong>下列关于运算指令的控制信号描述正确的是？</p><p>A、add指令与ori指令的寄存器堆控制信号RegDst不同</p><p>B、add指令与ori指令的ALU源操作数控制信号ALUSrc不同</p><p>C、add指令与ori指令的ALU运算类型控制信号ALUctr不同</p><p>D、add指令的扩展部件控制信号ExtOp不唯一</p><p>E、ori指令的扩展部件控制信号ExtOp不唯一</p><p>F、add指令与ori指令的数据存储器控制信号MemWr可以不相同</p><p><strong>5、</strong>下列关于访存指令的控制信号描述正确的是？</p><p>A、lw指令与sw指令的ALU运算类型控制信号ALUctr相同</p><p>B、lw指令与sw指令的控制信号MemtoReg可以不相同</p><p>C、lw指令与sw指令的寄存器堆控制信号RegDst一定相同</p><p>D、lw指令与sw指令的扩展部件控制信号ExtOp可以不相同</p><p>E、lw指令与sw指令的数据存储器控制信号MemWr可以不相同</p><p><strong>6、</strong>下列关于beq指令的执行描述正确的是？</p><p>A、beq指令的寄存器堆控制信号RegDst是不唯一的</p><p>B、beq指令与lw指令的数据存储器控制信号MemWr是相同的</p><p>C、beq指令与add指令的ALU运算类型控制信号ALUctr相同</p><p>D、beq指令的扩展部件控制信号ExtOp一定为sign</p><p>E、若ALU计算结果为零，则beq指令不需要执行PC+4操作</p><p><strong>7、</strong>在单周期处理器上执行beq指令，使用到了下列哪些部件？</p><p>A、寄存器堆</p><p>B、ALU</p><p>C、扩展部件（零扩展或符号扩展）</p><p>D、数据存储器</p><p><strong>8、</strong>在单周期处理器上执行add指令，使用到了下列哪些部件？</p><p>A、寄存器堆</p><p>B、ALU</p><p>C、扩展部件（零扩展或符号扩展）</p><p>D、数据存储器</p><p><strong>9、</strong>在单周期处理器上执行ori指令，使用到了下列哪些部件？</p><p>A、扩展部件（零扩展或符号扩展）</p><p>B、寄存器堆</p><p>C、ALU</p><p>D、数据存储器</p><p><strong>10、</strong>在单周期处理器上执行lw指令，使用到了下列哪些部件？</p><p>A、扩展部件（零扩展或符号扩展）</p><p>B、数据存储器</p><p>C、寄存器堆</p><p>D、ALU</p><p><strong>11、</strong>假设单周期处理器五个阶段的延迟分别为200ps（取指）、50ps（读寄存器）、200ps（ALU操作）、300ps（访存）、100ps（写寄存器），则sw指令的总延迟为多少ps？</p><p>答案： 750</p><p><strong>12、</strong>假设单周期处理器五个阶段的延迟分别为200ps（取指）、50ps（读寄存器）、200ps（ALU操作）、300ps（访存）、100ps（写寄存器），则lw指令的总延迟为多少ps？</p><p>答案： 850</p><p><strong>13、</strong>假设单周期处理器五个阶段的延迟分别为200ps（取指）、50ps（读寄存器）、200ps（ALU操作）、300ps（访存）、100ps（写寄存器），则add指令的总延迟为多少ps？</p><p>答案： 550</p><p><strong>14、</strong>假设单周期处理器五个阶段的延迟分别为200ps（取指）、50ps（读寄存器）、200ps（ALU操作）、300ps（访存）、100ps（写寄存器），则beq指令的总延迟为多少ps？</p><p>答案： 450</p><p><strong>15、</strong>假设一条指令的32位编码从高到低依次为Ins<31>, Ins<30>, ……, Ins<0>，则产生ExtOp控制信号需要用到指令编码中的多少位？</0></30></31></p><p>A、6位</p><p>B、12位</p><p>C、32位</p><p>D、1位</p><p><strong>16、</strong>假设一条指令的32位编码从高到低依次为Ins<31>, Ins<30>, ……, Ins<0>，则产生MemWr控制信号需要用到指令编码中的多少位？</0></30></31></p><p>A、6位</p><p>B、12位</p><p>C、32位</p><p>D、1位</p><p><strong>17、</strong>假设一条指令的32位编码从高到低依次为Ins<31>, Ins<30>, ……, Ins<0>，则产生ALUctr[0]控制信号需要用到指令编码中的多少位？</0></30></31></p><p>A、12位</p><p>B、6位</p><p>C、7位</p><p>D、26位</p><p>E、32位</p><p>F、</p><p>14位</p><p><strong>18、</strong>假设一条指令的32位编码从高到低依次为Ins<31>, Ins<30>, ……, Ins<0>，则产生RegWr控制信号需要用到指令编码中的多少位？</0></30></31></p><p>A、12位</p><p>B、6位</p><p>C、7位</p><p>D、26位</p><p>E、32位</p><p>F、14位</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;处理器设计的五个步骤如下，请正确排序。&lt;/p&gt;
-&lt;p&gt;1 连接组件建立数据通路&lt;/p&gt;
-&lt;p&gt;2 为数据通路选择合适的组件&lt;/p&gt;
-&lt;p&gt;3 集成控制信号，形成完整的控制逻辑&lt;/p&gt;
-&lt;p&gt;4 分析指令系统，得出对数据通路的需求&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;对于第一版乘法器，当乘数寄存器最低位为1时，在该次循环过程中，需要将乘数寄存器向哪个方向移动，需要将被乘数寄存器向哪个方向移动？&lt;/p&gt;
+&lt;p&gt;A、右、左&lt;/p&gt;
+&lt;p&gt;B、不移动，左&lt;/p&gt;
+&lt;p&gt;C、不移动，右&lt;/p&gt;
+&lt;p&gt;D、右
       
     
     </summary>
@@ -609,6 +577,39 @@
       <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
     
       <category term="计算机组成" scheme="https://www.zqily.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>操作系统同步机制题库</title>
+    <link href="https://www.zqily.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%90%8C%E6%AD%A5%E6%9C%BA%E5%88%B6%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/操作系统同步机制题库/</id>
+    <published>2018-08-24T16:18:45.000Z</published>
+    <updated>2018-08-25T10:31:31.661Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>1、</strong>多个进程并发执行时，各个进程应互斥进入其临界区，所谓临界区是指</p><p>A、一段程序</p><p>B、一段数据区</p><p>C、一个缓冲区</p><p>D、一种同步机制</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180808173613677?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>2、</strong>下列哪一种场景问题只包含进程互斥问题？</p><p>A、田径场的四百米接力比赛</p><p>B、一个进程读文件，一个进程写文件</p><p>C、两个进程通过一个缓冲区传递数据</p><p>D、公共汽车上司机和售票员的工作配合</p><p><strong>3、</strong>以下是解决进程互斥进入临界区的一种解法。</p><blockquote><p>P:</p><p>… …</p><p>pturn = true;</p><p>while (qturn) ;</p><p>临界区操作</p><p>pturn = false;</p><p>… …</p><p>Q:</p><p>… …</p><p>qturn = true;</p><p>while (pturn) ;</p><p>临界区操作</p><p>qturn = false;</p><p>… …</p></blockquote><p>其中，pturn、qturn的初值为false</p><p>如果P、Q两个进程同时想进入临界区，那么会发生下面哪一种情形？</p><p>A、P和Q都进入了临界区</p><p>B、P先进入临界区，Q再进入临界区</p><p>C、Q先进入临界区，P再进入临界区</p><p>D、P和Q都进入不了临界区</p><p><strong>4、</strong>若干进程之间相互合作，共同完成一项任务。进程的这种关系称为</p><p>A、并发</p><p>B、同步</p><p>C、互斥</p><p>D、异步</p><p><strong>5、</strong>下列描述的四个现象中，哪一项既具有同步关系又具有互斥关系？</p><p>A、多个不同的用户进程一起玩踢足球电子游戏</p><p>B、多个不同的用户订票进程访问票额数据库</p><p>C、多个不同的用户进程一起玩麻将电子游戏</p><p>D、多个不同的用户进程编译自己的程序</p><p><strong>6、</strong>在使用信号量及P、V操作机制解决问题时，进程执行一次P操作，意味着该进程</p><p>A、正在使用一个资源</p><p>B、准备释放一个资源</p><p>C、申请分配一个资源</p><p>D、需要共享一个资源</p><p><strong>7、</strong>在使用信号量及P、V操作机制解决问题时，一个进程执行V操作意味着</p><p>A、可能有另一个进程从等待队列进入就绪队列</p><p>B、该进程从等待队列进入就绪队列</p><p>C、该进程从磁盘调入内存</p><p>D、可能有另一个进程从磁盘被调入内存</p><p><strong>8、</strong>假设信号量S的当前值为 -3，这就表示</p><p>A、系统中还有3个资源可以使用</p><p>B、系统中有3个等待该信号量的进程</p><p>C、在信号量S上不能再执行P操作了</p><p>D、在信号量S上只能执行V操作</p><p><strong>9、</strong>用信号量及PV操作管理临界区时，若信号量mutex的初值为1，当mutex的等待队列中有k（k &gt; 1）个进程时，信号量的值为</p><p>A、-k</p><p>B、k</p><p>C、k-1</p><p>D、1-k</p><p><strong>10、</strong>第一类读者写者问题的解决方案会导致写者进程产生“饥饿”现象。（T）</p><p><img src="https://img-blog.csdn.net/20180809165203963?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>11、</strong>用“测试并加锁”（TSL）指令解决进程互斥进入临界区的解决方案不适用于多处理器。（F）</p><p><img src="https://img-blog.csdn.net/20180809165129469?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>12、</strong>自旋锁采用了忙等待方式，它适用于多处理器。（T）</p><p><img src="https://img-blog.csdn.net/20180809165032459?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>13、</strong>若系统采用基于优先级的抢占式调度策略，临界区的使用可能导致优先级反转问题。（T）</p><p><strong>14、</strong>下列关于管程的描述中，哪一个是不正确的？</p><p>A、管程中需要提供互斥量以保证管程的互斥性</p><p>B、管程有自己的名字</p><p>C、管程的主要作用是管理共享资源（数据结构）</p><p>D、进程只能调用管程提供的过程对管程中的数据结构进行处理</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180809164918157?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>15、</strong>下列哪一个操作不会唤醒或通知等在条件变量上的进程？</p><p>A、broadcast()</p><p>B、notify()</p><p>C、signal()</p><p>D、wait()</p><p><strong>16、</strong>应用消息缓冲机制完成进程间通信的过程中，下列哪一项不是所必需的？</p><p>A、同步互斥信号量</p><p>B、消息缓冲区</p><p>C、send/receive原语</p><p>D、消息队列（指针）</p><p><img src="https://img-blog.csdn.net/201808091647566?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>17、</strong>采用共享内存进行进程间通信的方法需要程序员解决的问题是</p><p>A、设计共享内存空间的访问原语</p><p>B、处理进程在使用共享内存过程中的互斥关系</p><p>C、分配共享内存空间的大小</p><p>D、保证共享内存空间不被破坏</p><p><strong>18、</strong>MESA管程应用时需要至少2次对条件的检测。（假设线程都有一个进入队列、等待notify的过程，不存在直接通过的情况。）（T）</p><p><strong>19、</strong>若管程中同时出现2个进程，需要采取措施使其中一个进程等待。HOARE管程的解决办法是让先进入管程的进程等待。（F）</p><p>解析：先进入的先执行</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;多个进程并发执行时，各个进程应互斥进入其临界区，所谓临界区是指&lt;/p&gt;
+&lt;p&gt;A、一段程序&lt;/p&gt;
+&lt;p&gt;B、一段数据区&lt;/p&gt;
+&lt;p&gt;C、一个缓冲区&lt;/p&gt;
+&lt;p&gt;D、一种同步机制&lt;/p&gt;
+&lt;p&gt;解析：&lt;/p&gt;
+&lt;p&gt;&lt;img src
+      
+    
+    </summary>
+    
+      <category term="操作系统" scheme="https://www.zqily.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+      <category term="操作系统" scheme="https://www.zqily.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
     
   </entry>
   
