@@ -198,37 +198,6 @@
   </entry>
   
   <entry>
-    <title>操作系进程线程模型题库</title>
-    <link href="https://www.zqily.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E8%BF%9B%E7%A8%8B%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/操作系进程线程模型题库/</id>
-    <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T10:28:03.629Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>1、</strong>多道程序设计技术是操作系统中最早引入的软件技术，引入它的目的是</p><p>A、提高系统的实时响应速度</p><p>B、充分利用内存，有利于数据共享</p><p>C、充分利用CPU，提高CPU利用率</p><p>D、提高文件系统性能，减少内外存之间的信息传输量</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180807163425216?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>2、</strong>下列关于进程控制块PCB的叙述中，哪一个是错误的？</p><p>A、操作系统利用PCB描述进程的基本特征</p><p>B、一个PCB唯一对应一个进程</p><p>C、PCB可用于描述进程的运动变化过程</p><p>D、PCB通常保存在磁盘上</p><p>解析：</p><p><strong>3、</strong>在某一条件下，进程会在状态之间相互转换。下列哪一种进程状态转换不会发生？</p><p>A、等待态→就绪态</p><p>B、就绪态→运行态</p><p>C、就绪态→等待态</p><p>D、运行态→等待态</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180807164834276?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180807164932246?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180807165026923?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>4、</strong>假设某单处理器计算机系统中有10个进程，则系统中处于等待状态的进程最多有几个？</p><p>A、0</p><p>B、1</p><p>C、9</p><p>D、10</p><p><strong>5、</strong>下列关于进程控制操作的叙述中，哪一个是不正确的？</p><p>A、一个进程可以使用创建原语建立一个新的进程</p><p>B、撤销进程就是释放该进程占有的内存资源</p><p>C、阻塞原语使一个进程变为等待状态</p><p>D、唤醒原语使从等待队列中撤出进程</p><p>解析：释放该进程占有的内存资源只是撤销过程的部分</p><p><strong>6、</strong>下列哪一项工作不是创建进程时所作的？</p><p>A、给新进程分配一个唯一标识</p><p>B、给新进程分配虚拟地址空间</p><p>C、初始化新进程的进程控制块</p><p>D、将处理器控制权交给新进程</p><p>解析：</p><p><img src="https://img-blog.csdn.net/2018080717083980?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>7、</strong>进程控制原语有多种，下列哪一项不是进程控制原语？</p><p>A、改变进程优先级</p><p>B、挂起进程</p><p>C、进程唤醒</p><p>D、进程上下文切换</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180807171408393?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>8、</strong>在UNIX操作系统中运行如下C语言程序：</p><p>int main()</p><p>{</p><p>pid_t pid;</p><p>int a=5;</p><p>pid = fork();</p><p>if (pid==0)</p><p>printf (“This is the son process, a=%d “, –a);</p><p>else</p><p>printf (“This is the dad process, a=%d “, ++a);</p><p>}</p><p>假设编译链接过程正确且程序正确执行，那么运行结果是</p><p>A、This is the son process, a=4 This is the dad process, a=6</p><p>B、This is the son process, a=4</p><p>C、This is the dad process, a=6</p><p>D、This is the dad process, a=4 This is the son process, a=6</p><p><strong>9、</strong>进程映像由几部分组成，下列哪一项不属于进程映像？</p><p>A、进程控制块</p><p>B、程序代码</p><p>C、用户栈</p><p>D、就绪队列</p><p>解析：</p><p><img src="https://img-blog.csdn.net/201808071716527?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>10、</strong>某操作系统在进程中引入了多个执行序列——线程，那么下列叙述中，哪些描述了进程与线程的联系和区别？</p><p>A、进程是资源分配的基本单位</p><p>B、进程是处理器调度的基本单位</p><p>C、线程是资源分配的基本单位</p><p>D、线程是处理器调度的基本单位</p><p>E、线程不能独立于进程而存在</p><p><strong>11、</strong>下列各种事件中，一定产生进程状态改变的事件是</p><p>A、运行的进程正常退出</p><p>B、运行的进程因种种原因而阻塞</p><p>C、新进程创建成功</p><p>D、阻塞的进程被唤醒</p><p>E、运行的进程时间片用完</p><p><strong>12、</strong>进程运行时，其硬件状态保存在相应寄存器中；当它被切换下CPU时，其硬件状态保存在内核栈中。（F）</p><p><strong>13、</strong>当某个正在执行的进程需要进行I/O操作时，可以通过调用挂起原语将自己从运行状态变为等待状态。（F）</p><p><img src="https://img-blog.csdn.net/20180807165026923?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>14、</strong>用户级线程执行时，同一进程不同线程的切换不需要内核支持。（T）</p><p><strong>15、</strong>在支持线程的操作系统中，同一个进程中的各个线程共享该进程的用户栈。（F）</p><p><img src="https://img-blog.csdn.net/20180807174839750?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;多道程序设计技术是操作系统中最早引入的软件技术，引入它的目的是&lt;/p&gt;
-&lt;p&gt;A、提高系统的实时响应速度&lt;/p&gt;
-&lt;p&gt;B、充分利用内存，有利于数据共享&lt;/p&gt;
-&lt;p&gt;C、充分利用CPU，提高CPU利用率&lt;/p&gt;
-&lt;p&gt;D、提高文件系统
-      
-    
-    </summary>
-    
-      <category term="操作系统" scheme="https://www.zqily.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-      <category term="操作系统" scheme="https://www.zqily.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
     <title>操作系统运行环境题库</title>
     <link href="https://www.zqily.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%E9%A2%98%E5%BA%93/"/>
     <id>https://www.zqily.com/操作系统运行环境题库/</id>
@@ -260,32 +229,33 @@
   </entry>
   
   <entry>
-    <title>数据结构外排序题库</title>
-    <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%A4%96%E6%8E%92%E5%BA%8F%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/数据结构外排序题库/</id>
+    <title>操作系进程线程模型题库</title>
+    <link href="https://www.zqily.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E8%BF%9B%E7%A8%8B%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/操作系进程线程模型题库/</id>
     <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T11:01:17.284Z</updated>
+    <updated>2018-08-25T10:28:03.629Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>1、</strong>假设计算机系统有2048个字节的磁盘块，要存储的每一条记录为48字节，其中数据占了44个字节，关键码占4个字节。磁盘指针为4个字节。那么这个磁盘块上最多有多少条记录？</p><blockquote><p>解析</p><p>2048/48=42.67，则最多42条记录</p><p>答案： 42</p></blockquote><p><strong>2、</strong>假设计算机系统有2048个字节的磁盘块，要存储的每一条记录为68字节，其中数据占了64个字节，关键码占4个字节。磁盘指针为4个字节。那么这个磁盘块上最多有多少条记录？</p><blockquote><p>解析</p><p>2048/68=30.12，则最多30条记录</p><p>答案： 3</p></blockquote><p><strong>3、</strong>设输入的关键码满足k1&gt;k2&gt;…&gt;kn，缓冲区大小为m，用最小值堆进行置换-选择排序方法可产生多少个初始归并段？n=100,m=5</p><blockquote><p>解析</p><p>n/m=20，由于后面的关键码更小，所以每次的顺串大小均为m</p><p>答案： 20</p></blockquote><p><strong>4、</strong>有8个顺串，每个顺串的第一个记录的关键码分别为14，22，24，15，16，11，100，18，根据对顺串开始8路合并时的败者树。求问根节点是几号？（注意：顺串的编号从1开始，本题不是问根节点上面表示“冠军”的额外的节点）</p><blockquote><p>解析：败者树的根结点记录的是败者，需要加一个结点来记录整个比赛的胜利者。</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/7e62a9032fe3ebbc15acc19b6562f1d0.png" alt=""></p><p>答案： 1</p></blockquote><p><strong>5、</strong>有8个顺串，每个顺串的第一个记录的关键码分别为14，22，24，15，16，11，100，18，第二个记录的关键码分别为26，38，30，26，50，28，110，40。从败者树输出—个全局优胜者(并有相应的一个记录进入败者树)后需对败者树进行重构，则重构后的败者树的根结点是几号？（注意：顺串的编号从1开始，本题不是问根结点上面表示“冠军”的额外的结点）</p><blockquote><p>解析：败者树的根结点记录的是败者，需要加一个结点来记录整个比赛的胜利者。</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/edccc86d84bf5a573e8f7b8712028b4d.png" alt=""></p><p>答案： 5</p></blockquote><p><strong>6、</strong>从磁盘中随机选择的两个磁道的平均距离约是磁盘中磁道总数的多少？</p><p>A、1/2</p><p>B、1/3</p><p>C、2/3</p><p>D、1/4</p><blockquote><p>解析</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/deb0ed1de3a2360d1178bc1dfe26670f.png" alt=""></p><p>答案： B</p></blockquote><p><strong>7、</strong>如图所示，进行六路归并的顺串的第一个记录的关键码分别是22,6,12,84,10,9。请构造赢者树填充其他节点，求该二叉树的广度优先周游序列。（注意：不包括已知的6个外部节点，各个数字之间用空格分隔，结尾没有空格）</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/2db4c0c25e63c0ab2286512f1ceb1df6.png" alt=""></p><blockquote><p>解析：</p><p>一般来说，胜者树中胜出的是关键码较小的那个记录。</p><p>另外，要注意每个节点保存的是两个子节点中，胜出的记录的编号，而不是关键码。</p><p><img src="https://img-blog.csdn.net/20180820151431218?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>答案： 2 2 6 2 3</p></blockquote><p><strong>8.</strong> 如图所示，进行五路归并的顺串的第一个记录的关键码分别是14, 18, 9, 23, 77。请构造赢者树填充其他节点，求该二叉树的广度优先周游序列。（注意：不包括已知的5个外部节点，各个数字之间用空格分隔，结尾没有空格）</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/b90bc34cc0ad842d64f14e77be88d3ab.png" alt=""></p><blockquote><p>解析：</p><p>一般来说，胜者树中胜出的是关键码较小的那个记录。</p><p>另外，要注意每个节点保存的是两个子节点中，胜出的记录的编号，而不是关键码。</p><p><img src="https://img-blog.csdn.net/20180820151957454?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>答案： 3 3 4 1</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<p><strong>1、</strong>多道程序设计技术是操作系统中最早引入的软件技术，引入它的目的是</p><p>A、提高系统的实时响应速度</p><p>B、充分利用内存，有利于数据共享</p><p>C、充分利用CPU，提高CPU利用率</p><p>D、提高文件系统性能，减少内外存之间的信息传输量</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180807163425216?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>2、</strong>下列关于进程控制块PCB的叙述中，哪一个是错误的？</p><p>A、操作系统利用PCB描述进程的基本特征</p><p>B、一个PCB唯一对应一个进程</p><p>C、PCB可用于描述进程的运动变化过程</p><p>D、PCB通常保存在磁盘上</p><p>解析：</p><p><strong>3、</strong>在某一条件下，进程会在状态之间相互转换。下列哪一种进程状态转换不会发生？</p><p>A、等待态→就绪态</p><p>B、就绪态→运行态</p><p>C、就绪态→等待态</p><p>D、运行态→等待态</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180807164834276?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180807164932246?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><img src="https://img-blog.csdn.net/20180807165026923?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>4、</strong>假设某单处理器计算机系统中有10个进程，则系统中处于等待状态的进程最多有几个？</p><p>A、0</p><p>B、1</p><p>C、9</p><p>D、10</p><p><strong>5、</strong>下列关于进程控制操作的叙述中，哪一个是不正确的？</p><p>A、一个进程可以使用创建原语建立一个新的进程</p><p>B、撤销进程就是释放该进程占有的内存资源</p><p>C、阻塞原语使一个进程变为等待状态</p><p>D、唤醒原语使从等待队列中撤出进程</p><p>解析：释放该进程占有的内存资源只是撤销过程的部分</p><p><strong>6、</strong>下列哪一项工作不是创建进程时所作的？</p><p>A、给新进程分配一个唯一标识</p><p>B、给新进程分配虚拟地址空间</p><p>C、初始化新进程的进程控制块</p><p>D、将处理器控制权交给新进程</p><p>解析：</p><p><img src="https://img-blog.csdn.net/2018080717083980?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>7、</strong>进程控制原语有多种，下列哪一项不是进程控制原语？</p><p>A、改变进程优先级</p><p>B、挂起进程</p><p>C、进程唤醒</p><p>D、进程上下文切换</p><p>解析：</p><p><img src="https://img-blog.csdn.net/20180807171408393?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>8、</strong>在UNIX操作系统中运行如下C语言程序：</p><p>int main()</p><p>{</p><p>pid_t pid;</p><p>int a=5;</p><p>pid = fork();</p><p>if (pid==0)</p><p>printf (“This is the son process, a=%d “, –a);</p><p>else</p><p>printf (“This is the dad process, a=%d “, ++a);</p><p>}</p><p>假设编译链接过程正确且程序正确执行，那么运行结果是</p><p>A、This is the son process, a=4 This is the dad process, a=6</p><p>B、This is the son process, a=4</p><p>C、This is the dad process, a=6</p><p>D、This is the dad process, a=4 This is the son process, a=6</p><p><strong>9、</strong>进程映像由几部分组成，下列哪一项不属于进程映像？</p><p>A、进程控制块</p><p>B、程序代码</p><p>C、用户栈</p><p>D、就绪队列</p><p>解析：</p><p><img src="https://img-blog.csdn.net/201808071716527?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>10、</strong>某操作系统在进程中引入了多个执行序列——线程，那么下列叙述中，哪些描述了进程与线程的联系和区别？</p><p>A、进程是资源分配的基本单位</p><p>B、进程是处理器调度的基本单位</p><p>C、线程是资源分配的基本单位</p><p>D、线程是处理器调度的基本单位</p><p>E、线程不能独立于进程而存在</p><p><strong>11、</strong>下列各种事件中，一定产生进程状态改变的事件是</p><p>A、运行的进程正常退出</p><p>B、运行的进程因种种原因而阻塞</p><p>C、新进程创建成功</p><p>D、阻塞的进程被唤醒</p><p>E、运行的进程时间片用完</p><p><strong>12、</strong>进程运行时，其硬件状态保存在相应寄存器中；当它被切换下CPU时，其硬件状态保存在内核栈中。（F）</p><p><strong>13、</strong>当某个正在执行的进程需要进行I/O操作时，可以通过调用挂起原语将自己从运行状态变为等待状态。（F）</p><p><img src="https://img-blog.csdn.net/20180807165026923?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><strong>14、</strong>用户级线程执行时，同一进程不同线程的切换不需要内核支持。（T）</p><p><strong>15、</strong>在支持线程的操作系统中，同一个进程中的各个线程共享该进程的用户栈。（F）</p><p><img src="https://img-blog.csdn.net/20180807174839750?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;假设计算机系统有2048个字节的磁盘块，要存储的每一条记录为48字节，其中数据占了44个字节，关键码占4个字节。磁盘指针为4个字节。那么这个磁盘块上最多有多少条记录？&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;解析&lt;/p&gt;
-&lt;p&gt;2048
+        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;多道程序设计技术是操作系统中最早引入的软件技术，引入它的目的是&lt;/p&gt;
+&lt;p&gt;A、提高系统的实时响应速度&lt;/p&gt;
+&lt;p&gt;B、充分利用内存，有利于数据共享&lt;/p&gt;
+&lt;p&gt;C、充分利用CPU，提高CPU利用率&lt;/p&gt;
+&lt;p&gt;D、提高文件系统
       
     
     </summary>
     
-      <category term="数据结构" scheme="https://www.zqily.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="操作系统" scheme="https://www.zqily.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
+    
+      <category term="操作系统" scheme="https://www.zqily.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
       <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
-    
-      <category term="数据结构" scheme="https://www.zqily.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
@@ -303,6 +273,36 @@
       
       
         &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;有向图&lt;strong&gt;G&lt;/strong&gt;如下图所示，请写出所有拓扑排序序列。所有的顶点都直接用其数字标号表示，如拓扑排序序列为&lt;img src=&quot;http://i1.chinesemooc.org/course/formula/201
+      
+    
+    </summary>
+    
+      <category term="数据结构" scheme="https://www.zqily.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
+    
+      <category term="数据结构" scheme="https://www.zqily.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构外排序题库</title>
+    <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%A4%96%E6%8E%92%E5%BA%8F%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/数据结构外排序题库/</id>
+    <published>2018-08-24T16:18:45.000Z</published>
+    <updated>2018-08-25T11:01:17.284Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>1、</strong>假设计算机系统有2048个字节的磁盘块，要存储的每一条记录为48字节，其中数据占了44个字节，关键码占4个字节。磁盘指针为4个字节。那么这个磁盘块上最多有多少条记录？</p><blockquote><p>解析</p><p>2048/48=42.67，则最多42条记录</p><p>答案： 42</p></blockquote><p><strong>2、</strong>假设计算机系统有2048个字节的磁盘块，要存储的每一条记录为68字节，其中数据占了64个字节，关键码占4个字节。磁盘指针为4个字节。那么这个磁盘块上最多有多少条记录？</p><blockquote><p>解析</p><p>2048/68=30.12，则最多30条记录</p><p>答案： 3</p></blockquote><p><strong>3、</strong>设输入的关键码满足k1&gt;k2&gt;…&gt;kn，缓冲区大小为m，用最小值堆进行置换-选择排序方法可产生多少个初始归并段？n=100,m=5</p><blockquote><p>解析</p><p>n/m=20，由于后面的关键码更小，所以每次的顺串大小均为m</p><p>答案： 20</p></blockquote><p><strong>4、</strong>有8个顺串，每个顺串的第一个记录的关键码分别为14，22，24，15，16，11，100，18，根据对顺串开始8路合并时的败者树。求问根节点是几号？（注意：顺串的编号从1开始，本题不是问根节点上面表示“冠军”的额外的节点）</p><blockquote><p>解析：败者树的根结点记录的是败者，需要加一个结点来记录整个比赛的胜利者。</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/7e62a9032fe3ebbc15acc19b6562f1d0.png" alt=""></p><p>答案： 1</p></blockquote><p><strong>5、</strong>有8个顺串，每个顺串的第一个记录的关键码分别为14，22，24，15，16，11，100，18，第二个记录的关键码分别为26，38，30，26，50，28，110，40。从败者树输出—个全局优胜者(并有相应的一个记录进入败者树)后需对败者树进行重构，则重构后的败者树的根结点是几号？（注意：顺串的编号从1开始，本题不是问根结点上面表示“冠军”的额外的结点）</p><blockquote><p>解析：败者树的根结点记录的是败者，需要加一个结点来记录整个比赛的胜利者。</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/edccc86d84bf5a573e8f7b8712028b4d.png" alt=""></p><p>答案： 5</p></blockquote><p><strong>6、</strong>从磁盘中随机选择的两个磁道的平均距离约是磁盘中磁道总数的多少？</p><p>A、1/2</p><p>B、1/3</p><p>C、2/3</p><p>D、1/4</p><blockquote><p>解析</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/deb0ed1de3a2360d1178bc1dfe26670f.png" alt=""></p><p>答案： B</p></blockquote><p><strong>7、</strong>如图所示，进行六路归并的顺串的第一个记录的关键码分别是22,6,12,84,10,9。请构造赢者树填充其他节点，求该二叉树的广度优先周游序列。（注意：不包括已知的6个外部节点，各个数字之间用空格分隔，结尾没有空格）</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/2db4c0c25e63c0ab2286512f1ceb1df6.png" alt=""></p><blockquote><p>解析：</p><p>一般来说，胜者树中胜出的是关键码较小的那个记录。</p><p>另外，要注意每个节点保存的是两个子节点中，胜出的记录的编号，而不是关键码。</p><p><img src="https://img-blog.csdn.net/20180820151431218?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>答案： 2 2 6 2 3</p></blockquote><p><strong>8.</strong> 如图所示，进行五路归并的顺串的第一个记录的关键码分别是14, 18, 9, 23, 77。请构造赢者树填充其他节点，求该二叉树的广度优先周游序列。（注意：不包括已知的5个外部节点，各个数字之间用空格分隔，结尾没有空格）</p><p><img src="http://i1.chinesemooc.org/course/formula/201610/b90bc34cc0ad842d64f14e77be88d3ab.png" alt=""></p><blockquote><p>解析：</p><p>一般来说，胜者树中胜出的是关键码较小的那个记录。</p><p>另外，要注意每个节点保存的是两个子节点中，胜出的记录的编号，而不是关键码。</p><p><img src="https://img-blog.csdn.net/20180820151957454?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>答案： 3 3 4 1</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;假设计算机系统有2048个字节的磁盘块，要存储的每一条记录为48字节，其中数据占了44个字节，关键码占4个字节。磁盘指针为4个字节。那么这个磁盘块上最多有多少条记录？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;解析&lt;/p&gt;
+&lt;p&gt;2048
       
     
     </summary>
@@ -344,34 +344,6 @@
   </entry>
   
   <entry>
-    <title>数据结构检索题库</title>
-    <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%A3%80%E7%B4%A2%E9%A2%98%E5%BA%93/"/>
-    <id>https://www.zqily.com/数据结构检索题库/</id>
-    <published>2018-08-24T16:18:45.000Z</published>
-    <updated>2018-08-25T11:03:49.769Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>1、</strong>给定关键码序列26, 25, 20, 33, 21, 24, 45, 204, 42, 38, 29, 31，用散列法进行存储(本题采用闭散列方法解决冲突)，规定负载因子α=0.6。请给出最合理的除余法的散列函数。</p><p>A、H(key)=key % 17</p><p>B、H(key)=key % 23</p><p>C、H(key)=key % 19</p><p>D、H(key)=key % 20</p><blockquote><p>解析</p><p>在插入所有关键码后，负载因子最大为0.6。元素数目为12，散列表长度为12 / 0.6 = 20，小于20的最大质数为19。</p><p><img src="https://img-blog.csdn.net/20180820155433113?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p></blockquote><p><strong>2、</strong>有两个整数的集合A,B，大小分别为n，m=O(log(n))，由顺序表存储，并且已经排好序，现在要求他们的交集，请问你设计的高效算法的复杂度是：</p><p>A、n</p><p>B、</p><p><img src="https://img-blog.csdn.net/20180801171515816?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>C、</p><p><img src="https://img-blog.csdn.net/20180801171514827?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>D、</p><p><img src="https://img-blog.csdn.net/20180801171517242?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><blockquote><p>解析</p><p>枚举每个集合B中的元素，去集合A中寻找是否存在相同的元素。枚举的复杂度是logn，寻找可以用二分查找，复杂度是logn，故为logn的平方</p><p>答案： B</p></blockquote><p><strong>3、</strong>折半查找有序表（4，6，10，12，20，30，50，70，88，100）。若查找表中元素58，则它将依次与表中（）比较大小，查找结果是失败</p><p>A、20，50</p><p>B、30，88，70，50</p><p>C、20，70，30，50</p><p>D、30，88，50</p><blockquote><p>解析</p><p>一共10个记录，先与第5个记录20比较，58&gt;20，所以继续查找右半部分，与70比较，58&lt;70，继续查找左半部分，与30比较，58&gt;30，继续查找右半部分，与50比较，查找结束。</p></blockquote><p><strong>4、</strong>在各种查找方法中，平均查找长度与结点个数n无关的查找方法是（ ）。</p><p>A、散列查找</p><p>B、顺序查找</p><p>C、二分查找</p><p>D、没有这样的查找方法使得平均查找长度和n无关</p><blockquote><p>解析</p><p>散列查找的平均查找长度只跟负载因子有关，而顺序查找平均查找长度是O(n)，二分查找平均查找长度是O(logn)</p></blockquote><p><strong>5、</strong>一个散列表的散列函数是h(key)=key%19，共有20个槽，用闭散列的线性探查方法。从空表开始，依次进行如下插入删除操作，问这些操作的平均检索长度是()（用整数或分数表示）</p><p>操作是：Add 26 Add 25 Add 24 Add 195 Del 26 Add 176</p><p>提示：</p><p>1.散列表中不能插入两个相同的关键码</p><p>2.结果请用一个最简分数数值表示，分号用/表示，例如四分之三写为：3/4</p><blockquote><p>解析</p><p>依次检索次数为1，1，1，4，1，5，故总次数1+1+1+4+1+5=13，故平均检索次数为13/6</p><p>答案： 13/6</p></blockquote><p><strong>6、</strong>有一个散列表，共有N个槽，采用双散列探查的闭散列方法解决冲突。经过一系列插入操作，当前散列表中有M个元素，负载因子a为0.4，即M/N=a=0.4。假设M,N都非常大，并且双散列探查方法近使得每一次探查的位置，可以近似为均匀分布（即等概率地探查每个槽）。当前对于某个关键码，近似估算不成功检索的平均检索长度：5/3</p><blockquote><p>解析：</p><p>关键点提示：不成功检索由多次hash碰撞和一次未碰撞构成，由题意得，碰撞的概率为a，为碰撞的概率为1-a。故不成功检索的检索长度l概率分布是如下形式的指数分布：</p><p><img src="https://img-blog.csdn.net/20180820160537216?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>计算</p><p><img src="https://img-blog.csdn.net/20180820160537382?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>，最后得到答案为5/3</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;给定关键码序列26, 25, 20, 33, 21, 24, 45, 204, 42, 38, 29, 31，用散列法进行存储(本题采用闭散列方法解决冲突)，规定负载因子α=0.6。请给出最合理的除余法的散列函数。&lt;/p&gt;
-&lt;p&gt;A、H
-      
-    
-    </summary>
-    
-      <category term="数据结构" scheme="https://www.zqily.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    
-      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
-    
-      <category term="数据结构" scheme="https://www.zqily.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
     <title>数据结构树题库</title>
     <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%A0%91%E9%A2%98%E5%BA%93/"/>
     <id>https://www.zqily.com/数据结构树题库/</id>
@@ -388,6 +360,34 @@
 &lt;p&gt;N={A,B,C,D,E,F,G,H,I,J,K}&lt;/p&gt;
 &lt;p&gt;R={r}&lt;/p&gt;
 &lt;p&gt;r={(A,B),(B,E),(B,F),(F,G),(F,H),(A,C),(C,I
+      
+    
+    </summary>
+    
+      <category term="数据结构" scheme="https://www.zqily.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="题库" scheme="https://www.zqily.com/tags/%E9%A2%98%E5%BA%93/"/>
+    
+      <category term="数据结构" scheme="https://www.zqily.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构检索题库</title>
+    <link href="https://www.zqily.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%A3%80%E7%B4%A2%E9%A2%98%E5%BA%93/"/>
+    <id>https://www.zqily.com/数据结构检索题库/</id>
+    <published>2018-08-24T16:18:45.000Z</published>
+    <updated>2018-08-25T11:03:49.769Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>1、</strong>给定关键码序列26, 25, 20, 33, 21, 24, 45, 204, 42, 38, 29, 31，用散列法进行存储(本题采用闭散列方法解决冲突)，规定负载因子α=0.6。请给出最合理的除余法的散列函数。</p><p>A、H(key)=key % 17</p><p>B、H(key)=key % 23</p><p>C、H(key)=key % 19</p><p>D、H(key)=key % 20</p><blockquote><p>解析</p><p>在插入所有关键码后，负载因子最大为0.6。元素数目为12，散列表长度为12 / 0.6 = 20，小于20的最大质数为19。</p><p><img src="https://img-blog.csdn.net/20180820155433113?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p></blockquote><p><strong>2、</strong>有两个整数的集合A,B，大小分别为n，m=O(log(n))，由顺序表存储，并且已经排好序，现在要求他们的交集，请问你设计的高效算法的复杂度是：</p><p>A、n</p><p>B、</p><p><img src="https://img-blog.csdn.net/20180801171515816?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>C、</p><p><img src="https://img-blog.csdn.net/20180801171514827?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>D、</p><p><img src="https://img-blog.csdn.net/20180801171517242?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><blockquote><p>解析</p><p>枚举每个集合B中的元素，去集合A中寻找是否存在相同的元素。枚举的复杂度是logn，寻找可以用二分查找，复杂度是logn，故为logn的平方</p><p>答案： B</p></blockquote><p><strong>3、</strong>折半查找有序表（4，6，10，12，20，30，50，70，88，100）。若查找表中元素58，则它将依次与表中（）比较大小，查找结果是失败</p><p>A、20，50</p><p>B、30，88，70，50</p><p>C、20，70，30，50</p><p>D、30，88，50</p><blockquote><p>解析</p><p>一共10个记录，先与第5个记录20比较，58&gt;20，所以继续查找右半部分，与70比较，58&lt;70，继续查找左半部分，与30比较，58&gt;30，继续查找右半部分，与50比较，查找结束。</p></blockquote><p><strong>4、</strong>在各种查找方法中，平均查找长度与结点个数n无关的查找方法是（ ）。</p><p>A、散列查找</p><p>B、顺序查找</p><p>C、二分查找</p><p>D、没有这样的查找方法使得平均查找长度和n无关</p><blockquote><p>解析</p><p>散列查找的平均查找长度只跟负载因子有关，而顺序查找平均查找长度是O(n)，二分查找平均查找长度是O(logn)</p></blockquote><p><strong>5、</strong>一个散列表的散列函数是h(key)=key%19，共有20个槽，用闭散列的线性探查方法。从空表开始，依次进行如下插入删除操作，问这些操作的平均检索长度是()（用整数或分数表示）</p><p>操作是：Add 26 Add 25 Add 24 Add 195 Del 26 Add 176</p><p>提示：</p><p>1.散列表中不能插入两个相同的关键码</p><p>2.结果请用一个最简分数数值表示，分号用/表示，例如四分之三写为：3/4</p><blockquote><p>解析</p><p>依次检索次数为1，1，1，4，1，5，故总次数1+1+1+4+1+5=13，故平均检索次数为13/6</p><p>答案： 13/6</p></blockquote><p><strong>6、</strong>有一个散列表，共有N个槽，采用双散列探查的闭散列方法解决冲突。经过一系列插入操作，当前散列表中有M个元素，负载因子a为0.4，即M/N=a=0.4。假设M,N都非常大，并且双散列探查方法近使得每一次探查的位置，可以近似为均匀分布（即等概率地探查每个槽）。当前对于某个关键码，近似估算不成功检索的平均检索长度：5/3</p><blockquote><p>解析：</p><p>关键点提示：不成功检索由多次hash碰撞和一次未碰撞构成，由题意得，碰撞的概率为a，为碰撞的概率为1-a。故不成功检索的检索长度l概率分布是如下形式的指数分布：</p><p><img src="https://img-blog.csdn.net/20180820160537216?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>计算</p><p><img src="https://img-blog.csdn.net/20180820160537382?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5ZHlkMTEw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>，最后得到答案为5/3</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;给定关键码序列26, 25, 20, 33, 21, 24, 45, 204, 42, 38, 29, 31，用散列法进行存储(本题采用闭散列方法解决冲突)，规定负载因子α=0.6。请给出最合理的除余法的散列函数。&lt;/p&gt;
+&lt;p&gt;A、H
       
     
     </summary>
