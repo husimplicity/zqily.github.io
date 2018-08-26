@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="冰清璧润-唐泽清的博客">
 <meta property="og:description" content="1、处理器设计的五个步骤如下，请正确排序。 1 连接组件建立数据通路 2 为数据通路选择合适的组件 3 集成控制信号，形成完整的控制逻辑 4 分析指令系统，得出对数据通路的需求 5 分析每条指令的实现，以确定控制信号 答案： 42153 2、课程中提到的MIPS-lite指令子集（addu，subu，ori，lw，sw，beq）对ALU的需求有哪些？ A、加法 B、减法 C、逻辑或 D、相等 E、">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-25T10:14:26.742Z">
+<meta property="og:updated_time" content="2018-08-25T14:26:31.357Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机组成单周期处理器题库">
 <meta name="twitter:description" content="1、处理器设计的五个步骤如下，请正确排序。 1 连接组件建立数据通路 2 为数据通路选择合适的组件 3 集成控制信号，形成完整的控制逻辑 4 分析指令系统，得出对数据通路的需求 5 分析每条指令的实现，以确定控制信号 答案： 42153 2、课程中提到的MIPS-lite指令子集（addu，subu，ori，lw，sw，beq）对ALU的需求有哪些？ A、加法 B、减法 C、逻辑或 D、相等 E、">
@@ -471,10 +471,10 @@
 <p>5 分析每条指令的实现，以确定控制信号</p>
 <p>答案： 42153</p>
 <p><strong>2、</strong>课程中提到的MIPS-lite指令子集（addu，subu，ori，lw，sw，beq）对ALU的需求有哪些？</p>
-<p>A、加法</p>
-<p>B、减法</p>
-<p>C、逻辑或</p>
-<p>D、相等</p>
+<p><strong>A、加法</strong></p>
+<p><strong>B、减法</strong></p>
+<p><strong>C、逻辑或</strong></p>
+<p><strong>D、相等</strong></p>
 <p>E、逻辑与</p>
 <p>F、逻辑非</p>
 <p>G、乘法</p>
@@ -482,51 +482,51 @@
 <p>I、左移</p>
 <p>J、右移</p>
 <p><strong>3、</strong>下列关于MIPS-lite指令子集对数据通路的需求描述正确的是？</p>
-<p>A、add指令与ori指令对寄存器堆的写操作需求不一样</p>
-<p>B、lw指令需要符号扩展部件</p>
-<p>C、lw指令与sw指令都需要数据存储器</p>
+<p><strong>A、add指令与ori指令对寄存器堆的写操作需求不一样</strong></p>
+<p><strong>B、lw指令需要符号扩展部件</strong></p>
+<p><strong>C、lw指令与sw指令都需要数据存储器</strong></p>
 <p>D、add指令需要零扩展部件</p>
 <p>E、sub指令需要符号扩展部件</p>
 <p>F、ori指令需要符号扩展部件</p>
 <p><strong>4、</strong>下列关于运算指令的控制信号描述正确的是？</p>
-<p>A、add指令与ori指令的寄存器堆控制信号RegDst不同</p>
-<p>B、add指令与ori指令的ALU源操作数控制信号ALUSrc不同</p>
-<p>C、add指令与ori指令的ALU运算类型控制信号ALUctr不同</p>
-<p>D、add指令的扩展部件控制信号ExtOp不唯一</p>
+<p><strong>A、add指令与ori指令的寄存器堆控制信号RegDst不同</strong></p>
+<p><strong>B、add指令与ori指令的ALU源操作数控制信号ALUSrc不同</strong></p>
+<p><strong>C、add指令与ori指令的ALU运算类型控制信号ALUctr不同</strong></p>
+<p><strong>D、add指令的扩展部件控制信号ExtOp不唯一</strong></p>
 <p>E、ori指令的扩展部件控制信号ExtOp不唯一</p>
 <p>F、add指令与ori指令的数据存储器控制信号MemWr可以不相同</p>
 <p><strong>5、</strong>下列关于访存指令的控制信号描述正确的是？</p>
-<p>A、lw指令与sw指令的ALU运算类型控制信号ALUctr相同</p>
-<p>B、lw指令与sw指令的控制信号MemtoReg可以不相同</p>
+<p><strong>A、lw指令与sw指令的ALU运算类型控制信号ALUctr相同</strong></p>
+<p><strong>B、lw指令与sw指令的控制信号MemtoReg可以不相同</strong></p>
 <p>C、lw指令与sw指令的寄存器堆控制信号RegDst一定相同</p>
 <p>D、lw指令与sw指令的扩展部件控制信号ExtOp可以不相同</p>
 <p>E、lw指令与sw指令的数据存储器控制信号MemWr可以不相同</p>
 <p><strong>6、</strong>下列关于beq指令的执行描述正确的是？</p>
-<p>A、beq指令的寄存器堆控制信号RegDst是不唯一的</p>
-<p>B、beq指令与lw指令的数据存储器控制信号MemWr是相同的</p>
+<p><strong>A、beq指令的寄存器堆控制信号RegDst是不唯一的</strong></p>
+<p><strong>B、beq指令与lw指令的数据存储器控制信号MemWr是相同的</strong></p>
 <p>C、beq指令与add指令的ALU运算类型控制信号ALUctr相同</p>
 <p>D、beq指令的扩展部件控制信号ExtOp一定为sign</p>
 <p>E、若ALU计算结果为零，则beq指令不需要执行PC+4操作</p>
 <p><strong>7、</strong>在单周期处理器上执行beq指令，使用到了下列哪些部件？</p>
-<p>A、寄存器堆</p>
-<p>B、ALU</p>
+<p><strong>A、寄存器堆</strong></p>
+<p><strong>B、ALU</strong></p>
 <p>C、扩展部件（零扩展或符号扩展）</p>
 <p>D、数据存储器</p>
 <p><strong>8、</strong>在单周期处理器上执行add指令，使用到了下列哪些部件？</p>
-<p>A、寄存器堆</p>
-<p>B、ALU</p>
+<p><strong>A、寄存器堆</strong></p>
+<p><strong>B、ALU</strong></p>
 <p>C、扩展部件（零扩展或符号扩展）</p>
 <p>D、数据存储器</p>
 <p><strong>9、</strong>在单周期处理器上执行ori指令，使用到了下列哪些部件？</p>
-<p>A、扩展部件（零扩展或符号扩展）</p>
-<p>B、寄存器堆</p>
-<p>C、ALU</p>
+<p><strong>A、扩展部件（零扩展或符号扩展）</strong></p>
+<p><strong>B、寄存器堆</strong></p>
+<p><strong>C、ALU</strong></p>
 <p>D、数据存储器</p>
 <p><strong>10、</strong>在单周期处理器上执行lw指令，使用到了下列哪些部件？</p>
-<p>A、扩展部件（零扩展或符号扩展）</p>
-<p>B、数据存储器</p>
-<p>C、寄存器堆</p>
-<p>D、ALU</p>
+<p><strong>A、扩展部件（零扩展或符号扩展）</strong></p>
+<p><strong>B、数据存储器</strong></p>
+<p><strong>C、寄存器堆</strong></p>
+<p><strong>D、ALU</strong></p>
 <p><strong>11、</strong>假设单周期处理器五个阶段的延迟分别为200ps（取指）、50ps（读寄存器）、200ps（ALU操作）、300ps（访存）、100ps（写寄存器），则sw指令的总延迟为多少ps？</p>
 <p>答案： 750</p>
 <p><strong>12、</strong>假设单周期处理器五个阶段的延迟分别为200ps（取指）、50ps（读寄存器）、200ps（ALU操作）、300ps（访存）、100ps（写寄存器），则lw指令的总延迟为多少ps？</p>
@@ -536,17 +536,17 @@
 <p><strong>14、</strong>假设单周期处理器五个阶段的延迟分别为200ps（取指）、50ps（读寄存器）、200ps（ALU操作）、300ps（访存）、100ps（写寄存器），则beq指令的总延迟为多少ps？</p>
 <p>答案： 450</p>
 <p><strong>15、</strong>假设一条指令的32位编码从高到低依次为Ins<31>, Ins<30>, ……, Ins<0>，则产生ExtOp控制信号需要用到指令编码中的多少位？</0></30></31></p>
-<p>A、6位</p>
+<p><strong>A、6位</strong></p>
 <p>B、12位</p>
 <p>C、32位</p>
 <p>D、1位</p>
 <p><strong>16、</strong>假设一条指令的32位编码从高到低依次为Ins<31>, Ins<30>, ……, Ins<0>，则产生MemWr控制信号需要用到指令编码中的多少位？</0></30></31></p>
-<p>A、6位</p>
+<p><strong>A、6位</strong></p>
 <p>B、12位</p>
 <p>C、32位</p>
 <p>D、1位</p>
 <p><strong>17、</strong>假设一条指令的32位编码从高到低依次为Ins<31>, Ins<30>, ……, Ins<0>，则产生ALUctr[0]控制信号需要用到指令编码中的多少位？</0></30></31></p>
-<p>A、12位</p>
+<p><strong>A、12位</strong></p>
 <p>B、6位</p>
 <p>C、7位</p>
 <p>D、26位</p>
@@ -554,7 +554,7 @@
 <p>F、</p>
 <p>14位</p>
 <p><strong>18、</strong>假设一条指令的32位编码从高到低依次为Ins<31>, Ins<30>, ……, Ins<0>，则产生RegWr控制信号需要用到指令编码中的多少位？</0></30></31></p>
-<p>A、12位</p>
+<p><strong>A、12位</strong></p>
 <p>B、6位</p>
 <p>C、7位</p>
 <p>D、26位</p>
@@ -658,8 +658,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/计算机组成存储层次结构题库/" rel="next" title="计算机组成存储层次结构题库">
-                <i class="fa fa-chevron-left"></i> 计算机组成存储层次结构题库
+              <a href="/数据结构概述题库/" rel="next" title="数据结构概述题库">
+                <i class="fa fa-chevron-left"></i> 数据结构概述题库
               </a>
             
           </div>
@@ -668,8 +668,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/操作系统io系统题库/" rel="prev" title="操作系统io系统题库">
-                操作系统io系统题库 <i class="fa fa-chevron-right"></i>
+              <a href="/数据结构检索题库/" rel="prev" title="数据结构检索题库">
+                数据结构检索题库 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -785,7 +785,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">46</span>
+                  <span class="site-state-item-count">47</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -904,7 +904,7 @@ var ap = new APlayer({
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">101.9k</span>
+    <span title="Site words total count">103.8k</span>
   
 </div>
 

@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="冰清璧润-唐泽清的博客">
 <meta property="og:description" content="1、x86实模式下，若中断类型码为15H，则中断向量存放在从哪个地址开始的4个字节单元中。（答案用16进制数表示，如02ABCH） 答案： 00054h 2、x86实模式下，若中断类型码为10H，则中断向量存放在从哪个地址开始的4个字节单元中。（答案用16进制数表示，如02ABCH） 答案： 00040h 3、x86实模式下，若某中断向量对应的4字节内容分别是10H，24H，50H，68H（从低到">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-25T10:18:38.336Z">
+<meta property="og:updated_time" content="2018-08-25T23:39:59.641Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机组成中断和异常题库">
 <meta name="twitter:description" content="1、x86实模式下，若中断类型码为15H，则中断向量存放在从哪个地址开始的4个字节单元中。（答案用16进制数表示，如02ABCH） 答案： 00054h 2、x86实模式下，若中断类型码为10H，则中断向量存放在从哪个地址开始的4个字节单元中。（答案用16进制数表示，如02ABCH） 答案： 00040h 3、x86实模式下，若某中断向量对应的4字节内容分别是10H，24H，50H，68H（从低到">
@@ -476,7 +476,7 @@
 <p><strong>6、</strong>x86实模式下，若中断类型码为20H，中断服务程序的入口地址为5670H:1350H，试指出中断向量表中存放该中断向量的第2个字节（从低到高）单元的地址是什么？（答案用16进制数表示，如02ABCH）</p>
 <p>答案： 00081h</p>
 <p><strong>7、</strong>8086系统中，中断标志寄存器是哪一个？</p>
-<p>A、IF</p>
+<p><strong>A、IF</strong></p>
 <p>B、DF</p>
 <p>C、TF</p>
 <p>D、ZF</p>
@@ -491,59 +491,59 @@
 <p>6 保护现场</p>
 <p>答案： 351624</p>
 <p><strong>9、</strong>下列哪项操作是在中断处理过程中的“保护现场”步骤进行的？</p>
-<p>A、将中断服务程序中要使用的寄存器压入堆栈</p>
-<p>B、将标志寄存器压入堆栈</p>
+<p><strong>A、将中断服务程序中要使用的寄存器压入堆栈</strong></p>
+<p><strong>B、将标志寄存器压入堆栈</strong></p>
 <p>C、屏蔽其他中断请求</p>
 <p>D、将发生中断处的指令地址压入堆栈</p>
 <p>E、找到相应的中断服务程序的入口地址</p>
 <p>F、开放中断，以便允许响应较高优先级的中断</p>
 <p>G、将标志寄存器弹出堆栈</p>
 <p><strong>10、</strong>下列哪些操作是在中断处理过程中的“恢复现场”步骤进行的？</p>
-<p>A、将中断服务程序中要使用的寄存器弹出堆栈</p>
-<p>B、将标志寄存器弹出堆栈</p>
-<p>C、执行中断返回指令</p>
+<p><strong>A、将中断服务程序中要使用的寄存器弹出堆栈</strong></p>
+<p><strong>B、将标志寄存器弹出堆栈</strong></p>
+<p><strong>C、执行中断返回指令</strong></p>
 <p>D、将发生中断处的指令地址压入堆栈</p>
 <p>E、将中断服务程序中要使用的寄存器压入堆栈</p>
 <p>F、屏蔽其他中断请求</p>
 <p><strong>11、</strong>下列关于除法错中断描述错误的是？</p>
-<p>A、除法错中断可以通过软件方法屏蔽</p>
+<p><strong>A、除法错中断可以通过软件方法屏蔽</strong></p>
 <p>B、除法错中断的中断类型号为0</p>
 <p>C、DIV指令能够触发除法错中断</p>
 <p>D、IDIV指令能够触发触发错中断</p>
 <p>E、除法错中断属于内部中断</p>
 <p><strong>12、</strong>下列关于溢出中断描述正确的是？</p>
-<p>A、溢出中断有时候会被处理器为空操作</p>
-<p>B、溢出中断属于内部中断</p>
+<p><strong>A、溢出中断有时候会被处理器为空操作</strong></p>
+<p><strong>B、溢出中断属于内部中断</strong></p>
 <p>C、溢出中断的中断类型号为1</p>
 <p>D、溢出中断的触发与标志位ZF有关</p>
 <p>E、溢出中断只能跟在DIV指令之后使用</p>
 <p><strong>13、</strong>下列关于单步中断描述正确的是？</p>
-<p>A、单步中断服务程序一般用于显示CPU内部各寄存器的内容</p>
-<p>B、单步工作方式下，CPU每执行完一条指令，就会自动产生一个单步中断</p>
+<p><strong>A、单步中断服务程序一般用于显示CPU内部各寄存器的内容</strong></p>
+<p><strong>B、单步工作方式下，CPU每执行完一条指令，就会自动产生一个单步中断</strong></p>
 <p>C、单步中断的中断类型号为4</p>
 <p>D、单步中断不能通过软件方法屏蔽</p>
 <p>E、单步中断的执行与OF标志位有关</p>
 <p><strong>14、</strong>下列关于断点中断描述错误的是？</p>
-<p>A、断点中断可以通过软件方法屏蔽</p>
+<p><strong>A、断点中断可以通过软件方法屏蔽</strong></p>
 <p>B、断点中断通常与单步中断结合使用</p>
 <p>C、断点中断的中断服务程序通常显示CPU各寄存器的值</p>
 <p>D、断点中断的中断类型号为3</p>
 <p><strong>15、</strong>下列关于断点中断描述错误的是？</p>
-<p>A、断点中断可以通过软件方法屏蔽</p>
+<p><strong>A、断点中断可以通过软件方法屏蔽</strong></p>
 <p>B、断点中断的中断服务程序通常显示CPU各寄存器的值</p>
 <p>C、断点中断往往作为一种程序的调试手段</p>
 <p>D、断点中断通常与单步中断结合使用</p>
 <p><strong>16、</strong>下列x86程序实现的是什么功能？</p>
 <p>MOV AH, 2CH</p>
 <p>INT 21H</p>
-<p>A、读取时间</p>
+<p><strong>A、读取时间</strong></p>
 <p>B、输入字符</p>
 <p>C、显示字符串</p>
 <p>D、设置时间</p>
 <p><strong>17、</strong>下列x86程序实现的是什么功能？</p>
 <p>MOV AH, 2CH</p>
 <p>INT 21H</p>
-<p>A、读取时间</p>
+<p><strong>A、读取时间</strong></p>
 <p>B、设置时间</p>
 <p>C、输入字符</p>
 <p>D、输出字符</p>
@@ -551,7 +551,7 @@
 <p>MOV AH， 0</p>
 <p>MOV AL， 12H</p>
 <p>INT 10H</p>
-<p>A、设置显示方式为640×480彩色图形</p>
+<p><strong>A、设置显示方式为640×480彩色图形</strong></p>
 <p>B、设置光标位置</p>
 <p>C、读时钟</p>
 <p>D、设置显示方式为640×480单色图形</p>
@@ -559,7 +559,7 @@
 <p>MOV AH， 0</p>
 <p>MOV AL， 12H</p>
 <p>INT 10H</p>
-<p>A、设置显示方式为640×480彩色图形</p>
+<p><strong>A、设置显示方式为640×480彩色图形</strong></p>
 <p>B、设置光标位置</p>
 <p>C、读时钟</p>
 <p>D、置时钟</p>
@@ -661,8 +661,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/操作系统io系统题库/" rel="next" title="操作系统io系统题库">
-                <i class="fa fa-chevron-left"></i> 操作系统io系统题库
+              <a href="/操作系统概论题库/" rel="next" title="操作系统概论题库">
+                <i class="fa fa-chevron-left"></i> 操作系统概论题库
               </a>
             
           </div>
@@ -671,8 +671,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/数据结构高级数据结构题库/" rel="prev" title="数据结构高级数据结构题库">
-                数据结构高级数据结构题库 <i class="fa fa-chevron-right"></i>
+              <a href="/计算机网络应用层题库/" rel="prev" title="计算机网络应用层题库">
+                计算机网络应用层题库 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -788,7 +788,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">46</span>
+                  <span class="site-state-item-count">47</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -907,7 +907,7 @@ var ap = new APlayer({
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">101.9k</span>
+    <span title="Site words total count">103.8k</span>
   
 </div>
 
