@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.zqily.com/xrdp%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2018-09-12T02:18:47.334Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.zqily.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E6%A6%82%E8%AE%BA%E9%A2%98%E5%BA%93/</loc>
     
     <lastmod>2018-08-26T01:19:22.926Z</lastmod>
@@ -373,13 +380,6 @@
   </url>
   
   <url>
-    <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/Epsilon2.1.model.json</loc>
-    
-    <lastmod>2018-02-14T12:21:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/Epsilon2.1.physics.json</loc>
     
     <lastmod>2018-02-14T12:21:52.000Z</lastmod>
@@ -387,7 +387,7 @@
   </url>
   
   <url>
-    <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/exp/f08.exp.json</loc>
+    <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/Epsilon2.1.model.json</loc>
     
     <lastmod>2018-02-14T12:21:52.000Z</lastmod>
     
@@ -415,13 +415,6 @@
   </url>
   
   <url>
-    <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/exp/f05.exp.json</loc>
-    
-    <lastmod>2018-02-14T12:21:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/exp/f04.exp.json</loc>
     
     <lastmod>2018-02-14T12:21:52.000Z</lastmod>
@@ -437,6 +430,20 @@
   
   <url>
     <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/exp/f07.exp.json</loc>
+    
+    <lastmod>2018-02-14T12:21:52.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/exp/f08.exp.json</loc>
+    
+    <lastmod>2018-02-14T12:21:52.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.zqily.com/live2d-widget-model-epsilon2_1/assets/exp/f05.exp.json</loc>
     
     <lastmod>2018-02-14T12:21:52.000Z</lastmod>
     
